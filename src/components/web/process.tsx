@@ -65,8 +65,13 @@ export function Process() {
 
         <ol className="border-border border-t">
           {steps.map((s, i) => (
-            <Reveal as="li" key={s.n} delay={i * 50}>
-              <li className="group border-border grid grid-cols-[auto_minmax(0,1fr)] gap-x-5 gap-y-2 border-b py-7 transition-colors sm:grid-cols-[auto_minmax(0,1fr)_auto]">
+            <Reveal
+              as="li"
+              key={s.n}
+              delay={i * 50}
+              className="group border-border grid grid-cols-[auto_minmax(0,1fr)] gap-x-5 gap-y-2 border-b py-7 sm:grid-cols-[auto_minmax(0,1fr)_auto]"
+            >
+              <>
                 <span className="font-display text-grey-light group-hover:text-accent-yellow text-[15px] font-extrabold transition-colors">
                   {s.n}
                 </span>
@@ -77,7 +82,7 @@ export function Process() {
                 <span className="border-border text-ink-soft col-start-2 w-fit rounded-full border px-3 py-1 text-[11.5px] font-medium sm:col-start-3 sm:self-start">
                   {s.out}
                 </span>
-              </li>
+              </>
             </Reveal>
           ))}
         </ol>
