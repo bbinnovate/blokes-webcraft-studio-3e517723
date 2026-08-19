@@ -5,15 +5,15 @@ const logo = (slug: string) => `https://cdn.simpleicons.org/${slug}`;
 
 // ring: 1 = innermost arc, 3 = outermost. t = 0..1 position along the arc (left -> right)
 const stack = [
-  { name: "Shopify", note: "Ecommerce", slug: "shopify", ring: 1, t: 0.18, d: "0s" },
-  { name: "React", note: "Custom builds", slug: "react", ring: 1, t: 0.5, d: "0.9s" },
-  { name: "Next.js", note: "Speed at scale", slug: "nextdotjs", ring: 1, t: 0.82, d: "1.5s" },
-  { name: "WordPress", note: "Content sites", slug: "wordpress", ring: 2, t: 0.12, d: "0.6s" },
-  { name: "Webflow", note: "Marketing sites", slug: "webflow", ring: 2, t: 0.4, d: "1.2s" },
-  { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", ring: 2, t: 0.68, d: "0.3s" },
-  { name: "Razorpay", note: "Payments", slug: "razorpay", ring: 2, t: 0.93, d: "1.8s" },
-  { name: "HubSpot", note: "CRM sync", slug: "hubspot", ring: 3, t: 0.25, d: "2.1s" },
-  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", ring: 3, t: 0.75, d: "1.1s" },
+  { name: "Shopify", note: "Ecommerce", slug: "shopify", ring: 1, t: 0.3, d: "0s" },
+  { name: "React", note: "Custom builds", slug: "react", ring: 1, t: 0.7, d: "0.9s" },
+  { name: "WordPress", note: "Content sites", slug: "wordpress", ring: 2, t: 0.16, d: "0.6s" },
+  { name: "Next.js", note: "Speed at scale", slug: "nextdotjs", ring: 2, t: 0.5, d: "1.5s" },
+  { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", ring: 2, t: 0.84, d: "0.3s" },
+  { name: "Webflow", note: "Marketing sites", slug: "webflow", ring: 3, t: 0.1, d: "1.2s" },
+  { name: "HubSpot", note: "CRM sync", slug: "hubspot", ring: 3, t: 0.36, d: "2.1s" },
+  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", ring: 3, t: 0.64, d: "1.1s" },
+  { name: "Razorpay", note: "Payments", slug: "razorpay", ring: 3, t: 0.9, d: "1.8s" },
 ];
 
 const RADII = [0, 30, 43, 56] as const;
@@ -34,7 +34,7 @@ export function StackCluster() {
 
       <Reveal delay={100}>
         {/* Concentric arc — same layout at every breakpoint, just tighter */}
-        <div className="relative mx-auto mt-12 aspect-[2/1.12] w-full max-w-[860px] overflow-hidden">
+        <div className="relative mx-auto mt-10 aspect-[2/1.35] w-full max-w-[860px] sm:mt-12 sm:aspect-[2/1.12]">
           <div
             aria-hidden
             className="pointer-events-none absolute bottom-0 left-1/2 h-[92%] w-[92%] -translate-x-1/2 rounded-t-full opacity-80 blur-2xl"
@@ -109,27 +109,9 @@ export function StackCluster() {
           </div>
         </div>
 
-        <ul className="mt-8 grid grid-cols-2 gap-2.5 sm:hidden">
-          {stack.map((s) => (
-            <li
-              key={s.name}
-              className="border-border bg-card flex min-w-0 items-center gap-2 rounded-xl border p-2.5"
-            >
-              <img
-                src={logo(s.slug)}
-                alt={`${s.name} logo`}
-                width={16}
-                height={16}
-                loading="lazy"
-                className="h-4 w-4 shrink-0"
-              />
-              <div className="min-w-0">
-                <p className="font-display truncate text-[12px] font-extrabold">{s.name}</p>
-                <p className="text-grey truncate text-[11px]">{s.note}</p>
-              </div>
-            </li>
-          ))}
-        </ul>
+        <p className="text-grey mt-8 text-center text-[12px] sm:hidden">
+          Shopify · WordPress · Webflow · React · Next.js · Node.js · Razorpay · HubSpot · GA4
+        </p>
       </Reveal>
     </div>
   );
