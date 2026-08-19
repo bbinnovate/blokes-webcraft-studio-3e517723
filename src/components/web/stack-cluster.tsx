@@ -4,15 +4,15 @@ import hub from "@/assets/stack-hub.png";
 const logo = (slug: string) => `https://cdn.simpleicons.org/${slug}`;
 
 const stack = [
-  { name: "Shopify", note: "Ecommerce", slug: "shopify", angle: -150, d: "0s" },
-  { name: "WordPress", note: "Content sites", slug: "wordpress", angle: -105, d: "0.6s" },
-  { name: "Webflow", note: "Marketing sites", slug: "webflow", angle: -60, d: "1.2s" },
-  { name: "React", note: "Custom builds", slug: "react", angle: -15, d: "0.3s" },
-  { name: "Next.js", note: "Speed at scale", slug: "nextdotjs", angle: 30, d: "1.5s" },
-  { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", angle: 75, d: "0.9s" },
-  { name: "Razorpay", note: "Payments", slug: "razorpay", angle: 120, d: "1.8s" },
-  { name: "HubSpot", note: "CRM sync", slug: "hubspot", angle: 165, d: "2.1s" },
-  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", angle: 195, d: "1.1s" },
+  { name: "Shopify", note: "Ecommerce", slug: "shopify", angle: -160, d: "0s" },
+  { name: "WordPress", note: "Content sites", slug: "wordpress", angle: -120, d: "0.6s" },
+  { name: "Webflow", note: "Marketing sites", slug: "webflow", angle: -80, d: "1.2s" },
+  { name: "React", note: "Custom builds", slug: "react", angle: -40, d: "0.3s" },
+  { name: "Next.js", note: "Speed at scale", slug: "nextdotjs", angle: 0, d: "1.5s" },
+  { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", angle: 40, d: "0.9s" },
+  { name: "Razorpay", note: "Payments", slug: "razorpay", angle: 80, d: "1.8s" },
+  { name: "HubSpot", note: "CRM sync", slug: "hubspot", angle: 120, d: "2.1s" },
+  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", angle: 160, d: "1.1s" },
 ];
 
 export function StackCluster() {
