@@ -9,7 +9,6 @@ import { CaseStudies } from "@/components/web/case-studies";
 import { ResponsiveTech } from "@/components/web/responsive-tech";
 import { Process } from "@/components/web/process";
 import { Testimonials } from "@/components/web/testimonials";
-import { Investment } from "@/components/web/investment";
 import { Faq, faqs } from "@/components/web/faq";
 import { CtaFooter } from "@/components/web/cta-footer";
 
@@ -81,7 +80,6 @@ function Index() {
       <ResponsiveTech />
       <Process />
       <Testimonials />
-      <Investment />
       <Faq />
       <CtaFooter />
       <Toaster position="top-center" />
