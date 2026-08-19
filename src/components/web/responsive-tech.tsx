@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Monitor, Smartphone, Tablet } from "lucide-react";
-import mobileSet from "@/assets/mobile-set.jpg";
 import afterSite from "@/assets/after-site.jpg";
 import deviceTablet from "@/assets/device-tablet.jpg";
 import deviceMobile from "@/assets/device-mobile.jpg";
@@ -107,28 +106,6 @@ export function ResponsiveTech() {
           </div>
         </Reveal>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <Reveal>
-            <img
-              src={mobileSet}
-              alt="Mobile-first website interfaces built by Bombay Blokes"
-              width={1200}
-              height={800}
-              loading="lazy"
-              className="border-border w-full rounded-[24px] border object-cover"
-            />
-          </Reveal>
-          <Reveal delay={80}>
-            <p className="eyebrow">Built for every screen</p>
-            <h3 className="mt-3 text-[26px] leading-tight sm:text-[32px]">
-              One design system, tested on real devices before launch.
-            </h3>
-            <p className="text-ink-soft mt-4 text-[15px] leading-relaxed">
-              Every layout is drawn at three breakpoints and QA'd on real handsets — not just a
-              browser resize. Tap targets, sticky CTAs and image weights are tuned per device.
-            </p>
-          </Reveal>
-        </div>
       </div>
 
       <StackCluster />

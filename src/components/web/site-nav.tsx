@@ -6,7 +6,7 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "Capabilities", href: "#capabilities" },
   { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#investment" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export function SiteNav() {

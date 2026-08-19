@@ -39,7 +39,7 @@ export const faqs = [
 
 export function Faq() {
   return (
-    <section className="bg-secondary py-20 lg:py-28">
+    <section id="faq" className="bg-secondary scroll-mt-24 py-20 lg:py-28">
       <div className="container-bb grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
         <Reveal>
           <p className="eyebrow">FAQs</p>

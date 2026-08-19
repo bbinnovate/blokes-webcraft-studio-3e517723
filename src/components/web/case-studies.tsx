@@ -100,14 +100,16 @@ export function CaseStudies() {
           </div>
         </Reveal>
 
-        <div className="mt-12 space-y-6">
+        <div className="mt-12 space-y-8 lg:space-y-0">
           {studies.map((s, i) => (
-            <Reveal as="article" key={s.client} delay={40}>
-              <div className="group border-border bg-card overflow-hidden rounded-[26px] border transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_40px_80px_-56px_rgba(29,29,29,0.5)]">
+            <article
+              key={s.client}
+              className="lg:sticky"
+              style={{ top: `calc(6rem + ${i * 22}px)`, zIndex: i + 1 }}
+            >
+              <div className="group border-border bg-card overflow-hidden rounded-[26px] border shadow-[0_40px_80px_-64px_rgba(29,29,29,0.45)] transition-all duration-500 lg:mb-8">
                 <div className="grid lg:grid-cols-2">
-                  <div
-                    className={`bg-secondary overflow-hidden ${i % 2 === 1 ? "lg:order-2" : ""}`}
-                  >
+                  <div className="bg-secondary overflow-hidden">
                     <img
                       src={s.img}
                       alt={`${s.client} website case study`}
@@ -148,7 +150,7 @@ export function CaseStudies() {
                   </div>
                 </div>
               </div>
-            </Reveal>
+            </article>
           ))}
         </div>
       </div>
