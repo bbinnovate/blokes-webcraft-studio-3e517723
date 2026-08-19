@@ -5,7 +5,6 @@ import { Hero } from "@/components/web/hero";
 import { LogoMarquee } from "@/components/web/logo-marquee";
 import { Transformation } from "@/components/web/transformation";
 import { Capabilities } from "@/components/web/capabilities";
-import { WorkShowcase } from "@/components/web/work-showcase";
 import { CaseStudies } from "@/components/web/case-studies";
 import { ResponsiveTech } from "@/components/web/responsive-tech";
 import { Process } from "@/components/web/process";
@@ -78,7 +77,6 @@ function Index() {
       <LogoMarquee />
       <Transformation />
       <Capabilities />
-      <WorkShowcase />
       <CaseStudies />
       <ResponsiveTech />
       <Process />
