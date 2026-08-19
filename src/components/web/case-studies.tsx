@@ -101,14 +101,10 @@ export function CaseStudies() {
           </div>
         </Reveal>
 
-        <div className="mt-12 space-y-8 lg:space-y-0">
+        <div className="mt-12">
           {studies.map((s, i) => (
-            <article
-              key={s.client}
-              className="lg:sticky"
-              style={{ top: `calc(6rem + ${i * 22}px)`, zIndex: i + 1 }}
-            >
-              <div className="group border-border bg-card overflow-hidden rounded-[26px] border shadow-[0_40px_80px_-64px_rgba(29,29,29,0.45)] transition-all duration-500 lg:mb-8">
+            <StickyCard key={s.client} index={i} total={studies.length}>
+              <div className="group border-border bg-card overflow-hidden rounded-[26px] border shadow-[0_40px_80px_-64px_rgba(29,29,29,0.45)]">
                 <div className="grid lg:grid-cols-2">
                   <div className="bg-secondary overflow-hidden">
                     <img
@@ -151,10 +147,69 @@ export function CaseStudies() {
                   </div>
                 </div>
               </div>
-            </article>
+            </StickyCard>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+function StickyCard({
+  children,
+  index,
+  total,
+}: {
+  children: React.ReactNode;
+  index: number;
+  total: number;
+}) {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [progress, setProgress] = useState(0);
+  const isLast = index === total - 1;
+
+  useEffect(() => {
+    if (isLast) return;
+    const el = ref.current;
+    if (!el) return;
+    let frame = 0;
+    const onScroll = () => {
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const rect = el.getBoundingClientRect();
+        const stickTop = 80 + index * 14;
+        const travel = Math.max(rect.height * 0.75, 260);
+        const p = Math.min(Math.max((stickTop - rect.top) / travel, 0), 1);
+        setProgress(p);
+      });
+    };
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, [index, isLast]);
+
+  return (
+    <article
+      className="sticky pb-6 lg:pb-8"
+      style={{ top: `calc(5rem + ${index * 14}px)`, zIndex: index + 1 }}
+    >
+      <div
+        ref={ref}
+        className="origin-top will-change-transform"
+        style={{
+          transform: `scale(${1 - progress * 0.06})`,
+          opacity: 1 - progress * 0.35,
+          filter: progress > 0 ? `blur(${progress * 1.6}px)` : undefined,
+        }}
+      >
+        {children}
+      </div>
+    </article>
   );
 }
