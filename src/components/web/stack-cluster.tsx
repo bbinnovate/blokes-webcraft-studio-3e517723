@@ -2,14 +2,14 @@ import { ShoppingBag, FileText, Layers, Code2, Server, CreditCard, Users, BarCha
 import { Reveal } from "./reveal";
 
 const stack = [
-  { name: "Shopify", note: "Ecommerce", icon: ShoppingBag, pos: "left-[2%] top-[6%]", d: "0s" },
-  { name: "WordPress", note: "Content sites", icon: FileText, pos: "left-[24%] top-[38%]", d: "0.8s" },
-  { name: "Webflow", note: "Marketing sites", icon: Layers, pos: "left-[3%] top-[68%]", d: "1.6s" },
-  { name: "React / Next", note: "Custom builds", icon: Code2, pos: "right-[3%] top-[4%]", d: "0.4s" },
-  { name: "Node & APIs", note: "Integrations", icon: Server, pos: "right-[24%] top-[36%]", d: "1.2s" },
-  { name: "Razorpay", note: "Payments", icon: CreditCard, pos: "right-[2%] top-[66%]", d: "2s" },
-  { name: "HubSpot", note: "CRM sync", icon: Users, pos: "left-[16%] top-[88%]", d: "2.4s" },
-  { name: "GA4 + GTM", note: "Measurement", icon: BarChart3, pos: "right-[16%] top-[88%]", d: "1s" },
+  { name: "Shopify", note: "Ecommerce", icon: ShoppingBag, pos: "left-[6%] top-[4%]", d: "0s" },
+  { name: "WordPress", note: "Content sites", icon: FileText, pos: "left-[9%] top-[36%]", d: "0.8s" },
+  { name: "Webflow", note: "Marketing sites", icon: Layers, pos: "left-[9%] top-[66%]", d: "1.6s" },
+  { name: "React / Next", note: "Custom builds", icon: Code2, pos: "right-[6%] top-[4%]", d: "0.4s" },
+  { name: "Node & APIs", note: "Integrations", icon: Server, pos: "right-[9%] top-[36%]", d: "1.2s" },
+  { name: "Razorpay", note: "Payments", icon: CreditCard, pos: "right-[9%] top-[66%]", d: "2s" },
+  { name: "HubSpot", note: "CRM sync", icon: Users, pos: "left-[28%] top-[88%]", d: "2.4s" },
+  { name: "GA4 + GTM", note: "Measurement", icon: BarChart3, pos: "right-[28%] top-[88%]", d: "1s" },
 ];
 
 export function StackCluster() {
