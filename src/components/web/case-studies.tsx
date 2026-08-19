@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import jewellery from "@/assets/project-jewellery.jpg";
 import b2b from "@/assets/project-b2b.jpg";
 import skincare from "@/assets/project-skincare.jpg";
