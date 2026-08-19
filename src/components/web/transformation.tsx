@@ -77,8 +77,8 @@ export function Transformation() {
               className="absolute inset-0 h-full w-full object-cover object-top"
             />
             <div
-              className="absolute inset-y-0 left-0 overflow-hidden"
-              style={{ width: `${pos}%` }}
+              className="absolute inset-0"
+              style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
             >
               <img
                 src={beforeSite}
@@ -87,7 +87,6 @@ export function Transformation() {
                 height={800}
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover object-top"
-                style={{ width: trackRef.current?.clientWidth ?? undefined }}
               />
             </div>
 
