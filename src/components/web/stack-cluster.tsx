@@ -12,7 +12,7 @@ const stack = [
   { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", angle: 75, d: "0.9s" },
   { name: "Razorpay", note: "Payments", slug: "razorpay", angle: 120, d: "1.8s" },
   { name: "HubSpot", note: "CRM sync", slug: "hubspot", angle: 165, d: "2.1s" },
-  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", angle: 210, d: "1.1s" },
+  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", angle: 195, d: "1.1s" },
 ];
 
 export function StackCluster() {
