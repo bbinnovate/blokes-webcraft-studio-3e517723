@@ -1,24 +1,92 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { SiteNav } from "@/components/web/site-nav";
+import { Hero } from "@/components/web/hero";
+import { LogoMarquee } from "@/components/web/logo-marquee";
+import { Transformation } from "@/components/web/transformation";
+import { Capabilities } from "@/components/web/capabilities";
+import { WorkShowcase } from "@/components/web/work-showcase";
+import { CaseStudies } from "@/components/web/case-studies";
+import { ResponsiveTech } from "@/components/web/responsive-tech";
+import { Process } from "@/components/web/process";
+import { Testimonials } from "@/components/web/testimonials";
+import { Investment } from "@/components/web/investment";
+import { Faq, faqs } from "@/components/web/faq";
+import { CtaFooter } from "@/components/web/cta-footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Web Development Agency in Mumbai | Bombay Blokes";
+const description =
+  "Bombay Blokes is a web design and development agency in Mumbai building fast, conversion-focused websites and Shopify stores. Get a free website audit.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      name: "Bombay Blokes",
+      description,
+      areaServed: "India",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Mumbai",
+        addressRegion: "Maharashtra",
+        addressCountry: "IN",
+      },
+      makesOffer: [
+        "Website design and development",
+        "Shopify ecommerce development",
+        "Custom web development",
+        "Website redesign",
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  ],
+};
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(jsonLd),
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background overflow-x-hidden">
+      <SiteNav />
+      <Hero />
+      <LogoMarquee />
+      <Transformation />
+      <Capabilities />
+      <WorkShowcase />
+      <CaseStudies />
+      <ResponsiveTech />
+      <Process />
+      <Testimonials />
+      <Investment />
+      <Faq />
+      <CtaFooter />
+      <Toaster position="top-center" />
+    </main>
   );
 }
