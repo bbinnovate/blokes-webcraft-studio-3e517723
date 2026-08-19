@@ -1,6 +1,6 @@
 import { Star, Zap, ShieldCheck } from "lucide-react";
-import heroMockup from "@/assets/hero-mockup.jpg";
 import { LeadForm } from "./lead-form";
+import { HeroVisual } from "./hero-visual";
 import { Reveal } from "./reveal";
 
 const proofPills = [
@@ -79,28 +79,16 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={320}>
-            <div className="border-border bg-card relative mt-10 hidden overflow-hidden rounded-[26px] border lg:block">
-              <img
-                src={heroMockup}
-                alt="Responsive website built by Bombay Blokes shown on a laptop and mobile"
-                width={1408}
-                height={1104}
-                className="h-[280px] w-full object-cover object-center"
-              />
+            <div className="mt-14 hidden lg:block">
+              <HeroVisual />
             </div>
           </Reveal>
         </div>
 
         <Reveal delay={120} className="lg:sticky lg:top-24">
           <LeadForm />
-          <div className="border-border bg-card mt-4 overflow-hidden rounded-[22px] border lg:hidden">
-            <img
-              src={heroMockup}
-              alt="Responsive website built by Bombay Blokes shown on a laptop and mobile"
-              width={1408}
-              height={1104}
-              className="h-56 w-full object-cover"
-            />
+          <div className="mt-10 lg:hidden">
+            <HeroVisual />
           </div>
         </Reveal>
       </div>
