@@ -2,32 +2,48 @@ import { useState } from "react";
 import { Monitor, Smartphone, Tablet } from "lucide-react";
 import mobileSet from "@/assets/mobile-set.jpg";
 import afterSite from "@/assets/after-site.jpg";
+import deviceTablet from "@/assets/device-tablet.jpg";
+import deviceMobile from "@/assets/device-mobile.jpg";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
+import { StackCluster } from "./stack-cluster";
 
 const devices = [
-  { id: "desktop", label: "Desktop", icon: Monitor, width: "100%", ratio: "aspect-[16/10]" },
-  { id: "tablet", label: "Tablet", icon: Tablet, width: "62%", ratio: "aspect-[16/10]" },
-  { id: "mobile", label: "Mobile", icon: Smartphone, width: "33%", ratio: "aspect-[16/10]" },
+  {
+    id: "desktop",
+    label: "Desktop",
+    icon: Monitor,
+    img: afterSite,
+    frameClass: "w-full max-w-[860px] rounded-xl",
+    imgClass: "aspect-[16/10]",
+    note: "Full-width editorial layout, multi-column grid, hover states.",
+  },
+  {
+    id: "tablet",
+    label: "Tablet",
+    icon: Tablet,
+    img: deviceTablet,
+    frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
+    imgClass: "aspect-[3/4]",
+    note: "Two-column product grid, larger tap targets, condensed nav.",
+  },
+  {
+    id: "mobile",
+    label: "Mobile",
+    icon: Smartphone,
+    img: deviceMobile,
+    frameClass: "w-[240px] rounded-[34px]",
+    imgClass: "aspect-[9/18]",
+    note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
+  },
 ] as const;
-
-const stack = [
-  { name: "Shopify", note: "Ecommerce" },
-  { name: "WordPress", note: "Content sites" },
-  { name: "Webflow", note: "Marketing sites" },
-  { name: "React / Next", note: "Custom builds" },
-  { name: "Node & APIs", note: "Integrations" },
-  { name: "Razorpay", note: "Payments" },
-  { name: "HubSpot", note: "CRM sync" },
-  { name: "GA4 + GTM", note: "Measurement" },
-];
 
 export function ResponsiveTech() {
   const [active, setActive] = useState<(typeof devices)[number]["id"]>("desktop");
   const current = devices.find((d) => d.id === active)!;
 
   return (
-    <section className="bg-secondary py-20 lg:py-28">
+    <section className="py-20 lg:py-28">
       <div className="container-bb">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <Reveal>
@@ -42,6 +58,7 @@ export function ResponsiveTech() {
                 <button
                   key={d.id}
                   onClick={() => setActive(d.id)}
+                  aria-pressed={active === d.id}
                   className={cn(
                     "inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all",
                     active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink",
@@ -56,27 +73,37 @@ export function ResponsiveTech() {
         </div>
 
         <Reveal delay={120}>
-          <div className="border-border bg-card mt-10 flex justify-center overflow-hidden rounded-[26px] border p-4 sm:p-8">
+          <div className="border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-10">
             <div
-              className="transition-all duration-[600ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
-              style={{ width: current.width }}
+              key={current.id}
+              className={cn(
+                "border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500",
+                current.frameClass,
+              )}
             >
-              <div className="border-border bg-secondary overflow-hidden rounded-xl border">
-                <div className="border-border flex items-center gap-1.5 border-b px-3 py-2">
+              {current.id === "desktop" ? (
+                <div className="border-border bg-secondary flex items-center gap-1.5 border-b px-3 py-2">
                   <span className="bg-grey-light h-2 w-2 rounded-full" />
                   <span className="bg-grey-light h-2 w-2 rounded-full" />
                   <span className="bg-accent-yellow h-2 w-2 rounded-full" />
                 </div>
-                <img
-                  src={afterSite}
-                  alt="Website layout adapting across desktop, tablet and mobile"
-                  width={1200}
-                  height={800}
-                  loading="lazy"
-                  className={cn("w-full object-cover object-top", current.ratio)}
-                />
-              </div>
+              ) : (
+                <div className="flex justify-center py-1.5">
+                  <span className="bg-ink/20 h-1.5 w-14 rounded-full" />
+                </div>
+              )}
+              <img
+                src={current.img}
+                alt={`Website layout on ${current.label.toLowerCase()}`}
+                width={1200}
+                height={1200}
+                loading="lazy"
+                className={cn("w-full object-cover object-top", current.imgClass)}
+              />
             </div>
+            <p className="text-grey mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
+              <span className="text-ink font-semibold">{current.label}:</span> {current.note}
+            </p>
           </div>
         </Reveal>
 
@@ -92,28 +119,19 @@ export function ResponsiveTech() {
             />
           </Reveal>
           <Reveal delay={80}>
-            <p className="eyebrow">Platforms & stack</p>
+            <p className="eyebrow">Built for every screen</p>
             <h3 className="mt-3 text-[26px] leading-tight sm:text-[32px]">
-              We pick the platform that fits your business — not the one we like selling.
+              One design system, tested on real devices before launch.
             </h3>
             <p className="text-ink-soft mt-4 text-[15px] leading-relaxed">
-              Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at
-              scale? A custom React build. You own every account, every repo and every login.
+              Every layout is drawn at three breakpoints and QA'd on real handsets — not just a
+              browser resize. Tap targets, sticky CTAs and image weights are tuned per device.
             </p>
-            <ul className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-2 xl:grid-cols-4">
-              {stack.map((s) => (
-                <li
-                  key={s.name}
-                  className="border-border bg-card hover:border-ink/30 rounded-xl border p-3.5 transition-colors"
-                >
-                  <p className="font-display text-[14px] font-extrabold">{s.name}</p>
-                  <p className="text-grey mt-0.5 text-[11.5px]">{s.note}</p>
-                </li>
-              ))}
-            </ul>
           </Reveal>
         </div>
       </div>
+
+      <StackCluster />
     </section>
   );
 }

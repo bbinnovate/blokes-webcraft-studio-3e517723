@@ -9,6 +9,14 @@ const services = [
   "Web app or custom platform",
 ];
 
+const budgets = [
+  "Under ₹1 lakh",
+  "₹1 – 3 lakh",
+  "₹3 – 8 lakh",
+  "₹8 lakh+",
+  "Not sure yet",
+];
+
 export function LeadForm({ id = "quote" }: { id?: string }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
 
@@ -78,6 +86,14 @@ export function LeadForm({ id = "quote" }: { id?: string }) {
             </option>
             {services.map((s) => (
               <option key={s}>{s}</option>
+            ))}
+          </select>
+          <select required name="budget" defaultValue="" className={field}>
+            <option value="" disabled>
+              Approximate budget
+            </option>
+            {budgets.map((b) => (
+              <option key={b}>{b}</option>
             ))}
           </select>
           <button

@@ -75,6 +75,36 @@
   animation: bb-marquee 32s linear infinite;
 }
 
+@keyframes bb-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@utility animate-float {
+  animation: bb-float 6s ease-in-out infinite;
+}
+
+@keyframes bb-bar {
+  from {
+    transform: scaleX(0.2);
+    opacity: 0.3;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@utility animate-bar {
+  transform-origin: left;
+  animation: bb-bar 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 /*
  * Design system definition.
  *
@@ -235,5 +265,14 @@
   ::selection {
     background: var(--accent-yellow);
     color: var(--ink);
+  }
+}
+
+@keyframes bb-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
