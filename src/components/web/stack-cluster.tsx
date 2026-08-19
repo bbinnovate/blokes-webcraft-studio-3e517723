@@ -16,7 +16,7 @@ const stack = [
   { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", ring: 3, t: 0.75, d: "1.1s" },
 ];
 
-const RADII: Record<number, number> = { 1: 30, 2: 43, 3: 56 };
+const RADII = [0, 30, 43, 56] as const;
 
 export function StackCluster() {
   return (
@@ -52,7 +52,7 @@ export function StackCluster() {
             {[1, 2, 3].map((r) => (
               <path
                 key={r}
-                d={`M ${50 - RADII[r]} 56 A ${RADII[r]} ${RADII[r]} 0 0 1 ${50 + RADII[r]} 56`}
+                d={`M ${50 - RADII[r]!} 56 A ${RADII[r]!} ${RADII[r]!} 0 0 1 ${50 + RADII[r]!} 56`}
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="0.22"
@@ -62,7 +62,7 @@ export function StackCluster() {
           </svg>
 
           {stack.map((s) => {
-            const r = RADII[s.ring];
+            const r = RADII[s.ring] ?? 40;
             const rad = Math.PI * (1 - s.t); // 180deg -> 0deg
             return (
               <div
