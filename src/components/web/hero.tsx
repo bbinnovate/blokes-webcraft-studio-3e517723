@@ -24,7 +24,7 @@ export function Hero() {
           <Reveal>
             <span className="border-border bg-card text-ink-soft inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[12px] font-semibold">
               <span className="bg-accent-yellow h-1.5 w-1.5 rounded-full" />
-              Web development agency in Mumbai
+              Web development agency
             </span>
           </Reveal>
 
