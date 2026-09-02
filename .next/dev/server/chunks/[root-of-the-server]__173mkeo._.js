@@ -326,9 +326,9 @@ async function POST(req) {
             });
             // Send Admin Email
             const adminEmails = [
-                // "hello@bombayblokes.com",
-                // "bdm@bombayblokes.com",
-                // "siddique@bombayblokes.com",
+                "hello@bombayblokes.com",
+                "bdm@bombayblokes.com",
+                "siddique@bombayblokes.com",
                 "aryankuril09@gmail.com"
             ];
             await sendOneSignalEmail({

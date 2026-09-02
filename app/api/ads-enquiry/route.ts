@@ -274,9 +274,9 @@ export async function POST(req: Request) {
 
       // Send Admin Email
       const adminEmails = [
-        // "hello@bombayblokes.com",
-        // "bdm@bombayblokes.com",
-        // "siddique@bombayblokes.com",
+        "hello@bombayblokes.com",
+        "bdm@bombayblokes.com",
+        "siddique@bombayblokes.com",
         "aryankuril09@gmail.com",
       ];
       await sendOneSignalEmail({
