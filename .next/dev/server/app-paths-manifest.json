@@ -1,0 +1,4 @@
+{
+  "/api/ads-enquiry/route": "app/api/ads-enquiry/route.js",
+  "/page": "app/page.js"
+}

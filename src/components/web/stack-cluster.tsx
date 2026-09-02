@@ -1,5 +1,4 @@
 import { Reveal } from "./reveal";
-import hub from "@/assets/stack-hub.png";
 
 const logo = (slug: string) => `https://cdn.simpleicons.org/${slug}`;
 
@@ -20,7 +19,7 @@ const RADII = [0, 22, 33, 44] as const;
 
 export function StackCluster() {
   return (
-    <div className="container-bb mt-24">
+    <div className="container mt-24">
       <Reveal className="text-center">
         <p className="eyebrow">Platforms & stack</p>
         <h3 className="mx-auto mt-3 max-w-2xl text-[28px] leading-[1.08] sm:text-[38px]">
@@ -95,7 +94,7 @@ export function StackCluster() {
           <div className="border-border bg-card absolute bottom-0 left-1/2 grid h-24 w-24 -translate-x-1/2 translate-y-1/4 place-items-center rounded-full border text-center shadow-[0_30px_60px_-40px_rgba(29,29,29,0.6)] sm:h-32 sm:w-32">
             <div className="-translate-y-2 sm:-translate-y-3">
               <img
-                src={hub}
+                src="/assets/stack-hub.png"
                 alt="Bombay Blokes build hub"
                 width={768}
                 height={768}

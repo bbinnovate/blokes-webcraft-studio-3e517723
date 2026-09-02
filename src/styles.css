@@ -276,3 +276,142 @@
     width: 100%;
   }
 }
+
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+    width: 100%;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 750px) {
+
+    .container-sm,
+    .container {
+        width: 100%;
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .container-sm,
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 960px;
+
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1000px;
+
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1200px;
+
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1600px;
+    }
+}
+
+
+
+/* ================================
+   LOGO MARQUEE
+================================ */
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Row 1 - faster */
+.animate-marquee {
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+/* Row 2 - slower */
+.animate-marquee-reverse {
+  width: max-content;
+  animation: marquee-reverse 42s linear infinite;
+  will-change: transform;
+}
+
+/* Pause on hover */
+.group:hover .animate-marquee,
+.group:hover .animate-marquee-reverse {
+  animation-play-state: paused;
+}

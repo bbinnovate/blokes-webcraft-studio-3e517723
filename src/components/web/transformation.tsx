@@ -1,7 +1,6 @@
+"use client"
 import { useCallback, useEffect, useRef, useState } from "react";
 import { MoveHorizontal } from "lucide-react";
-import beforeSite from "@/assets/before-site.jpg";
-import afterSite from "@/assets/after-site.jpg";
 import { Reveal } from "./reveal";
 
 const outcomes = [
@@ -41,7 +40,7 @@ export function Transformation() {
 
   return (
     <section className="py-20 lg:py-28">
-      <div className="container-bb">
+      <div className="container">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <Reveal>
             <p className="eyebrow">Website redesign</p>
@@ -69,7 +68,7 @@ export function Transformation() {
             className="border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]"
           >
             <img
-              src={afterSite}
+              src="/assets/after-site.jpg"
               alt="Modern redesigned website after the Bombay Blokes rebuild"
               width={1200}
               height={800}
@@ -81,7 +80,7 @@ export function Transformation() {
               style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
             >
               <img
-                src={beforeSite}
+                src="/assets/before-site.jpg"
                 alt="Outdated website before the redesign"
                 width={1200}
                 height={800}

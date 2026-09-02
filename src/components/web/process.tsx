@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
@@ -70,7 +71,7 @@ export function Process() {
 
   return (
     <section id="process" className="scroll-mt-24 py-20 lg:py-28">
-      <div className="container-bb grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="container grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="lg:self-start">
           <Reveal>
             <p className="eyebrow">How we work</p>

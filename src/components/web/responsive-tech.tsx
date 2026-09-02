@@ -1,8 +1,6 @@
+"use client"
 import { useState } from "react";
 import { Monitor, Smartphone, Tablet } from "lucide-react";
-import afterSite from "@/assets/after-site.jpg";
-import deviceTablet from "@/assets/device-tablet.jpg";
-import deviceMobile from "@/assets/device-mobile.jpg";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
 import { StackCluster } from "./stack-cluster";
@@ -12,7 +10,7 @@ const devices = [
     id: "desktop",
     label: "Desktop",
     icon: Monitor,
-    img: afterSite,
+    img: "/assets/after-site.jpg",
     frameClass: "w-full max-w-[860px] rounded-xl",
     imgClass: "aspect-[16/10]",
     note: "Full-width editorial layout, multi-column grid, hover states.",
@@ -21,7 +19,7 @@ const devices = [
     id: "tablet",
     label: "Tablet",
     icon: Tablet,
-    img: deviceTablet,
+    img: "/assets/device-tablet.jpg",
     frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
     imgClass: "aspect-[3/4]",
     note: "Two-column product grid, larger tap targets, condensed nav.",
@@ -30,7 +28,7 @@ const devices = [
     id: "mobile",
     label: "Mobile",
     icon: Smartphone,
-    img: deviceMobile,
+    img: "/assets/device-mobile.jpg",
     frameClass: "w-[240px] rounded-[34px]",
     imgClass: "aspect-[9/18]",
     note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
@@ -43,7 +41,7 @@ export function ResponsiveTech() {
 
   return (
     <section className="py-20 lg:py-28">
-      <div className="container-bb">
+      <div className="container">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <Reveal>
             <p className="eyebrow">Responsive by default</p>

@@ -50,7 +50,7 @@ const items = [
 export function Capabilities() {
   return (
     <section id="capabilities" className="bg-secondary scroll-mt-24 py-20 lg:py-28">
-      <div className="container-bb">
+      <div className="container">
         <Reveal>
           <p className="eyebrow">What we build</p>
           <h2 className="mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]">

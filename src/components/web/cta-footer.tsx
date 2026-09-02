@@ -1,11 +1,13 @@
 import { ArrowRight, Mail, MapPin, Phone } from "lucide-react";
 import { Reveal } from "./reveal";
+import Image from "next/image";
+import Link from "next/link";
 
 export function CtaFooter() {
   return (
     <>
       <section className="pb-20 lg:pb-28">
-        <div className="container-bb">
+        <div className="container">
           <Reveal>
             <div className="bg-accent-yellow text-ink relative overflow-hidden rounded-[28px] px-6 py-12 sm:px-12 sm:py-16">
               <div
@@ -32,7 +34,7 @@ export function CtaFooter() {
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </a>
                   <a
-                    href="tel:+919000000000"
+                       href="tel:+919833037816"
                     className="border-ink/25 hover:bg-ink/5 inline-flex items-center gap-2 rounded-full border px-6 py-3.5 text-sm font-bold transition-colors"
                   >
                     <Phone className="h-4 w-4" /> Talk to us
@@ -44,51 +46,141 @@ export function CtaFooter() {
         </div>
       </section>
 
-      <footer className="bg-ink text-primary-foreground py-14">
-        <div className="container-bb grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr]">
-          <div>
-            <div className="flex items-center gap-2.5">
-              <span className="bg-accent-yellow text-ink font-display grid h-8 w-8 place-items-center rounded-lg text-sm font-extrabold">
-                BB
-              </span>
-              <span className="font-display text-[15px] font-extrabold">Bombay Blokes</span>
-            </div>
-            <p className="text-grey-light mt-4 max-w-sm text-[14px] leading-relaxed">
-              A web design and development agency in Mumbai building fast, search-ready websites
-              and Shopify stores for brands that measure marketing in revenue.
-            </p>
-          </div>
+     <footer className="w-full">
+      <div className="mx-auto container py-5 mt-3 ">
+        {/* Top Section */}
+      {/* Top Section */}
+<div className="flex items-center justify-between w-full">
+  {/* Logo */}
+  <div className="hidden sm:flex justify-start relative">
+    <Link href="/">
+      <Image
+        src="/assets/bblogo.webp"
+        alt="Bombay Blokes Logo"
+        width={250}
+        height={60}
+        className="object-contain"
+      />
+    </Link>
+  </div>
 
-          <div>
-            <p className="eyebrow text-grey-light">Services</p>
-            <ul className="text-grey-light mt-4 space-y-2.5 text-[14px]">
-              <li>Website design & development</li>
-              <li>Shopify ecommerce development</li>
-              <li>Website redesign</li>
-              <li>Custom web development</li>
-              <li>Website care & optimisation</li>
-            </ul>
-          </div>
+  {/* Social Icons - Far Right */}
+  <div className="hidden sm:flex items-center gap-5 ml-auto">
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/bombay_blokes"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+       className="text-black transition-colors duration-300 hover:text-[#FAB31E]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+      </svg>
+    </a>
 
-          <div>
-            <p className="eyebrow text-grey-light">Get in touch</p>
-            <ul className="text-grey-light mt-4 space-y-3 text-[14px]">
-              <li className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 shrink-0" /> hello@bombayblokes.com
-              </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 shrink-0" /> +91 90000 00000
-              </li>
-              <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0" /> Andheri West, Mumbai, Maharashtra
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="container-bb text-grey mt-10 border-t border-white/10 pt-6 text-[12.5px]">
-          © {new Date().getFullYear()} Bombay Blokes. All rights reserved.
-        </div>
-      </footer>
+    {/* LinkedIn */}
+   <a
+  href="https://in.linkedin.com/company/bombay-blokes-digital-solutions-llp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn"
+  className="text-black transition-colors duration-300 hover:text-[#FAB31E]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="30"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+</a>
+  </div>
+
+    {/* mobiel Social Icons - Far Right */}
+  <div className="flex items-center lg:gap-5 gap-3 lg:hidden">
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/bombay_blokes"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram"
+       className="text-black transition-colors duration-300 hover:text-[#FAB31E]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+      </svg>
+    </a>
+
+    {/* LinkedIn */}
+   <a
+  href="https://in.linkedin.com/company/bombay-blokes-digital-solutions-llp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="LinkedIn"
+  className="text-black transition-colors duration-300 hover:text-[#FAB31E]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="30"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+</a>
+  </div>
+</div>
+
+        {/* Bottom Section */}
+     <div className="body4 lg:mt-6 mt-2 border-t pt-4 lg:pt-1 flex flex-col gap-4 md:flex-row md:justify-center md:items-center black-text text-sm">
+  {/* Copyright */}
+  <p className="text-center mt-2 body4">
+    Copyright ©{new Date().getFullYear()} Bombay Blokes. All rights
+    reserved.
+  </p>
+</div>
+      </div>
+    </footer>
     </>
   );
 }

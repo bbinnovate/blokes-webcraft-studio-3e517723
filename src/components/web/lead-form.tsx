@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -20,15 +21,45 @@ const budgets = [
 export function LeadForm({ id = "quote" }: { id?: string }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
 
-  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("loading");
-    window.setTimeout(() => {
+
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      name: formData.get("name") as string,
+      phone: formData.get("phone") as string,
+      email: formData.get("email") as string,
+      website: formData.get("website") as string,
+      service: formData.get("service") as string,
+      budget: formData.get("budget") as string,
+    };
+
+    try {
+      const res = await fetch("/api/ads-enquiry", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+
       setStatus("done");
       toast.success("Request received", {
         description: "A senior strategist will call you within one working day.",
       });
-    }, 900);
+    } catch (err) {
+      setStatus("idle");
+      toast.error("Submission failed", {
+        description: err instanceof Error ? err.message : "Failed to submit request.",
+      });
+    }
   }
 
   const field =

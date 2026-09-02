@@ -19,12 +19,12 @@ export function Hero() {
             "radial-gradient(circle, color-mix(in oklab, var(--accent-yellow) 55%, transparent), transparent 70%)",
         }}
       />
-      <div className="container-bb relative grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      <div className="container relative grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
         <div>
           <Reveal>
             <span className="border-border bg-card text-ink-soft inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[12px] font-semibold">
               <span className="bg-accent-yellow h-1.5 w-1.5 rounded-full" />
-              Web development agency
+              Web development agency in Mumbai
             </span>
           </Reveal>
 
@@ -78,11 +78,11 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={320}>
+          {/* <Reveal delay={320}>
             <div className="mt-14 hidden lg:block">
               <HeroVisual />
             </div>
-          </Reveal>
+          </Reveal> */}
         </div>
 
         <Reveal delay={120} className="lg:sticky lg:top-24">

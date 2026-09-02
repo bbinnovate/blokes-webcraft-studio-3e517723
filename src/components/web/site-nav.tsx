@@ -1,6 +1,9 @@
+"use client"
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 
 const links = [
   { label: "Work", href: "#work" },
@@ -27,15 +30,16 @@ export function SiteNav() {
         scrolled ? "bg-background/85 border-b border-border backdrop-blur-xl" : "bg-transparent",
       )}
     >
-      <div className="container-bb grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5 lg:flex lg:justify-between">
-        <a href="#top" className="flex min-w-0 items-center gap-2.5">
-          <span className="bg-ink text-accent-yellow font-display grid h-8 w-8 shrink-0 place-items-center rounded-lg text-sm font-extrabold">
-            BB
-          </span>
-          <span className="font-display truncate text-[15px] font-extrabold tracking-tight">
-            Bombay Blokes
-          </span>
-        </a>
+      <div className="container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5 lg:flex lg:justify-between">
+        <Link href="/">
+          <Image
+            src="/assets/bblogo.webp"
+            alt="Bombay Blokes Logo"
+            width={210}
+            height={80}
+            className="object-cover transition-opacity duration-300"
+          />
+        </Link>
 
         <nav className="hidden items-center gap-8 lg:flex">
           {links.map((l) => (

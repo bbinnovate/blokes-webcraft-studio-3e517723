@@ -1,14 +1,11 @@
+"use client"
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import jewellery from "@/assets/project-jewellery.jpg";
-import b2b from "@/assets/project-b2b.jpg";
-import skincare from "@/assets/project-skincare.jpg";
-import realestate from "@/assets/project-realestate.jpg";
 import { Reveal } from "./reveal";
 
 const studies = [
   {
-    img: jewellery,
+    img: "/assets/project-jewellery.jpg",
     client: "Aurumé Fine Jewellery",
     type: "Shopify ecommerce development",
     headline: "A ₹95,000 pendant doesn't sell on a template.",
@@ -26,7 +23,7 @@ const studies = [
     ],
   },
   {
-    img: b2b,
+    img: "/assets/project-b2b.jpg",
     client: "Precision Metal Components",
     type: "B2B website design & development",
     headline: "From invisible manufacturer to 68 RFQs a month.",
@@ -44,7 +41,7 @@ const studies = [
     ],
   },
   {
-    img: skincare,
+    img: "/assets/project-skincare.jpg",
     client: "Aurelia Skin",
     type: "Custom Shopify website development",
     headline: "Fixing the checkout was worth more than more ads.",
@@ -62,7 +59,7 @@ const studies = [
     ],
   },
   {
-    img: realestate,
+    img: "/assets/project-realestate.jpg",
     client: "Northline Developers",
     type: "Custom web development",
     headline: "Project pages that sell flats before the site visit.",
@@ -85,7 +82,7 @@ export function CaseStudies() {
   return (
     <section id="work" className="bg-secondary scroll-mt-24 py-20 lg:py-28">
       <span id="case-studies" className="block scroll-mt-24" />
-      <div className="container-bb">
+      <div className="container">
         <Reveal>
           <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
             <div>
