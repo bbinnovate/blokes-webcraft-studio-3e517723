@@ -18,7 +18,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 const studies = [
     {
-        img: "/assets/project-jewellery.jpg",
+        img: "/assets/SCS2.jpg",
         client: "Aurumé Fine Jewellery",
         type: "Shopify ecommerce development",
         headline: "A ₹95,000 pendant doesn't sell on a template.",
@@ -44,7 +44,7 @@ const studies = [
         ]
     },
     {
-        img: "/assets/project-b2b.jpg",
+        img: "/assets/FelineFoundation2.jpg",
         client: "Precision Metal Components",
         type: "B2B website design & development",
         headline: "From invisible manufacturer to 68 RFQs a month.",
@@ -70,7 +70,7 @@ const studies = [
         ]
     },
     {
-        img: "/assets/project-skincare.jpg",
+        img: "/assets/SuperSoxnew.jpg",
         client: "Aurelia Skin",
         type: "Custom Shopify website development",
         headline: "Fixing the checkout was worth more than more ads.",
@@ -92,32 +92,6 @@ const studies = [
             {
                 k: "2.4x",
                 v: "repeat purchases"
-            }
-        ]
-    },
-    {
-        img: "/assets/project-realestate.jpg",
-        client: "Northline Developers",
-        type: "Custom web development",
-        headline: "Project pages that sell flats before the site visit.",
-        problem: "Enquiries came from portals, not their own site — every project lived on a single PDF-heavy page.",
-        did: [
-            "Immersive project pages with floor-plan viewers and location intelligence",
-            "One sticky enquiry rail carried across the entire journey",
-            "CRM + WhatsApp routing so leads reach sales in under a minute"
-        ],
-        stats: [
-            {
-                k: "5.4%",
-                v: "enquiry rate"
-            },
-            {
-                k: "-46%",
-                v: "cost per lead"
-            },
-            {
-                k: "<60s",
-                v: "lead response time"
             }
         ]
     }
@@ -155,14 +129,14 @@ function CaseStudies() {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]",
                                             children: [
-                                                "The website was the growth lever. ",
+                                                "The website did the selling.",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     className: "hl",
-                                                    children: "Here's the receipts."
+                                                    children: " Here's proof."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
                                                     lineNumber: 91,
-                                                    columnNumber: 51
+                                                    columnNumber: 44
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -177,8 +151,8 @@ function CaseStudies() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-grey text-sm lg:max-w-xs lg:text-right",
-                                    children: "Four live builds — design, development and launch handled in-house by our Mumbai team."
+                                    className: "text-grey text-sm lg:max-w-sm lg:text-right",
+                                    children: "Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
                                     lineNumber: 94,
@@ -216,12 +190,12 @@ function CaseStudies() {
                                                     className: "h-[240px] w-full object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] lg:h-full lg:min-h-[420px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 106,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 105,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -239,20 +213,20 @@ function CaseStudies() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 118,
+                                                                lineNumber: 117,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
                                                                 className: "text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 121,
+                                                                lineNumber: 120,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 117,
+                                                        lineNumber: 116,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -260,7 +234,7 @@ function CaseStudies() {
                                                         children: s.headline
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 122,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -268,7 +242,7 @@ function CaseStudies() {
                                                         children: s.client
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 123,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -276,7 +250,7 @@ function CaseStudies() {
                                                         children: s.problem
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 124,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -288,19 +262,19 @@ function CaseStudies() {
                                                                         className: "bg-accent-yellow mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 129,
+                                                                        lineNumber: 128,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     d
                                                                 ]
                                                             }, d, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 128,
+                                                                lineNumber: 127,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 126,
+                                                        lineNumber: 125,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -312,7 +286,7 @@ function CaseStudies() {
                                                                         children: st.k
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 137,
+                                                                        lineNumber: 136,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -320,45 +294,45 @@ function CaseStudies() {
                                                                         children: st.v
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 140,
+                                                                        lineNumber: 139,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, st.v, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 136,
+                                                                lineNumber: 135,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 134,
+                                                        lineNumber: 133,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 116,
+                                                lineNumber: 115,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                        lineNumber: 105,
+                                        lineNumber: 104,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 104,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this)
                             }, s.client, false, {
                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                lineNumber: 103,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 101,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
@@ -435,12 +409,12 @@ function StickyCard({ children, index, total }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/web/case-studies.tsx",
-            lineNumber: 199,
+            lineNumber: 198,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 195,
+        lineNumber: 194,
         columnNumber: 5
     }, this);
 }
@@ -1325,26 +1299,20 @@ const steps = [
     {
         n: "03",
         t: "Design system & UI",
-        d: "Type scale, colour, components and motion — designed desktop and mobile side by side so nothing breaks on a phone.",
+        d: "Type scale, colour, components, and motion designed desktop and mobile side by side so nothing breaks on a phone.",
         out: "Figma design system"
     },
     {
         n: "04",
         t: "Development & integrations",
-        d: "Clean, componentised builds on Shopify, WordPress or React — with CRM, payments, WhatsApp and analytics wired in.",
+        d: "Clean, componentised builds on Shopify, WordPress, or React as a web development agency that also runs Shopify ecommerce development, we wire in CRM, payments, WhatsApp, and analytics from day one.",
         out: "Staging build + QA sheet"
     },
     {
         n: "05",
         t: "Speed, SEO & QA",
-        d: "Core Web Vitals, schema, redirects, cross-browser and real-device testing before anything goes near production.",
+        d: "Core Web Vitals, schema, redirects, cross-browser and real-device testing the technical SEO foundations checked before anything goes near production.",
         out: "Launch readiness report"
-    },
-    {
-        n: "06",
-        t: "Launch & optimisation",
-        d: "We ship, watch the data, and keep improving — heatmaps, form drop-off and A/B tests on the pages that matter.",
-        out: "Monthly performance review"
     }
 ];
 const STEP_MS = 4200;
@@ -1404,23 +1372,23 @@ function Process() {
                                 children: "How we work"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 77,
+                                lineNumber: 75,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 className: "mt-3 text-[32px] leading-[1.06] sm:text-[42px]",
-                                children: "A website design and development process you can actually follow."
+                                children: "Our web design and development process runs on one rule: no surprises."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 78,
+                                lineNumber: 76,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-ink-soft mt-5 max-w-md text-[15px] leading-relaxed",
-                                children: "No black box, no ghosting. You get a named project lead, a shared timeline, and a deliverable at the end of every stage — so you always know what's happening and what's next."
+                                children: "We give you a named project lead, a shared timeline, and a real deliverable at every stage."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 81,
+                                lineNumber: 79,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1435,20 +1403,20 @@ function Process() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/process.tsx",
-                                        lineNumber: 87,
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "bg-border h-px flex-1"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/process.tsx",
-                                        lineNumber: 90,
+                                        lineNumber: 86,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 86,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1457,18 +1425,18 @@ function Process() {
                                 children: "Book a 20-minute scoping call"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 92,
+                                lineNumber: 88,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/process.tsx",
-                        lineNumber: 76,
+                        lineNumber: 74,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/process.tsx",
-                    lineNumber: 75,
+                    lineNumber: 73,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ol", {
@@ -1495,7 +1463,7 @@ function Process() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 118,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1503,7 +1471,7 @@ function Process() {
                                     children: s.n
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 131,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1514,7 +1482,7 @@ function Process() {
                                             children: s.t
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/process.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 140,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1522,13 +1490,13 @@ function Process() {
                                             children: s.d
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/process.tsx",
-                                            lineNumber: 145,
+                                            lineNumber: 141,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 139,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1536,30 +1504,30 @@ function Process() {
                                     children: s.out
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 150,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, s.n, true, {
                             fileName: "[project]/src/components/web/process.tsx",
-                            lineNumber: 109,
+                            lineNumber: 105,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/process.tsx",
-                    lineNumber: 101,
+                    lineNumber: 97,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/process.tsx",
-            lineNumber: 74,
+            lineNumber: 72,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/process.tsx",
-        lineNumber: 73,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 }
@@ -1599,7 +1567,7 @@ const devices = [
         id: "desktop",
         label: "Desktop",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"],
-        img: "/assets/after-site.jpg",
+        img: "/assets/dextop.png",
         frameClass: "w-full max-w-[860px] rounded-xl",
         imgClass: "aspect-[16/10]",
         note: "Full-width editorial layout, multi-column grid, hover states."
@@ -1608,7 +1576,7 @@ const devices = [
         id: "tablet",
         label: "Tablet",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tablet$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tablet$3e$__["Tablet"],
-        img: "/assets/device-tablet.jpg",
+        img: "/assets/tab.png",
         frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
         imgClass: "aspect-[3/4]",
         note: "Two-column product grid, larger tap targets, condensed nav."
@@ -1617,7 +1585,7 @@ const devices = [
         id: "mobile",
         label: "Mobile",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__["Smartphone"],
-        img: "/assets/device-mobile.jpg",
+        img: "/assets/mobile.png",
         frameClass: "w-[240px] rounded-[34px]",
         imgClass: "aspect-[9/18]",
         note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy."
@@ -1647,7 +1615,7 @@ function ResponsiveTech() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "mt-3 max-w-2xl text-[32px] leading-[1.06] sm:text-[42px]",
+                                        className: "mt-3 max-w-4xl text-[32px] leading-[1.06] sm:text-[42px]",
                                         children: "Over 70% of your visitors arrive on a phone. We design for them first."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
@@ -1756,7 +1724,7 @@ function ResponsiveTech() {
                                             width: 1200,
                                             height: 1200,
                                             loading: "lazy",
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("w-full object-cover object-top", current.imgClass)
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("w-full object-fit object-top", current.imgClass)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
                                             lineNumber: 92,
@@ -2202,16 +2170,16 @@ function StackCluster() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                        className: "mx-auto mt-3 max-w-2xl text-[28px] leading-[1.08] sm:text-[38px]",
+                        className: "mx-auto mt-3 max-w-4xl text-[28px] leading-[1.08] sm:text-[38px]",
                         children: [
-                            "We pick the platform that fits your business — ",
+                            "We pick the platform that fits your business ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "hl",
                                 children: "not the one we like selling."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
                                 lineNumber: 26,
-                                columnNumber: 58
+                                columnNumber: 56
                             }, this)
                         ]
                     }, void 0, true, {
@@ -2431,6 +2399,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 const quotes = [
     {
+        text: "I have been working with Bombay Blokes for app development and marketing, and it’s been a really solid experience. What stood out to me most was the trust and transparency (hard to find). The team has been very patient with all my requirements, kept me updated regularly, and delivered things pretty quickly without compromising on quality. Janki, Yash, Siddesh, and Khyaati did a great job building our mobile app from scratch within a tight timeline. On the marketing side, Karishma and Tisha went above and beyond to deeply understand my brand and get the narrative right. Overall, the team has been easy to work with, open to feedback, and willing to go the extra mile to get things right.",
+        name: "Akshat Adani",
+        role: "App Development & Marketing"
+    },
+    {
+        text: "I recently had the pleasure of working with Bombay Blokes, and I must say, they are an outstanding digital marketing agency. From the moment I contacted them for website design and development, they displayed utmost professionalism and dedication to delivering exceptional results. First and foremost, the team at Bombay Blokes is incredibly talented and knowledgeable. They took the time to understand my vision for the website and translated it into a stunning reality that exceeded my expectations. The team was always responsive, attentive, and ensured that all my requirements were met. They kept me updated at every stage and provided valuable insights and suggestions that greatly enhanced the overall user experience of my website. I wholeheartedly recommend Bombay Blokes for anyone seeking top-notch website development and designing services.",
+        name: "Harjagit Dhanjal",
+        role: "Website Design & Development"
+    },
+    {
         text: "From website development to ecommerce, the team showed real expertise and professionalism. They behave like a partner who genuinely cares about the business, not a vendor billing hours.",
         name: "Alex Kriplani",
         role: "Founder, D2C retail brand"
@@ -2439,21 +2417,6 @@ const quotes = [
         text: "Working with Bombay Blokes has been seamless from day one. They understood our customers faster than agencies we'd worked with for years, and the new site reflects it.",
         name: "Kaushik Shah",
         role: "Director, manufacturing"
-    },
-    {
-        text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-        name: "Tilika Vispute",
-        role: "Marketing Head, services"
-    },
-    {
-        text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-        name: "Tilika Vispute",
-        role: "Marketing Head, services"
-    },
-    {
-        text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-        name: "Tilika Vispute",
-        role: "Marketing Head, services"
     },
     {
         text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
@@ -2559,7 +2522,7 @@ function Testimonials() {
                                         children: "Client voice"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                        lineNumber: 119,
+                                        lineNumber: 114,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2567,13 +2530,13 @@ function Testimonials() {
                                         children: "What it's actually like to work with us."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                        lineNumber: 121,
+                                        lineNumber: 116,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 118,
+                                lineNumber: 113,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2588,12 +2551,12 @@ function Testimonials() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/testimonials.tsx",
-                                            lineNumber: 134,
+                                            lineNumber: 129,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                        lineNumber: 128,
+                                        lineNumber: 123,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2605,29 +2568,29 @@ function Testimonials() {
                                             className: "size-4"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/testimonials.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 138,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                        lineNumber: 137,
+                                        lineNumber: 132,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 127,
+                                lineNumber: 122,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/testimonials.tsx",
-                        lineNumber: 117,
+                        lineNumber: 112,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 116,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2648,7 +2611,7 @@ function Testimonials() {
                                                 className: "text-accent-yellow h-6 w-6 shrink-0"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                                lineNumber: 163,
+                                                lineNumber: 158,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
@@ -2660,7 +2623,7 @@ function Testimonials() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 160,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("figcaption", {
@@ -2674,12 +2637,12 @@ function Testimonials() {
                                                                 className: "fill-accent-yellow text-accent-yellow h-3 w-3"
                                                             }, s, false, {
                                                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                                                lineNumber: 172,
+                                                                lineNumber: 167,
                                                                 columnNumber: 27
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                                        lineNumber: 170,
+                                                        lineNumber: 165,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2687,7 +2650,7 @@ function Testimonials() {
                                                         children: q.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                                        lineNumber: 179,
+                                                        lineNumber: 174,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2695,39 +2658,39 @@ function Testimonials() {
                                                         children: q.role
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                                        lineNumber: 183,
+                                                        lineNumber: 178,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                                lineNumber: 169,
+                                                lineNumber: 164,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 157,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/testimonials.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 156,
                                     columnNumber: 17
                                 }, this)
                             }, `${q.name}-${i}`, false, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 157,
+                                lineNumber: 152,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/testimonials.tsx",
-                        lineNumber: 155,
+                        lineNumber: 150,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 150,
+                    lineNumber: 145,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2742,12 +2705,12 @@ function Testimonials() {
                                 className: "size-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 202,
+                                lineNumber: 197,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 196,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2759,18 +2722,18 @@ function Testimonials() {
                                 className: "size-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 211,
+                                lineNumber: 206,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 205,
+                            lineNumber: 200,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 195,
+                    lineNumber: 190,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2782,23 +2745,23 @@ function Testimonials() {
                             className: `h-1.5 rounded-full transition-all ${selected === i ? "w-8 bg-secondary" : "bg-border w-3"}`
                         }, `dot-${q.name}-${i}`, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 218,
+                            lineNumber: 213,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 216,
+                    lineNumber: 211,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/testimonials.tsx",
-            lineNumber: 115,
+            lineNumber: 110,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/testimonials.tsx",
-        lineNumber: 114,
+        lineNumber: 109,
         columnNumber: 5
     }, this);
 }
@@ -2890,7 +2853,7 @@ function Transformation() {
             className: "container",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end",
+                    className: "grid lg:gap-60 gap-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-end",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
                             children: [
@@ -2900,47 +2863,48 @@ function Transformation() {
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
                                     lineNumber: 46,
-                                    columnNumber: 13
+                                    columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "mt-3 text-[32px] leading-[1.06] sm:text-[42px]",
                                     children: [
-                                        "Same business. ",
+                                        "Same business.",
+                                        " ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "hl",
                                             children: "Very different"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 48,
-                                            columnNumber: 30
+                                            lineNumber: 50,
+                                            columnNumber: 7
                                         }, this),
                                         " first impression."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 47,
-                                    columnNumber: 13
+                                    lineNumber: 48,
+                                    columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/transformation.tsx",
                             lineNumber: 45,
-                            columnNumber: 11
+                            columnNumber: 3
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
                             delay: 80,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-ink-soft max-w-xl text-[15px] leading-relaxed",
-                                children: "Most businesses don't have a traffic problem — they have a credibility problem. Drag the handle to see what a professional web development company changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
+                                className: "text-ink-soft w-full text-[15px] leading-relaxed",
+                                children: "Most businesses don't have a traffic problem, they have a credibility problem. Drag the handle to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 52,
-                                columnNumber: 13
+                                lineNumber: 55,
+                                columnNumber: 5
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 51,
-                            columnNumber: 11
+                            lineNumber: 54,
+                            columnNumber: 3
                         }, this)
                     ]
                 }, void 0, true, {
@@ -2959,15 +2923,15 @@ function Transformation() {
                         className: "border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/assets/after-site.jpg",
+                                src: "/assets/after2.png",
                                 alt: "Modern redesigned website after the Bombay Blokes rebuild",
                                 width: 1200,
                                 height: 800,
                                 loading: "lazy",
-                                className: "absolute inset-0 h-full w-full object-cover object-top"
+                                className: "absolute inset-0 h-full w-full object-git object-top"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 70,
+                                lineNumber: 73,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2976,20 +2940,20 @@ function Transformation() {
                                     clipPath: `inset(0 ${100 - pos}% 0 0)`
                                 },
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/assets/before-site.jpg",
+                                    src: "/assets/before.png",
                                     alt: "Outdated website before the redesign",
                                     width: 1200,
                                     height: 800,
                                     loading: "lazy",
-                                    className: "absolute inset-0 h-full w-full object-cover object-top"
+                                    className: "absolute inset-0 h-full w-full object-fit object-top"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 85,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 78,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2997,7 +2961,7 @@ function Transformation() {
                                 children: "Before"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 92,
+                                lineNumber: 95,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3005,7 +2969,7 @@ function Transformation() {
                                 children: "After"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 95,
+                                lineNumber: 98,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3019,28 +2983,28 @@ function Transformation() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 107,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 106,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 99,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 62,
+                        lineNumber: 65,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 61,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3055,7 +3019,7 @@ function Transformation() {
                                         children: o.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 114,
+                                        lineNumber: 117,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3063,23 +3027,23 @@ function Transformation() {
                                         children: o.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 115,
+                                        lineNumber: 118,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 113,
+                                lineNumber: 116,
                                 columnNumber: 15
                             }, this)
                         }, o.value, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 112,
+                            lineNumber: 115,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 110,
+                    lineNumber: 113,
                     columnNumber: 9
                 }, this)
             ]

@@ -6,7 +6,7 @@ import Link from "next/link";
 export function CtaFooter() {
   return (
     <>
-      <section className="pb-20 lg:pb-28">
+      <section className="py-6 sm:py-8 lg:py-8">
         <div className="container">
           <Reveal>
             <div className="bg-accent-yellow text-ink relative overflow-hidden rounded-[28px] px-6 py-12 sm:px-12 sm:py-16">

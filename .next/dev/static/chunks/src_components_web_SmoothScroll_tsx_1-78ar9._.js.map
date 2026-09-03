@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Aryan%20IT/bb/preslov-ui/blokes-webcraft-studio-3e517723/src/components/web/SmoothScroll.tsx"],"sourcesContent":["\"use client\";\r\nimport { ReactLenis, useLenis } from \"lenis/react\";\r\nimport { usePathname } from \"next/navigation\";\r\nimport { useEffect } from \"react\";\r\nconst SmoothScroll = ({ children }: { children: React.ReactNode }) => {\r\n  const pathname = usePathname();\r\n  const lenis = useLenis();\r\n  useEffect(() => {\r\n    lenis?.scrollTo(0, { immediate: true });\r\n  }, [pathname]);\r\n  return <ReactLenis root>{children}</ReactLenis>;\r\n};\r\nexport default SmoothScroll;\r\n\r\n\r\n"],"names":["SmoothScroll","children","pathname","lenis","scrollTo","immediate","root"],"mappings":";;;;;AACA;AACA;AACA;;;AAHA;;;;AAIA,MAAMA,eAAe,CAAC,EAAEC,QAAQ,EAAiC;;IAC/D,MAAMC,WAAW,IAAA,oJAAW;IAC5B,MAAMC,QAAQ,IAAA,+JAAQ;IACtB,IAAA,0KAAS;kCAAC;YACRA,OAAOC,SAAS,GAAG;gBAAEC,WAAW;YAAK;QACvC;iCAAG;QAACH;KAAS;IACb,qBAAO,6LAAC,iKAAU;QAACI,IAAI;kBAAEL;;;;;;AAC3B;GAPMD;;QACa,oJAAW;QACd,+JAAQ;;;KAFlBA;uCAQSA"}}]
+}

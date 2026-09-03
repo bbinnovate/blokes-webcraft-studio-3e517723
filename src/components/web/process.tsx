@@ -10,35 +10,33 @@ const steps = [
     d: "We interview you and your sales team, study competitors, and map what a buyer needs to see before they enquire.",
     out: "Sitemap + messaging brief",
   },
+
   {
     n: "02",
     t: "Wireframes & content strategy",
     d: "Structure before styling. Every section earns its place, and the copy is written for the decision, not the word count.",
     out: "Low-fi wireframes + copy deck",
   },
+
   {
     n: "03",
     t: "Design system & UI",
-    d: "Type scale, colour, components and motion — designed desktop and mobile side by side so nothing breaks on a phone.",
+    d: "Type scale, colour, components, and motion designed desktop and mobile side by side so nothing breaks on a phone.",
     out: "Figma design system",
   },
+
   {
     n: "04",
     t: "Development & integrations",
-    d: "Clean, componentised builds on Shopify, WordPress or React — with CRM, payments, WhatsApp and analytics wired in.",
+    d: "Clean, componentised builds on Shopify, WordPress, or React as a web development agency that also runs Shopify ecommerce development, we wire in CRM, payments, WhatsApp, and analytics from day one.",
     out: "Staging build + QA sheet",
   },
+
   {
     n: "05",
     t: "Speed, SEO & QA",
-    d: "Core Web Vitals, schema, redirects, cross-browser and real-device testing before anything goes near production.",
+    d: "Core Web Vitals, schema, redirects, cross-browser and real-device testing the technical SEO foundations checked before anything goes near production.",
     out: "Launch readiness report",
-  },
-  {
-    n: "06",
-    t: "Launch & optimisation",
-    d: "We ship, watch the data, and keep improving — heatmaps, form drop-off and A/B tests on the pages that matter.",
-    out: "Monthly performance review",
   },
 ];
 
@@ -70,18 +68,16 @@ export function Process() {
   }, [active, paused, inView]);
 
   return (
-    <section id="process" className="scroll-mt-24 py-20 lg:py-28">
+    <section id="process" className="scroll-mt-24 py-6 sm:py-8 lg:py-8">
       <div className="container grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="lg:self-start">
           <Reveal>
             <p className="eyebrow">How we work</p>
             <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-              A website design and development process you can actually follow.
+Our web design and development process runs on one rule: no surprises.
             </h2>
             <p className="text-ink-soft mt-5 max-w-md text-[15px] leading-relaxed">
-              No black box, no ghosting. You get a named project lead, a shared timeline, and a
-              deliverable at the end of every stage — so you always know what's happening and
-              what's next.
+             We give you a named project lead, a shared timeline, and a real deliverable at every stage.
             </p>
             <div className="mt-7 flex items-center gap-3">
               <span className="font-display text-[13px] font-extrabold">

@@ -5,7 +5,7 @@ import { Reveal } from "./reveal";
 
 const studies = [
   {
-    img: "/assets/project-jewellery.jpg",
+    img: "/assets/SCS2.jpg",
     client: "Aurumé Fine Jewellery",
     type: "Shopify ecommerce development",
     headline: "A ₹95,000 pendant doesn't sell on a template.",
@@ -23,7 +23,7 @@ const studies = [
     ],
   },
   {
-    img: "/assets/project-b2b.jpg",
+    img: "/assets/FelineFoundation2.jpg",
     client: "Precision Metal Components",
     type: "B2B website design & development",
     headline: "From invisible manufacturer to 68 RFQs a month.",
@@ -41,7 +41,7 @@ const studies = [
     ],
   },
   {
-    img: "/assets/project-skincare.jpg",
+    img: "/assets/SuperSoxnew.jpg",
     client: "Aurelia Skin",
     type: "Custom Shopify website development",
     headline: "Fixing the checkout was worth more than more ads.",
@@ -58,29 +58,29 @@ const studies = [
       { k: "2.4x", v: "repeat purchases" },
     ],
   },
-  {
-    img: "/assets/project-realestate.jpg",
-    client: "Northline Developers",
-    type: "Custom web development",
-    headline: "Project pages that sell flats before the site visit.",
-    problem:
-      "Enquiries came from portals, not their own site — every project lived on a single PDF-heavy page.",
-    did: [
-      "Immersive project pages with floor-plan viewers and location intelligence",
-      "One sticky enquiry rail carried across the entire journey",
-      "CRM + WhatsApp routing so leads reach sales in under a minute",
-    ],
-    stats: [
-      { k: "5.4%", v: "enquiry rate" },
-      { k: "-46%", v: "cost per lead" },
-      { k: "<60s", v: "lead response time" },
-    ],
-  },
+  // {
+  //   img: "/assets/project-realestate.jpg",
+  //   client: "Northline Developers",
+  //   type: "Custom web development",
+  //   headline: "Project pages that sell flats before the site visit.",
+  //   problem:
+  //     "Enquiries came from portals, not their own site — every project lived on a single PDF-heavy page.",
+  //   did: [
+  //     "Immersive project pages with floor-plan viewers and location intelligence",
+  //     "One sticky enquiry rail carried across the entire journey",
+  //     "CRM + WhatsApp routing so leads reach sales in under a minute",
+  //   ],
+  //   stats: [
+  //     { k: "5.4%", v: "enquiry rate" },
+  //     { k: "-46%", v: "cost per lead" },
+  //     { k: "<60s", v: "lead response time" },
+  //   ],
+  // },
 ];
 
 export function CaseStudies() {
   return (
-    <section id="work" className="bg-secondary scroll-mt-24 py-20 lg:py-28">
+    <section id="work" className="bg-secondary scroll-mt-24 py-6 sm:py-8 lg:py-8">
       <span id="case-studies" className="block scroll-mt-24" />
       <div className="container">
         <Reveal>
@@ -88,12 +88,11 @@ export function CaseStudies() {
             <div>
               <p className="eyebrow">Selected work</p>
               <h2 className="mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]">
-                The website was the growth lever. <span className="hl">Here's the receipts.</span>
+               The website did the selling.<span className="hl"> Here's proof.</span>
               </h2>
             </div>
-            <p className="text-grey text-sm lg:max-w-xs lg:text-right">
-              Four live builds — design, development and launch handled in-house by our Mumbai
-              team.
+            <p className="text-grey text-sm lg:max-w-sm lg:text-right">
+             Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency.
             </p>
           </div>
         </Reveal>

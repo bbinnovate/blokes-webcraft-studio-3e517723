@@ -10,6 +10,8 @@ import { Process } from "@/components/web/process";
 import { Testimonials } from "@/components/web/testimonials";
 import { Faq } from "@/components/web/faq";
 import { CtaFooter } from "@/components/web/cta-footer";
+import Mobilecta from "@/components/web/Mobilecta";
+import SectionPopup from "@/components/web/SectionPopup";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <CtaFooter />
+      <Mobilecta />
+      <SectionPopup />
       <Toaster position="top-center" />
     </main>
   );

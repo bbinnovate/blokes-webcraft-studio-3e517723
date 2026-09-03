@@ -22,8 +22,8 @@ export function StackCluster() {
     <div className="container mt-24">
       <Reveal className="text-center">
         <p className="eyebrow">Platforms & stack</p>
-        <h3 className="mx-auto mt-3 max-w-2xl text-[28px] leading-[1.08] sm:text-[38px]">
-          We pick the platform that fits your business — <span className="hl">not the one we like selling.</span>
+        <h3 className="mx-auto mt-3 max-w-4xl text-[28px] leading-[1.08] sm:text-[38px]">
+          We pick the platform that fits your business <span className="hl">not the one we like selling.</span>
         </h3>
         <p className="text-ink-soft mx-auto mt-4 max-w-xl text-[15px] leading-relaxed">
           Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at

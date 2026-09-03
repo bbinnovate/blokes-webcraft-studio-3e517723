@@ -10,7 +10,7 @@ const devices = [
     id: "desktop",
     label: "Desktop",
     icon: Monitor,
-    img: "/assets/after-site.jpg",
+    img: "/assets/dextop.png",
     frameClass: "w-full max-w-[860px] rounded-xl",
     imgClass: "aspect-[16/10]",
     note: "Full-width editorial layout, multi-column grid, hover states.",
@@ -19,7 +19,7 @@ const devices = [
     id: "tablet",
     label: "Tablet",
     icon: Tablet,
-    img: "/assets/device-tablet.jpg",
+    img: "/assets/tab.png",
     frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
     imgClass: "aspect-[3/4]",
     note: "Two-column product grid, larger tap targets, condensed nav.",
@@ -28,7 +28,7 @@ const devices = [
     id: "mobile",
     label: "Mobile",
     icon: Smartphone,
-    img: "/assets/device-mobile.jpg",
+    img: "/assets/mobile.png",
     frameClass: "w-[240px] rounded-[34px]",
     imgClass: "aspect-[9/18]",
     note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
@@ -40,12 +40,12 @@ export function ResponsiveTech() {
   const current = devices.find((d) => d.id === active)!;
 
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-6 sm:py-8 lg:py-8">
       <div className="container">
         <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <Reveal>
             <p className="eyebrow">Responsive by default</p>
-            <h2 className="mt-3 max-w-2xl text-[32px] leading-[1.06] sm:text-[42px]">
+            <h2 className="mt-3 max-w-4xl text-[32px] leading-[1.06] sm:text-[42px]">
               Over 70% of your visitors arrive on a phone. We design for them first.
             </h2>
           </Reveal>
@@ -95,7 +95,7 @@ export function ResponsiveTech() {
                 width={1200}
                 height={1200}
                 loading="lazy"
-                className={cn("w-full object-cover object-top", current.imgClass)}
+                className={cn("w-full object-fit object-top", current.imgClass)}
               />
             </div>
             <p className="text-grey mt-6 max-w-md text-center text-[13.5px] leading-relaxed">

@@ -12,49 +12,54 @@ const items = [
   {
     icon: Layout,
     title: "Website design & development",
-    body: "Custom design systems, not recycled templates. Every page is wireframed around a buying decision before a single pixel is drawn.",
+    body: "Custom design systems, not recycled templates. As a dedicated web design and development agency, we wireframe every page around a buying decision before a single pixel is drawn.",
     tags: ["UX wireframes", "Design system", "CMS build"],
   },
+
   {
     icon: ShoppingBag,
     title: "Shopify ecommerce development",
-    body: "As a Shopify web development company we build storefronts that make browsing effortless — fast PDPs, frictionless checkout, clean merchandising.",
+    body: "As a Shopify web development company, we build storefronts that make browsing effortless — fast PDPs, frictionless checkout, clean merchandising, and custom Shopify website development wherever off-the-shelf falls short.",
     tags: ["Shopify 2.0", "Custom theme", "Checkout UX"],
   },
+
   {
     icon: Code2,
     title: "Custom web development",
-    body: "Portals, dashboards, booking flows, calculators and integrations. When an off-the-shelf plugin won't do, we write it properly.",
+    body: "Portals, dashboards, booking flows, calculators, and integrations. When an off-the-shelf plugin won't do, our custom web development team writes it properly from scratch, built to scale.",
     tags: ["React", "Headless", "API work"],
   },
+
   {
     icon: Gauge,
     title: "Speed & Core Web Vitals",
-    body: "Image pipelines, lazy loading, script discipline and clean markup so your site passes Core Web Vitals on real mobile networks.",
+    body: "Image pipelines, lazy loading, script discipline, and clean markup so your site passes Core Web Vitals on real mobile networks, not just lab tests.",
     tags: ["LCP < 2s", "Mobile-first", "Lighthouse"],
   },
+
   {
     icon: Search,
     title: "Technical SEO foundations",
-    body: "Crawlable structure, schema, clean URLs, internal linking and content architecture built in from day one — not bolted on later.",
+    body: "Crawlable structure, schema, clean URLs, internal linking, and content architecture built in from day one — not bolted on later, so search engines (and buyers) find you faster.",
     tags: ["Schema", "Site architecture", "Analytics"],
   },
+
   {
     icon: Wrench,
     title: "Care, hosting & iteration",
-    body: "Launch is the start. Monthly updates, security patching, uptime monitoring and CRO experiments that keep the site earning.",
+    body: "Launch is the start. Monthly updates, security patching, uptime monitoring, and CRO experiments that keep your site and your web development agency relationship earning long after go-live.",
     tags: ["Support SLA", "A/B tests", "Reporting"],
   },
 ];
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="bg-secondary scroll-mt-24 py-20 lg:py-28">
+    <section id="capabilities" className="bg-secondary scroll-mt-24 py-6 sm:py-8 lg:py-8">
       <div className="container">
         <Reveal>
           <p className="eyebrow">What we build</p>
-          <h2 className="mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]">
-            A full-stack website development agency — design, build, launch and everything after.
+          <h2 className="mt-3 max-w-5xl text-[32px] leading-[1.06] sm:text-[42px]">
+           A full-stack web design and development agency, from first sketch to final launch, and everything that keeps it running after.
           </h2>
         </Reveal>
 

@@ -30,16 +30,14 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-5 text-[38px] leading-[1.02] sm:text-[54px] lg:text-[66px]">
-              Websites that sell
+              Websites that sell 
               <br className="hidden sm:block" /> your business <span className="hl">while you sleep.</span>
             </h1>
           </Reveal>
 
           <Reveal delay={140}>
             <p className="text-ink-soft mt-5 max-w-xl text-[15px] leading-relaxed sm:text-[17px]">
-              We are a web design and development agency that builds fast, search-ready websites
-              and Shopify stores for Indian brands — designed around how your customers actually
-              buy, and engineered so every visit has a chance to become an enquiry.
+             We're a web design and development agency building fast, search-ready websites and Shopify stores for Indian brands, engineered so every visit has a real shot at becoming an enquiry.
             </p>
           </Reveal>
 
@@ -87,9 +85,9 @@ export function Hero() {
 
         <Reveal delay={120} className="lg:sticky lg:top-24">
           <LeadForm />
-          <div className="mt-10 lg:hidden">
+          {/* <div className="mt-10 lg:hidden">
             <HeroVisual />
-          </div>
+          </div> */}
         </Reveal>
       </div>
     </section>

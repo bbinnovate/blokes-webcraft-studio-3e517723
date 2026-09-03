@@ -7,6 +7,16 @@ import { Reveal } from "./reveal";
 
 const quotes = [
   {
+    text: "I have been working with Bombay Blokes for app development and marketing, and it’s been a really solid experience. What stood out to me most was the trust and transparency (hard to find). The team has been very patient with all my requirements, kept me updated regularly, and delivered things pretty quickly without compromising on quality. Janki, Yash, Siddesh, and Khyaati did a great job building our mobile app from scratch within a tight timeline. On the marketing side, Karishma and Tisha went above and beyond to deeply understand my brand and get the narrative right. Overall, the team has been easy to work with, open to feedback, and willing to go the extra mile to get things right.",
+    name: "Akshat Adani",
+    role: "App Development & Marketing",
+  },
+  {
+    text: "I recently had the pleasure of working with Bombay Blokes, and I must say, they are an outstanding digital marketing agency. From the moment I contacted them for website design and development, they displayed utmost professionalism and dedication to delivering exceptional results. First and foremost, the team at Bombay Blokes is incredibly talented and knowledgeable. They took the time to understand my vision for the website and translated it into a stunning reality that exceeded my expectations. The team was always responsive, attentive, and ensured that all my requirements were met. They kept me updated at every stage and provided valuable insights and suggestions that greatly enhanced the overall user experience of my website. I wholeheartedly recommend Bombay Blokes for anyone seeking top-notch website development and designing services.",
+    name: "Harjagit Dhanjal",
+    role: "Website Design & Development",
+  },
+  {
     text: "From website development to ecommerce, the team showed real expertise and professionalism. They behave like a partner who genuinely cares about the business, not a vendor billing hours.",
     name: "Alex Kriplani",
     role: "Founder, D2C retail brand",
@@ -15,21 +25,6 @@ const quotes = [
     text: "Working with Bombay Blokes has been seamless from day one. They understood our customers faster than agencies we'd worked with for years, and the new site reflects it.",
     name: "Kaushik Shah",
     role: "Director, manufacturing",
-  },
-  {
-    text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-    name: "Tilika Vispute",
-    role: "Marketing Head, services",
-  },
-  {
-    text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-    name: "Tilika Vispute",
-    role: "Marketing Head, services",
-  },
-  {
-    text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
-    name: "Tilika Vispute",
-    role: "Marketing Head, services",
   },
   {
     text: "Some of the best digital work we've seen in India. The website they built is quick, clean and easy for my team to update ourselves — that alone was worth it.",
@@ -111,7 +106,7 @@ export function Testimonials() {
   }, [emblaApi]);
 
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-6 sm:py-8 lg:py-8">
       <div className="container">
         <Reveal>
           <div className="flex items-end justify-between">

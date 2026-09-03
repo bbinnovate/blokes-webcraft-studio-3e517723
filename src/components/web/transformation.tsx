@@ -39,24 +39,27 @@ export function Transformation() {
   }, [setFromClientX]);
 
   return (
-    <section className="py-20 lg:py-28">
+    <section   id="section-3" className="py-6 sm:py-8 lg:py-8">
       <div className="container">
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-          <Reveal>
-            <p className="eyebrow">Website redesign</p>
-            <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-              Same business. <span className="hl">Very different</span> first impression.
-            </h2>
-          </Reveal>
-          <Reveal delay={80}>
-            <p className="text-ink-soft max-w-xl text-[15px] leading-relaxed">
-              Most businesses don't have a traffic problem — they have a credibility problem. Drag
-              the handle to see what a professional web development company changes: sharper
-              hierarchy, faster loads, one obvious next step, and copy written for the buyer, not
-              the brochure.
-            </p>
-          </Reveal>
-        </div>
+        <div className="grid lg:gap-60 gap-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+  <Reveal>
+    <p className="eyebrow">Website redesign</p>
+
+    <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
+      Same business.{" "}
+      <span className="hl">Very different</span> first impression.
+    </h2>
+  </Reveal>
+
+  <Reveal delay={80}>
+    <p className="text-ink-soft w-full text-[15px] leading-relaxed">
+      Most businesses don't have a traffic problem, they have a credibility
+      problem. Drag the handle to see what a professional website development
+      agency actually changes: sharper hierarchy, faster loads, one obvious
+      next step, and copy written for the buyer, not the brochure.
+    </p>
+  </Reveal>
+</div>
 
         <Reveal delay={120}>
           <div
@@ -68,24 +71,24 @@ export function Transformation() {
             className="border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]"
           >
             <img
-              src="/assets/after-site.jpg"
+              src="/assets/after2.png"
               alt="Modern redesigned website after the Bombay Blokes rebuild"
               width={1200}
               height={800}
               loading="lazy"
-              className="absolute inset-0 h-full w-full object-cover object-top"
+              className="absolute inset-0 h-full w-full object-git object-top"
             />
             <div
               className="absolute inset-0"
               style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
             >
               <img
-                src="/assets/before-site.jpg"
+                src="/assets/before.png"
                 alt="Outdated website before the redesign"
                 width={1200}
                 height={800}
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover object-top"
+                className="absolute inset-0 h-full w-full object-fit object-top"
               />
             </div>
 
