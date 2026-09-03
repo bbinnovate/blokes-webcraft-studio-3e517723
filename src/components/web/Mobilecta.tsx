@@ -12,6 +12,7 @@ export default function Mobilecta() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        if (!entry) return;
         setShowCTA(entry.isIntersecting || entry.boundingClientRect.top < 0);
       },
       {

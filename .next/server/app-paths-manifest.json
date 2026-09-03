@@ -2,5 +2,6 @@
   "/_global-error/page": "app/_global-error/page.js",
   "/_not-found/page": "app/_not-found/page.js",
   "/api/ads-enquiry/route": "app/api/ads-enquiry/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/thank-you/page": "app/thank-you/page.js"
 }

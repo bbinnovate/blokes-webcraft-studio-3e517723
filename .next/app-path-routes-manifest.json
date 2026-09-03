@@ -2,5 +2,6 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/ads-enquiry/route": "/api/ads-enquiry",
-  "/page": "/"
+  "/page": "/",
+  "/thank-you/page": "/thank-you"
 }

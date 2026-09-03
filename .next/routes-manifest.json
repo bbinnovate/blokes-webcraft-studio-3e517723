@@ -46,6 +46,12 @@
       "regex": "^/api/ads\\-enquiry(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/ads\\-enquiry(?:/)?$"
+    },
+    {
+      "page": "/thank-you",
+      "regex": "^/thank\\-you(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/thank\\-you(?:/)?$"
     }
   ],
   "dataRoutes": [],

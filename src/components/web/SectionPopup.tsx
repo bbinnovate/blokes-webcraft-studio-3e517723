@@ -14,7 +14,7 @@ export default function SectionPopup() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasShown) {
+        if (entry && entry.isIntersecting && !hasShown) {
           setIsOpen(true);
           setHasShown(true);
         }

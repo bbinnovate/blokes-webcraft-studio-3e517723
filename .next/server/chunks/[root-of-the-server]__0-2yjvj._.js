@@ -69,7 +69,7 @@ module.exports=[61724,(e,t,r)=>{t.exports=e.x("next/dist/compiled/next-server/ap
     </table>
   </body>
 </html>
-  `)}),await c({apiKey:o,appId:u,toEmails:["aryankuril09@gmail.com"],subject:`New Website Audit Request - ${a.name}`,html:`
+  `)}),await c({apiKey:o,appId:u,toEmails:["hello@bombayblokes.com","bdm@bombayblokes.com","siddique@bombayblokes.com","aryankuril09@gmail.com"],subject:`New Website Audit Request - ${a.name}`,html:`
     <h3>New Website Audit Request</h3>
     <p><strong>Name:</strong> ${s(a.name||"-")}</p>
     <p><strong>Phone:</strong> ${s(a.phone||"-")}</p>
