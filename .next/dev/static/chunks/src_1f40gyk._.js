@@ -47,7 +47,7 @@ function Mobilecta() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                 href: "#audit",
-                className: "shrink-0 rounded-full bg-secondary px-4 py-2 text-xs font-bold tracking-wide text-secondary-foreground uppercase",
+                className: "shrink-0 rounded-full bg-accent-yellow px-4 py-2 text-xs font-bold tracking-wide text-secondary-foreground uppercase",
                 children: "Get free website audit"
             }, void 0, false, {
                 fileName: "[project]/src/components/web/Mobilecta.tsx",
@@ -208,7 +208,7 @@ function SectionPopup() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             type: "button",
                             onClick: handleCTA,
-                            className: "group mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-secondary px-6 py-4 text-sm font-bold text-secondary-foreground transition-all hover:-translate-y-0.5 hover:shadow-amber disabled:opacity-70",
+                            className: "group mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-accent-yellow px-6 py-4 text-sm font-bold text-black transition-all hover:-translate-y-0.5 hover:shadow-amber disabled:opacity-70",
                             children: "Get Your Free Audit"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/SectionPopup.tsx",

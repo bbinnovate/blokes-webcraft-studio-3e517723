@@ -140,7 +140,7 @@ export default function SectionPopup() {
           <button
             type="button"
             onClick={handleCTA}
-                         className="group mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-secondary px-6 py-4 text-sm font-bold text-secondary-foreground transition-all hover:-translate-y-0.5 hover:shadow-amber disabled:opacity-70"
+                         className="group mt-6 flex w-full items-center justify-center gap-2 rounded-full bg-accent-yellow px-6 py-4 text-sm font-bold text-black transition-all hover:-translate-y-0.5 hover:shadow-amber disabled:opacity-70"
 
           >
             Get Your Free Audit

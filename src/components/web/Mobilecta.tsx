@@ -36,7 +36,7 @@ export default function Mobilecta() {
 
       <a
   href="#audit"
-  className="shrink-0 rounded-full bg-secondary px-4 py-2 text-xs font-bold tracking-wide text-secondary-foreground uppercase"
+  className="shrink-0 rounded-full bg-accent-yellow px-4 py-2 text-xs font-bold tracking-wide text-secondary-foreground uppercase"
 >
   Get free website audit
 </a>
