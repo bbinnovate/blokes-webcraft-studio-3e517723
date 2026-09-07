@@ -321,7 +321,7 @@ async function POST(req) {
                 toEmails: [
                     payload.email
                 ],
-                subject: "Your free website audit request is received | Bombay Blokes",
+                subject: `Your free ${payload.service} audit request is received | Bombay Blokes`,
                 html: buildUserEmail(payload)
             });
             // Send Admin Email
@@ -335,7 +335,7 @@ async function POST(req) {
                 apiKey: ONE_SIGNAL_API_KEY,
                 appId: ONE_SIGNAL_APP_ID,
                 toEmails: adminEmails,
-                subject: `New Website Audit Request - ${payload.name}`,
+                subject: `New Lead From - ${payload.name} form ${payload.service}`,
                 html: buildAdminEmail(payload)
             });
         } else {

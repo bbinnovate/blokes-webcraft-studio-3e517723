@@ -66,16 +66,23 @@ export default function SectionPopup() {
     };
   }, [isOpen]);
 
-  const handleCTA = () => {
-    setIsOpen(false);
+const handleCTA = () => {
+  const target = document.getElementById("audit");
 
-    setTimeout(() => {
-      document.getElementById("audit")?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }, 100);
-  };
+  if (!target) {
+    console.log("Audit section not found");
+    return;
+  }
+
+  setIsOpen(false);
+
+  requestAnimationFrame(() => {
+    target.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+};
 
   if (!isOpen) return null;
 

@@ -1912,10 +1912,6 @@
     }
   }
 
-  .bg-black {
-    background-color: var(--color-black);
-  }
-
   .bg-black\/40 {
     background-color: #0006;
   }

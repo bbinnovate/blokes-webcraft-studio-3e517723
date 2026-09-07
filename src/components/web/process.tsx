@@ -86,7 +86,7 @@ Our web design and development process runs on one rule: no surprises.
               <span className="bg-border h-px flex-1" />
             </div>
             <a
-              href="#quote"
+                href="#audit"
               className="bg-ink text-primary-foreground mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
             >
               Book a 20-minute scoping call

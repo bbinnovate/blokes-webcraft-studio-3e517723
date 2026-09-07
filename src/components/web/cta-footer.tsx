@@ -27,7 +27,7 @@ export function CtaFooter() {
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href="#quote"
+                    href="#audit"
                     className="bg-ink text-primary-foreground group inline-flex items-center gap-2 rounded-full px-6 py-3.5 text-sm font-bold transition-transform hover:-translate-y-0.5"
                   >
                     Get my free website audit

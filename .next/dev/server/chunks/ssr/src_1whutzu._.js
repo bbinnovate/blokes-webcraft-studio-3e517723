@@ -117,13 +117,18 @@ function SectionPopup() {
         isOpen
     ]);
     const handleCTA = ()=>{
+        const target = document.getElementById("audit");
+        if (!target) {
+            console.log("Audit section not found");
+            return;
+        }
         setIsOpen(false);
-        setTimeout(()=>{
-            document.getElementById("audit")?.scrollIntoView({
+        requestAnimationFrame(()=>{
+            target.scrollIntoView({
                 behavior: "smooth",
                 block: "start"
             });
-        }, 100);
+        });
     };
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -140,7 +145,7 @@ function SectionPopup() {
                     children: "×"
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/SectionPopup.tsx",
-                    lineNumber: 98,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -151,7 +156,7 @@ function SectionPopup() {
                             children: "Ready to build?"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/SectionPopup.tsx",
-                            lineNumber: 124,
+                            lineNumber: 131,
                             columnNumber: 14
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h6", {
@@ -159,7 +164,7 @@ function SectionPopup() {
                             children: "Let's build a website that works for your business."
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/SectionPopup.tsx",
-                            lineNumber: 128,
+                            lineNumber: 135,
                             columnNumber: 1
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -167,7 +172,7 @@ function SectionPopup() {
                             children: "Get a fast, conversion-focused website built around your brand, your customers, and your growth goals."
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/SectionPopup.tsx",
-                            lineNumber: 132,
+                            lineNumber: 139,
                             columnNumber: 1
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -177,24 +182,24 @@ function SectionPopup() {
                             children: "Get Your Free Audit"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/SectionPopup.tsx",
-                            lineNumber: 140,
+                            lineNumber: 147,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/SectionPopup.tsx",
-                    lineNumber: 123,
+                    lineNumber: 130,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/SectionPopup.tsx",
-            lineNumber: 84,
+            lineNumber: 91,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/SectionPopup.tsx",
-        lineNumber: 83,
+        lineNumber: 90,
         columnNumber: 5
     }, this);
 }
@@ -641,7 +646,7 @@ const budgets = [
     "₹8 lakh+",
     "Not sure yet"
 ];
-function LeadForm({ id = "quote" }) {
+function LeadForm({ id = "audit" }) {
     const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("idle");
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     async function onSubmit(e) {
@@ -1201,7 +1206,7 @@ function Process() {
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#quote",
+                                href: "#audit",
                                 className: "bg-ink text-primary-foreground mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5",
                                 children: "Book a 20-minute scoping call"
                             }, void 0, false, {
@@ -1979,11 +1984,13 @@ function StackCluster() {
                             stack.map((s)=>{
                                 const r = RADII[s.ring] ?? 33;
                                 const rad = Math.PI * (1 - s.t); // 180deg -> 0deg
+                                const left = (50 + r * Math.cos(rad)).toFixed(4);
+                                const top = (100 - r / 44 * 100 * Math.sin(rad)).toFixed(4);
                                 return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     style: {
                                         animationDelay: s.d,
-                                        left: `${50 + r * Math.cos(rad)}%`,
-                                        top: `${100 - r / 44 * 100 * Math.sin(rad)}%`
+                                        left: `${left}%`,
+                                        top: `${top}%`
                                     },
                                     className: "animate-float border-border bg-card absolute flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full border p-1.5 shadow-[0_24px_50px_-36px_rgba(29,29,29,0.55)] transition-transform duration-300 hover:scale-[1.08] sm:gap-2.5 sm:rounded-2xl sm:px-3 sm:py-2",
                                     children: [
@@ -1998,12 +2005,12 @@ function StackCluster() {
                                                 className: "h-4 w-4 sm:h-[18px] sm:w-[18px]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 79,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 78,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2014,7 +2021,7 @@ function StackCluster() {
                                                     children: s.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                    lineNumber: 87,
+                                                    lineNumber: 89,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2022,19 +2029,19 @@ function StackCluster() {
                                                     children: s.note
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                    lineNumber: 88,
+                                                    lineNumber: 90,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 88,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.name, true, {
                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 69,
                                     columnNumber: 15
                                 }, this);
                             }),
@@ -2052,7 +2059,7 @@ function StackCluster() {
                                             className: "mx-auto h-9 w-9 object-contain sm:h-12 sm:w-12"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 96,
+                                            lineNumber: 98,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2060,18 +2067,18 @@ function StackCluster() {
                                             children: "Your build"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 104,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                    lineNumber: 95,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                lineNumber: 94,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -2085,7 +2092,7 @@ function StackCluster() {
                         children: "Shopify · WordPress · Webflow · React · Next.js · Node.js · Razorpay · HubSpot · GA4"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 111,
+                        lineNumber: 113,
                         columnNumber: 9
                     }, this)
                 ]

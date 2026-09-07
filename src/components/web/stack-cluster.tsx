@@ -63,13 +63,15 @@ export function StackCluster() {
           {stack.map((s) => {
             const r = RADII[s.ring] ?? 33;
             const rad = Math.PI * (1 - s.t); // 180deg -> 0deg
+            const left = (50 + r * Math.cos(rad)).toFixed(4);
+            const top = (100 - (r / 44) * 100 * Math.sin(rad)).toFixed(4);
             return (
               <div
                 key={s.name}
                 style={{
                   animationDelay: s.d,
-                  left: `${50 + r * Math.cos(rad)}%`,
-                  top: `${100 - (r / 44) * 100 * Math.sin(rad)}%`,
+                  left: `${left}%`,
+                  top: `${top}%`,
                 }}
                 className="animate-float border-border bg-card absolute flex -translate-x-1/2 -translate-y-1/2 items-center gap-2 rounded-full border p-1.5 shadow-[0_24px_50px_-36px_rgba(29,29,29,0.55)] transition-transform duration-300 hover:scale-[1.08] sm:gap-2.5 sm:rounded-2xl sm:px-3 sm:py-2"
               >

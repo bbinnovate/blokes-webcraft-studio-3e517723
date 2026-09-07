@@ -83,7 +83,7 @@ export function Hero() {
           </Reveal> */}
         </div>
 
-        <Reveal delay={120} className="lg:sticky lg:top-24">
+        <Reveal  delay={120} className="lg:sticky lg:top-24">
           <LeadForm />
           {/* <div className="mt-10 lg:hidden">
             <HeroVisual />
