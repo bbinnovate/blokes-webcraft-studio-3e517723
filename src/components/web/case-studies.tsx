@@ -4,24 +4,24 @@ import { useEffect, useRef, useState } from "react";
 import { Reveal } from "./reveal";
 
 const studies = [
-  {
-    img: "/assets/SCS2.jpg",
-    client: "Aurumé Fine Jewellery",
-    type: "Shopify ecommerce development",
-    headline: "A ₹95,000 pendant doesn't sell on a template.",
-    problem:
-      "Traffic was healthy, sales weren't. The old store buried certification, pricing and delivery promises three clicks deep.",
-    did: [
-      "Rebuilt the storefront on Shopify with a custom, story-led PDP",
-      "Added certification, EMI and try-at-home modules above the fold",
-      "Compressed the media pipeline — 4.1s to 1.6s on mobile",
-    ],
-    stats: [
-      { k: "3.1x", v: "online revenue" },
-      { k: "+58%", v: "add-to-cart rate" },
-      { k: "1.6s", v: "mobile LCP" },
-    ],
-  },
+ {
+  img: "/assets/SCS2.jpg",
+  client: "SCS Sports",
+  type: "Shopify ecommerce development",
+  headline: "When the catalogue gets bigger, the experience can't stay the same.",
+  problem:
+    "SCS had a strong product range, but its old storefront was holding the experience back. Outdated design, difficult navigation, weak product discovery and poor mobile performance made it harder for customers to find and buy the right gear.",
+  did: [
+    "Rebuilt the Shopify 2.0 storefront with a completely new visual direction and custom theme",
+    "Restructured the shopping experience with improved navigation, collections, search, filters, product pages and personalisation",
+    "Optimised the entire experience for mobile, speed, custom functionality, integrations and conversion",
+  ],
+  stats: [
+    { k: "Shopify 2.0", v: "Custom storefront" },
+    { k: "Custom UX", v: "Search, filters & personalisation" },
+    { k: "Performance", v: "Mobile-first optimisation" },
+  ],
+},
   {
     img: "/assets/FelineFoundation2.jpg",
     client: "Precision Metal Components",
@@ -41,23 +41,23 @@ const studies = [
     ],
   },
   {
-    img: "/assets/SuperSoxnew.jpg",
-    client: "Aurelia Skin",
-    type: "Custom Shopify website development",
-    headline: "Fixing the checkout was worth more than more ads.",
-    problem:
-      "Ad spend was scaling but 7 of 10 carts died at checkout on mobile — the theme fought every tap.",
-    did: [
-      "Rebuilt checkout UX with express pay, saved carts and clear shipping",
-      "Bundle and subscription logic built natively instead of via plugins",
-      "Removed 11 third-party scripts slowing the buying journey",
-    ],
-    stats: [
-      { k: "+42%", v: "checkout completion" },
-      { k: "-31%", v: "cost per order" },
-      { k: "2.4x", v: "repeat purchases" },
-    ],
-  },
+  img: "/assets/SuperSoxnew.jpg",
+  client: "SuperSox",
+  type: "Custom Shopify website development",
+  headline: "From everyday essential to everyday experience.",
+  problem:
+    "SuperSox had grown beyond being just a socks brand. With collections spanning men, women, kids, sports, lifestyle and gifting, the new website needed to make a wide product range feel simple to explore — while giving the brand a stronger premium identity online.",
+  did: [
+    "Built the complete Shopify storefront from the ground up, creating a new visual and ecommerce experience for the brand",
+    "Structured product discovery around how customers shop, with dedicated journeys for Men, Women, Kids, Gifting and multiple product categories",
+    "Designed the experience to sell more than individual products, bringing collections, bundles, gift boxes, offers and product storytelling together in one storefront",
+  ],
+  stats: [
+    { k: "Shopify", v: "Custom ecommerce development" },
+    { k: "Multi-category", v: "Men, Women, Kids & Gifting" },
+    { k: "Built from scratch", v: "End-to-end website development" },
+  ],
+},
   // {
   //   img: "/assets/project-realestate.jpg",
   //   client: "Northline Developers",

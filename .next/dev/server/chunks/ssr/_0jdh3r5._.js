@@ -323,14 +323,14 @@ function CtaFooter() {
                                                             className: "h-4 w-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                            lineNumber: 40,
+                                                            lineNumber: 47,
                                                             columnNumber: 21
                                                         }, this),
                                                         " Talk to us"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                    lineNumber: 36,
+                                                    lineNumber: 43,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
@@ -386,17 +386,17 @@ function CtaFooter() {
                                             className: "object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                            lineNumber: 57,
+                                            lineNumber: 64,
                                             columnNumber: 7
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 63,
                                         columnNumber: 5
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/cta-footer.tsx",
-                                    lineNumber: 55,
+                                    lineNumber: 62,
                                     columnNumber: 3
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -428,14 +428,14 @@ function CtaFooter() {
                                                         ry: "5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 88,
+                                                        lineNumber: 95,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 96,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -445,18 +445,18 @@ function CtaFooter() {
                                                         y2: "6.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 90,
+                                                        lineNumber: 97,
                                                         columnNumber: 9
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 84,
                                                 columnNumber: 7
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                            lineNumber: 70,
+                                            lineNumber: 77,
                                             columnNumber: 5
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -480,7 +480,7 @@ function CtaFooter() {
                                                         d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 113,
+                                                        lineNumber: 120,
                                                         columnNumber: 5
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -490,7 +490,7 @@ function CtaFooter() {
                                                         y: "9"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 114,
+                                                        lineNumber: 121,
                                                         columnNumber: 5
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -499,24 +499,24 @@ function CtaFooter() {
                                                         r: "2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 115,
+                                                        lineNumber: 122,
                                                         columnNumber: 5
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                lineNumber: 102,
+                                                lineNumber: 109,
                                                 columnNumber: 3
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                            lineNumber: 95,
+                                            lineNumber: 102,
                                             columnNumber: 4
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/cta-footer.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 75,
                                     columnNumber: 3
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -548,14 +548,14 @@ function CtaFooter() {
                                                         ry: "5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 141,
+                                                        lineNumber: 148,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                                         d: "M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 142,
+                                                        lineNumber: 149,
                                                         columnNumber: 9
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -565,18 +565,18 @@ function CtaFooter() {
                                                         y2: "6.5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 150,
                                                         columnNumber: 9
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 137,
                                                 columnNumber: 7
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                            lineNumber: 123,
+                                            lineNumber: 130,
                                             columnNumber: 5
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -600,7 +600,7 @@ function CtaFooter() {
                                                         d: "M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 166,
+                                                        lineNumber: 173,
                                                         columnNumber: 5
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -610,7 +610,7 @@ function CtaFooter() {
                                                         y: "9"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 167,
+                                                        lineNumber: 174,
                                                         columnNumber: 5
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -619,30 +619,30 @@ function CtaFooter() {
                                                         r: "2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 175,
                                                         columnNumber: 5
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 162,
                                                 columnNumber: 3
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                                            lineNumber: 148,
+                                            lineNumber: 155,
                                             columnNumber: 4
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/cta-footer.tsx",
-                                    lineNumber: 121,
+                                    lineNumber: 128,
                                     columnNumber: 3
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                            lineNumber: 53,
+                            lineNumber: 60,
                             columnNumber: 1
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -656,23 +656,23 @@ function CtaFooter() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                                lineNumber: 177,
+                                lineNumber: 184,
                                 columnNumber: 3
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/cta-footer.tsx",
-                            lineNumber: 175,
+                            lineNumber: 182,
                             columnNumber: 6
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/cta-footer.tsx",
-                    lineNumber: 50,
+                    lineNumber: 57,
                     columnNumber: 7
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/web/cta-footer.tsx",
-                lineNumber: 49,
+                lineNumber: 56,
                 columnNumber: 6
             }, this)
         ]
