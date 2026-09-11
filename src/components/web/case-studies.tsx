@@ -23,7 +23,7 @@ const studies = [
   ],
 },
   {
-    img: "/assets/FelineFoundation2.jpg",
+    img: "/assets/MrBloxnew.jpg",
     client: "Precision Metal Components",
     type: "B2B website design & development",
     headline: "From invisible manufacturer to 68 RFQs a month.",
@@ -133,7 +133,7 @@ export function CaseStudies() {
                     <dl className="border-border mt-8 grid grid-cols-3 gap-4 border-t pt-6">
                       {s.stats.map((st) => (
                         <div key={st.v}>
-                          <dt className="font-display text-[22px] font-extrabold sm:text-[28px]">
+                          <dt className="font-display text-[15px] font-extrabold sm:text-[28px]">
                             {st.k}
                           </dt>
                           <dd className="text-grey mt-1 text-[12px] leading-snug">{st.v}</dd>
