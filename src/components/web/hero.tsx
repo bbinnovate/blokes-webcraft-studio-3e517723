@@ -63,15 +63,15 @@ export function Hero() {
                     <Star key={i} className="fill-accent-yellow text-accent-yellow h-3.5 w-3.5" />
                   ))}
                 </div>
-                <p className="text-grey mt-1.5 text-[12.5px]">5.0 average from 40+ client reviews</p>
+                <p className="text-grey mt-1.5 text-[12.5px]">4.8 average from 80+ Google reviews</p>
               </div>
               <div>
-                <p className="font-display text-xl font-extrabold">150+</p>
-                <p className="text-grey text-[12.5px]">websites & stores shipped</p>
+                <p className="font-display text-xl font-extrabold">250+</p>
+                <p className="text-grey text-[12.5px]">Websites launched</p>
               </div>
               <div>
                 <p className="font-display text-xl font-extrabold">6–8 weeks</p>
-                <p className="text-grey text-[12.5px]">typical launch timeline</p>
+                <p className="text-grey text-[12.5px]">Typical launch timeline</p>
               </div>
             </div>
           </Reveal>

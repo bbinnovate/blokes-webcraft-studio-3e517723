@@ -120,6 +120,7 @@
     --font-weight-extrabold: 800;
     --tracking-tight: -.025em;
     --tracking-wide: .025em;
+    --tracking-wider: .05em;
     --tracking-widest: .1em;
     --leading-tight: 1.25;
     --leading-snug: 1.375;
@@ -771,6 +772,10 @@
 
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
+
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
   }
 
   .mb-6 {
@@ -2462,10 +2467,6 @@
     font-size: 19px;
   }
 
-  .text-\[22px\] {
-    font-size: 22px;
-  }
-
   .text-\[24px\] {
     font-size: 24px;
   }
@@ -2564,6 +2565,11 @@
   .tracking-wide {
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
+  }
+
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
   }
 
   .tracking-widest {
@@ -4203,6 +4209,10 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    .sm\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
     .sm\:grid-cols-\[1\.1fr_0\.9fr\] {
       grid-template-columns: 1.1fr .9fr;
     }
@@ -4295,6 +4305,10 @@
 
     .sm\:text-\[17px\] {
       font-size: 17px;
+    }
+
+    .sm\:text-\[20px\] {
+      font-size: 20px;
     }
 
     .sm\:text-\[21px\] {

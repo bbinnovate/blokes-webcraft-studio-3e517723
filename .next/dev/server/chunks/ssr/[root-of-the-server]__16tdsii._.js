@@ -1309,7 +1309,7 @@ function Hero() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-grey mt-1.5 text-[12.5px]",
-                                                    children: "5.0 average from 40+ client reviews"
+                                                    children: "4.8 average from 80+ Google reviews"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
                                                     lineNumber: 66,
@@ -1325,7 +1325,7 @@ function Hero() {
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "font-display text-xl font-extrabold",
-                                                    children: "150+"
+                                                    children: "250+"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
                                                     lineNumber: 69,
@@ -1333,7 +1333,7 @@ function Hero() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-grey text-[12.5px]",
-                                                    children: "websites & stores shipped"
+                                                    children: "Websites launched"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
                                                     lineNumber: 70,
@@ -1357,7 +1357,7 @@ function Hero() {
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     className: "text-grey text-[12.5px]",
-                                                    children: "typical launch timeline"
+                                                    children: "Typical launch timeline"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
                                                     lineNumber: 74,

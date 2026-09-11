@@ -225,7 +225,7 @@ const studies = [
         img: "/assets/SCS2.jpg",
         client: "SCS Sports",
         type: "Shopify ecommerce development",
-        headline: "When the catalogue gets bigger, the experience can't stay the same.",
+        headline: "A bigger catalogue needs a better experience.",
         problem: "SCS had a strong product range, but its old storefront was holding the experience back. Outdated design, difficult navigation, weak product discovery and poor mobile performance made it harder for customers to find and buy the right gear.",
         did: [
             "Rebuilt the Shopify 2.0 storefront with a completely new visual direction and custom theme",
@@ -249,27 +249,27 @@ const studies = [
     },
     {
         img: "/assets/MrBloxnew.jpg",
-        client: "Precision Metal Components",
-        type: "B2B website design & development",
-        headline: "From invisible manufacturer to 68 RFQs a month.",
-        problem: "A 12-year-old brochure site with one contact form, no capability pages, and nothing for Google to rank.",
+        client: "Mr. Blox",
+        type: "Custom Shopify website development",
+        headline: "A new toy brand, built to spark curiosity.",
+        problem: "Mr. Blox was launching with no existing website — so we built its digital storefront from the ground up. The challenge was to turn a playful, product-led brand into an ecommerce experience that could communicate its products, their learning benefits and their unique playability while making shopping simple for parents.",
         did: [
-            "Mapped 24 capability and material pages to real buyer search intent",
-            "Built a spec-led quote request flow with file uploads",
-            "Structured data and internal linking across the full catalogue"
+            "Designed the complete UI/UX and custom frontend to bring the playful Mr. Blox identity into the digital experience",
+            "Built the Shopify 2.0 storefront from scratch, with custom Liquid development, product discovery, search and filtering",
+            "Connected the entire ecommerce experience with payment, shipping, third-party integrations, performance optimisation and Klaviyo"
         ],
         stats: [
             {
-                k: "68",
-                v: "RFQs / month"
+                k: "Built from scratch",
+                v: "UI/UX + Custom frontend"
             },
             {
-                k: "4.7x",
-                v: "organic sessions"
+                k: "Shopify 2.0",
+                v: "Liquid development"
             },
             {
-                k: "22",
-                v: "keywords in top 3"
+                k: "Ecommerce ready",
+                v: "Payments, shipping & Klaviyo"
             }
         ]
     },
@@ -278,24 +278,24 @@ const studies = [
         client: "SuperSox",
         type: "Custom Shopify website development",
         headline: "From everyday essential to everyday experience.",
-        problem: "SuperSox had grown beyond being just a socks brand. With collections spanning men, women, kids, sports, lifestyle and gifting, the new website needed to make a wide product range feel simple to explore — while giving the brand a stronger premium identity online.",
+        problem: "A growing brand needed a storefront built for its next stage. SuperSox needed a completely new digital storefront that could bring its product range, brand story and shopping experience together. We designed and developed the website from the ground up, creating a more structured and scalable ecommerce experience across discovery, product selection and checkout.",
         did: [
-            "Built the complete Shopify storefront from the ground up, creating a new visual and ecommerce experience for the brand",
-            "Structured product discovery around how customers shop, with dedicated journeys for Men, Women, Kids, Gifting and multiple product categories",
-            "Designed the experience to sell more than individual products, bringing collections, bundles, gift boxes, offers and product storytelling together in one storefront"
+            "Designed the complete UI/UX and ecommerce experience, translating the SuperSox brand into a clean, product-led digital storefront",
+            "Built the Shopify 2.0 website from scratch with custom Liquid development, search, filtering and a custom cart experience",
+            "Built the commerce infrastructure around it with payment and shipping integrations, WhatsApp, Klaviyo, analytics, tracking, SEO migration and performance optimisation"
         ],
         stats: [
             {
-                k: "Shopify",
-                v: "Custom ecommerce development"
+                k: "UI/UX + Development",
+                v: "End-to-end ecommerce build"
             },
             {
-                k: "Multi-category",
-                v: "Men, Women, Kids & Gifting"
+                k: "Shopify 2.0",
+                v: "Custom Liquid development"
             },
             {
-                k: "Built from scratch",
-                v: "End-to-end website development"
+                k: "Growth Ready",
+                v: "SEO, analytics, Klaviyo & tracking"
             }
         ]
     }
@@ -310,7 +310,7 @@ function CaseStudies() {
                 className: "block scroll-mt-24"
             }, void 0, false, {
                 fileName: "[project]/src/components/web/case-studies.tsx",
-                lineNumber: 84,
+                lineNumber: 114,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -327,7 +327,7 @@ function CaseStudies() {
                                             children: "Selected work"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/case-studies.tsx",
-                                            lineNumber: 89,
+                                            lineNumber: 119,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -339,19 +339,19 @@ function CaseStudies() {
                                                     children: " Here's proof."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 91,
+                                                    lineNumber: 121,
                                                     columnNumber: 44
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/case-studies.tsx",
-                                            lineNumber: 90,
+                                            lineNumber: 120,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 88,
+                                    lineNumber: 118,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -359,18 +359,18 @@ function CaseStudies() {
                                     children: "Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 94,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/case-studies.tsx",
-                            lineNumber: 87,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 86,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -394,12 +394,12 @@ function CaseStudies() {
                                                     className: "h-[240px] w-full object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] lg:h-full lg:min-h-[420px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 106,
+                                                    lineNumber: 136,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 105,
+                                                lineNumber: 135,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -417,20 +417,20 @@ function CaseStudies() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 117,
+                                                                lineNumber: 147,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
                                                                 className: "text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 120,
+                                                                lineNumber: 150,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 116,
+                                                        lineNumber: 146,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -438,7 +438,7 @@ function CaseStudies() {
                                                         children: s.headline
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 122,
+                                                        lineNumber: 152,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -446,7 +446,7 @@ function CaseStudies() {
                                                         children: s.client
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 123,
+                                                        lineNumber: 153,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -454,7 +454,7 @@ function CaseStudies() {
                                                         children: s.problem
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 154,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -466,19 +466,19 @@ function CaseStudies() {
                                                                         className: "bg-accent-yellow mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 128,
+                                                                        lineNumber: 158,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     d
                                                                 ]
                                                             }, d, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 127,
+                                                                lineNumber: 157,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 125,
+                                                        lineNumber: 155,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -486,11 +486,11 @@ function CaseStudies() {
                                                         children: s.stats.map((st)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("dt", {
-                                                                        className: "font-display text-[15px] font-extrabold sm:text-[28px]",
+                                                                        className: "font-display text-[15px] font-extrabold sm:text-[20px]",
                                                                         children: st.k
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 136,
+                                                                        lineNumber: 166,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -498,57 +498,57 @@ function CaseStudies() {
                                                                         children: st.v
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 139,
+                                                                        lineNumber: 169,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, st.v, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 165,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 133,
+                                                        lineNumber: 163,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 145,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 134,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 133,
                                     columnNumber: 15
                                 }, this)
                             }, s.client, false, {
                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                lineNumber: 102,
+                                lineNumber: 132,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 100,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/case-studies.tsx",
-                lineNumber: 85,
+                lineNumber: 115,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 83,
+        lineNumber: 113,
         columnNumber: 5
     }, this);
 }
@@ -603,12 +603,12 @@ function StickyCard({ children, index, total }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/web/case-studies.tsx",
-            lineNumber: 198,
+            lineNumber: 228,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 194,
+        lineNumber: 224,
         columnNumber: 5
     }, this);
 }
@@ -955,7 +955,6 @@ const logos = [
     "/assets/lp-logos/logo-lp(8).png",
     "/assets/lp-logos/logo-lp(9).png",
     "/assets/lp-logos/logo-lp(10).png",
-    "/assets/lp-logos/logo-lp(11).png",
     "/assets/lp-logos/logo-lp(12).png",
     "/assets/lp-logos/logo-lp(13).png",
     "/assets/lp-logos/logo-lp(14).png",
@@ -981,12 +980,12 @@ function LogoMarquee() {
                         children: "Brands That Trust Our Work"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/logo-marquee.tsx",
-                        lineNumber: 40,
+                        lineNumber: 39,
                         columnNumber: 16
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/logo-marquee.tsx",
-                    lineNumber: 39,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1000,17 +999,17 @@ function LogoMarquee() {
                                 logo: logo
                             }, i, false, {
                                 fileName: "[project]/src/components/web/logo-marquee.tsx",
-                                lineNumber: 50,
+                                lineNumber: 49,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/logo-marquee.tsx",
-                        lineNumber: 48,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/logo-marquee.tsx",
-                    lineNumber: 47,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1024,28 +1023,28 @@ function LogoMarquee() {
                                 logo: logo
                             }, i, false, {
                                 fileName: "[project]/src/components/web/logo-marquee.tsx",
-                                lineNumber: 59,
+                                lineNumber: 58,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/logo-marquee.tsx",
-                        lineNumber: 57,
+                        lineNumber: 56,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/logo-marquee.tsx",
-                    lineNumber: 56,
+                    lineNumber: 55,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/logo-marquee.tsx",
-            lineNumber: 36,
+            lineNumber: 35,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/logo-marquee.tsx",
-        lineNumber: 32,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -1058,12 +1057,12 @@ function LogoCard({ logo }) {
             className: "h-full w-full object-contain"
         }, void 0, false, {
             fileName: "[project]/src/components/web/logo-marquee.tsx",
-            lineNumber: 94,
+            lineNumber: 93,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/logo-marquee.tsx",
-        lineNumber: 71,
+        lineNumber: 70,
         columnNumber: 5
     }, this);
 }
@@ -2496,16 +2495,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$
 ;
 const outcomes = [
     {
-        value: "2.9x",
-        label: "more enquiries in 90 days"
+        number: "01",
+        value: "Fast",
+        label: "Performance-first development"
     },
     {
-        value: "-61%",
-        label: "drop in bounce rate"
+        number: "02",
+        value: "Search-ready",
+        label: "Technical SEO built in"
     },
     {
-        value: "1.4s",
-        label: "largest contentful paint"
+        number: "03",
+        value: "Conversion-focused",
+        label: "UX designed around action"
+    },
+    {
+        number: "04",
+        value: "Growth-ready",
+        label: "Analytics, tracking & integrations"
     }
 ];
 function Transformation() {
@@ -2552,7 +2559,7 @@ function Transformation() {
                                     children: "Website redesign"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 46,
+                                    lineNumber: 47,
                                     columnNumber: 5
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2565,20 +2572,20 @@ function Transformation() {
                                             children: "Very different"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 50,
+                                            lineNumber: 51,
                                             columnNumber: 7
                                         }, this),
                                         " first impression."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 48,
+                                    lineNumber: 49,
                                     columnNumber: 5
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 3
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -2588,18 +2595,18 @@ function Transformation() {
                                 children: "Most businesses don't have a traffic problem, they have a credibility problem. Drag the handle to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 55,
+                                lineNumber: 56,
                                 columnNumber: 5
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 54,
+                            lineNumber: 55,
                             columnNumber: 3
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 44,
+                    lineNumber: 45,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -2613,7 +2620,7 @@ function Transformation() {
                         className: "border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/assets/after2.png",
+                                src: "/assets/after.png",
                                 alt: "Modern redesigned website after the Bombay Blokes rebuild",
                                 width: 1200,
                                 height: 800,
@@ -2621,7 +2628,7 @@ function Transformation() {
                                 className: "absolute inset-0 h-full w-full object-git object-top"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 73,
+                                lineNumber: 74,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2635,15 +2642,15 @@ function Transformation() {
                                     width: 1200,
                                     height: 800,
                                     loading: "lazy",
-                                    className: "absolute inset-0 h-full w-full object-fit object-top"
+                                    className: "absolute inset-0 h-full w-full object-cover object-top"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 85,
+                                    lineNumber: 86,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 81,
+                                lineNumber: 82,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2651,7 +2658,7 @@ function Transformation() {
                                 children: "Before"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 95,
+                                lineNumber: 96,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2659,7 +2666,7 @@ function Transformation() {
                                 children: "After"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 98,
+                                lineNumber: 99,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2673,78 +2680,93 @@ function Transformation() {
                                         className: "h-4 w-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 107,
+                                        lineNumber: 108,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 106,
+                                    lineNumber: 107,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 102,
+                                lineNumber: 103,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 64,
+                    lineNumber: 65,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-8 grid gap-4 sm:grid-cols-3",
+                    className: "mt-8 grid gap-4 sm:grid-cols-4",
                     children: outcomes.map((o, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
                             delay: i * 80,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "border-border bg-card h-full rounded-2xl border p-5",
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mb-5 flex items-center justify-between",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-grey text-xs font-bold tracking-wider",
+                                            children: o.number
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/web/transformation.tsx",
+                                            lineNumber: 119,
+                                            columnNumber: 9
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/web/transformation.tsx",
+                                        lineNumber: 118,
+                                        columnNumber: 7
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "font-display text-[30px] leading-none font-extrabold",
                                         children: o.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 117,
-                                        columnNumber: 17
+                                        lineNumber: 124,
+                                        columnNumber: 7
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-grey mt-2 text-sm",
                                         children: o.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 118,
-                                        columnNumber: 17
+                                        lineNumber: 128,
+                                        columnNumber: 7
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 116,
-                                columnNumber: 15
+                                lineNumber: 117,
+                                columnNumber: 5
                             }, this)
                         }, o.value, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 115,
-                            columnNumber: 13
+                            lineNumber: 116,
+                            columnNumber: 3
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 113,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/transformation.tsx",
-            lineNumber: 43,
+            lineNumber: 44,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/transformation.tsx",
-        lineNumber: 42,
+        lineNumber: 43,
         columnNumber: 5
     }, this);
 }

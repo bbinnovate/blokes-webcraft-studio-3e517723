@@ -4,9 +4,10 @@ import { MoveHorizontal } from "lucide-react";
 import { Reveal } from "./reveal";
 
 const outcomes = [
-  { value: "2.9x", label: "more enquiries in 90 days" },
-  { value: "-61%", label: "drop in bounce rate" },
-  { value: "1.4s", label: "largest contentful paint" },
+  { number: "01", value: "Fast", label: "Performance-first development" },
+  { number: "02", value: "Search-ready", label: "Technical SEO built in" },
+  { number: "03", value: "Conversion-focused", label: "UX designed around action" },
+  { number: "04", value: "Growth-ready", label: "Analytics, tracking & integrations" },
 ];
 
 export function Transformation() {
@@ -71,7 +72,7 @@ export function Transformation() {
             className="border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]"
           >
             <img
-              src="/assets/after2.png"
+              src="/assets/after.png"
               alt="Modern redesigned website after the Bombay Blokes rebuild"
               width={1200}
               height={800}
@@ -88,7 +89,7 @@ export function Transformation() {
                 width={1200}
                 height={800}
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-fit object-top"
+                className="absolute inset-0 h-full w-full object-cover object-top"
               />
             </div>
 
@@ -110,15 +111,26 @@ export function Transformation() {
           </div>
         </Reveal>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-3">
-          {outcomes.map((o, i) => (
-            <Reveal key={o.value} delay={i * 80}>
-              <div className="border-border bg-card h-full rounded-2xl border p-5">
-                <p className="font-display text-[30px] leading-none font-extrabold">{o.value}</p>
-                <p className="text-grey mt-2 text-sm">{o.label}</p>
-              </div>
-            </Reveal>
-          ))}
+        <div className="mt-8 grid gap-4 sm:grid-cols-4">
+         {outcomes.map((o, i) => (
+  <Reveal key={o.value} delay={i * 80}>
+    <div className="border-border bg-card h-full rounded-2xl border p-5">
+      <div className="mb-5 flex items-center justify-between">
+        <span className="text-grey text-xs font-bold tracking-wider">
+          {o.number}
+        </span>
+      </div>
+
+      <p className="font-display text-[30px] leading-none font-extrabold">
+        {o.value}
+      </p>
+
+      <p className="text-grey mt-2 text-sm">
+        {o.label}
+      </p>
+    </div>
+  </Reveal>
+))}
         </div>
       </div>
     </section>

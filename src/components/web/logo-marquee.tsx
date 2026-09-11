@@ -12,7 +12,6 @@ const logos = [
   "/assets/lp-logos/logo-lp(9).png",
   "/assets/lp-logos/logo-lp(10).png",
 
-  "/assets/lp-logos/logo-lp(11).png",
   "/assets/lp-logos/logo-lp(12).png",
   "/assets/lp-logos/logo-lp(13).png",
   "/assets/lp-logos/logo-lp(14).png",
