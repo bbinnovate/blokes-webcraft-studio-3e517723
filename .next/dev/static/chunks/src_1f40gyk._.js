@@ -269,11 +269,11 @@ const studies = [
         client: "SCS Sports",
         type: "Shopify ecommerce development",
         headline: "A bigger catalogue needs a better experience.",
-        problem: "SCS had a strong product range, but its old storefront was holding the experience back. Outdated design, difficult navigation, weak product discovery and poor mobile performance made it harder for customers to find and buy the right gear.",
+        problem: "SCS had a strong product range, but its old storefront made products harder to discover and shop. We rebuilt the experience around better navigation, mobile UX and performance.",
         did: [
-            "Rebuilt the Shopify 2.0 storefront with a completely new visual direction and custom theme",
-            "Restructured the shopping experience with improved navigation, collections, search, filters, product pages and personalisation",
-            "Optimised the entire experience for mobile, speed, custom functionality, integrations and conversion"
+            "Rebuilt the Shopify 2.0 storefront with a new visual direction",
+            "Improved navigation, collections, search, filters and product discovery",
+            "Optimised mobile performance, custom functionality and integrations"
         ],
         stats: [
             {
@@ -282,7 +282,7 @@ const studies = [
             },
             {
                 k: "Custom UX",
-                v: "Search, filters & personalisation"
+                v: "Search, filters & discovery"
             },
             {
                 k: "Performance",
@@ -295,23 +295,23 @@ const studies = [
         client: "Mr. Blox",
         type: "Custom Shopify website development",
         headline: "A new toy brand, built to spark curiosity.",
-        problem: "Mr. Blox was launching with no existing website — so we built its digital storefront from the ground up. The challenge was to turn a playful, product-led brand into an ecommerce experience that could communicate its products, their learning benefits and their unique playability while making shopping simple for parents.",
+        problem: "Mr. Blox was launching without an existing website, so we built its ecommerce experience from scratch. The focus was on bringing its playful identity, products and learning benefits together in a simple shopping journey.",
         did: [
-            "Designed the complete UI/UX and custom frontend to bring the playful Mr. Blox identity into the digital experience",
-            "Built the Shopify 2.0 storefront from scratch, with custom Liquid development, product discovery, search and filtering",
-            "Connected the entire ecommerce experience with payment, shipping, third-party integrations, performance optimisation and Klaviyo"
+            "Designed the complete UI/UX and custom frontend",
+            "Built the Shopify 2.0 store with custom Liquid development",
+            "Integrated payments, shipping, third-party tools and Klaviyo"
         ],
         stats: [
             {
                 k: "Built from scratch",
-                v: "UI/UX + Custom frontend"
+                v: "UI/UX + custom frontend"
             },
             {
                 k: "Shopify 2.0",
                 v: "Liquid development"
             },
             {
-                k: "Ecommerce ready",
+                k: "Ecommerce",
                 v: "Payments, shipping & Klaviyo"
             }
         ]
@@ -319,13 +319,13 @@ const studies = [
     {
         img: "/assets/SuperSoxnew.jpg",
         client: "SuperSox",
-        type: "Custom Shopify website development",
-        headline: "From everyday essential to everyday experience.",
-        problem: "A growing brand needed a storefront built for its next stage. SuperSox needed a completely new digital storefront that could bring its product range, brand story and shopping experience together. We designed and developed the website from the ground up, creating a more structured and scalable ecommerce experience across discovery, product selection and checkout.",
+        type: "Shopify ecommerce development",
+        headline: "From brand to checkout, built from scratch.",
+        problem: "SuperSox needed a completely new digital storefront to bring its products, brand and shopping experience together. We designed and developed the entire ecommerce experience with scalability, discovery and performance in mind.",
         did: [
-            "Designed the complete UI/UX and ecommerce experience, translating the SuperSox brand into a clean, product-led digital storefront",
-            "Built the Shopify 2.0 website from scratch with custom Liquid development, search, filtering and a custom cart experience",
-            "Built the commerce infrastructure around it with payment and shipping integrations, WhatsApp, Klaviyo, analytics, tracking, SEO migration and performance optimisation"
+            "Designed the complete UI/UX and ecommerce experience",
+            "Built Shopify 2.0 with custom Liquid, search, filters and cart",
+            "Integrated payments, shipping, WhatsApp, Klaviyo, SEO and analytics"
         ],
         stats: [
             {
@@ -338,7 +338,7 @@ const studies = [
             },
             {
                 k: "Growth Ready",
-                v: "SEO, analytics, Klaviyo & tracking"
+                v: "SEO, analytics & integrations"
             }
         ]
     }
@@ -353,7 +353,7 @@ function CaseStudies() {
                 className: "block scroll-mt-24"
             }, void 0, false, {
                 fileName: "[project]/src/components/web/case-studies.tsx",
-                lineNumber: 114,
+                lineNumber: 84,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -370,7 +370,7 @@ function CaseStudies() {
                                             children: "Selected work"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/case-studies.tsx",
-                                            lineNumber: 119,
+                                            lineNumber: 89,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -382,19 +382,19 @@ function CaseStudies() {
                                                     children: " Here's proof."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 121,
+                                                    lineNumber: 91,
                                                     columnNumber: 44
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/case-studies.tsx",
-                                            lineNumber: 120,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 88,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -402,18 +402,18 @@ function CaseStudies() {
                                     children: "Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/case-studies.tsx",
-                            lineNumber: 117,
+                            lineNumber: 87,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 116,
+                        lineNumber: 86,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -437,12 +437,12 @@ function CaseStudies() {
                                                     className: "h-[240px] w-full object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] lg:h-full lg:min-h-[420px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 136,
+                                                    lineNumber: 106,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 135,
+                                                lineNumber: 105,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -460,20 +460,20 @@ function CaseStudies() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 147,
+                                                                lineNumber: 117,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
                                                                 className: "text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 150,
+                                                                lineNumber: 120,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 146,
+                                                        lineNumber: 116,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -481,7 +481,7 @@ function CaseStudies() {
                                                         children: s.headline
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 152,
+                                                        lineNumber: 122,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -489,7 +489,7 @@ function CaseStudies() {
                                                         children: s.client
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 153,
+                                                        lineNumber: 123,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -497,7 +497,7 @@ function CaseStudies() {
                                                         children: s.problem
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 124,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -509,19 +509,19 @@ function CaseStudies() {
                                                                         className: "bg-accent-yellow mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 158,
+                                                                        lineNumber: 128,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     d
                                                                 ]
                                                             }, d, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 157,
+                                                                lineNumber: 127,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 155,
+                                                        lineNumber: 125,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -533,7 +533,7 @@ function CaseStudies() {
                                                                         children: st.k
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 166,
+                                                                        lineNumber: 136,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -541,57 +541,57 @@ function CaseStudies() {
                                                                         children: st.v
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 169,
+                                                                        lineNumber: 139,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, st.v, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 165,
+                                                                lineNumber: 135,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 163,
+                                                        lineNumber: 133,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 115,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                        lineNumber: 134,
+                                        lineNumber: 104,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 103,
                                     columnNumber: 15
                                 }, this)
                             }, s.client, false, {
                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                lineNumber: 132,
+                                lineNumber: 102,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 130,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/case-studies.tsx",
-                lineNumber: 115,
+                lineNumber: 85,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 113,
+        lineNumber: 83,
         columnNumber: 5
     }, this);
 }
@@ -656,12 +656,12 @@ function StickyCard({ children, index, total }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/web/case-studies.tsx",
-            lineNumber: 228,
+            lineNumber: 198,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 224,
+        lineNumber: 194,
         columnNumber: 5
     }, this);
 }
@@ -2671,7 +2671,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$move$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoveHorizontal$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/move-horizontal.js [app-client] (ecmascript) <export default as MoveHorizontal>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-down.js [app-client] (ecmascript) <export default as ArrowDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/web/reveal.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -2701,45 +2701,144 @@ const outcomes = [
         label: "Analytics, tracking & integrations"
     }
 ];
-function Transformation() {
+function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
     _s();
-    const [pos, setPos] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(52);
-    const trackRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
-    const dragging = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
-    const setFromClientX = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
-        "Transformation.useCallback[setFromClientX]": (clientX)=>{
-            const el = trackRef.current;
-            if (!el) return;
-            const rect = el.getBoundingClientRect();
-            const next = (clientX - rect.left) / rect.width * 100;
-            setPos(Math.min(98, Math.max(2, next)));
+    const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [maxScroll, setMaxScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(8);
+    const calculateScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "ScrollCard.useCallback[calculateScroll]": ()=>{
+            if (!containerRef.current || !imgRef.current) return 0;
+            const containerH = containerRef.current.clientHeight;
+            const containerW = containerRef.current.clientWidth;
+            const img = imgRef.current;
+            let fullHeight = img.offsetHeight || img.clientHeight;
+            if (img.naturalWidth && img.naturalHeight && containerW) {
+                const calculatedH = img.naturalHeight * containerW / img.naturalWidth;
+                fullHeight = Math.max(fullHeight, calculatedH);
+            }
+            if (fullHeight > containerH + 10) {
+                const dist = fullHeight - containerH;
+                setMaxScroll(dist);
+                // Speed: ~300px per second, duration between 4s and 16s
+                const calculatedDuration = Math.max(4, Math.min(16, dist / 300));
+                setDuration(calculatedDuration);
+                return dist;
+            } else {
+                setMaxScroll(0);
+                return 0;
+            }
         }
-    }["Transformation.useCallback[setFromClientX]"], []);
+    }["ScrollCard.useCallback[calculateScroll]"], []);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Transformation.useEffect": ()=>{
-            const move = {
-                "Transformation.useEffect.move": (e)=>{
-                    if (!dragging.current) return;
-                    setFromClientX(e.clientX);
-                }
-            }["Transformation.useEffect.move"];
-            const up = {
-                "Transformation.useEffect.up": ()=>{
-                    dragging.current = false;
-                }
-            }["Transformation.useEffect.up"];
-            window.addEventListener("pointermove", move);
-            window.addEventListener("pointerup", up);
+        "ScrollCard.useEffect": ()=>{
+            calculateScroll();
+            window.addEventListener("resize", calculateScroll);
             return ({
-                "Transformation.useEffect": ()=>{
-                    window.removeEventListener("pointermove", move);
-                    window.removeEventListener("pointerup", up);
-                }
-            })["Transformation.useEffect"];
+                "ScrollCard.useEffect": ()=>window.removeEventListener("resize", calculateScroll)
+            })["ScrollCard.useEffect"];
         }
-    }["Transformation.useEffect"], [
-        setFromClientX
+    }["ScrollCard.useEffect"], [
+        calculateScroll
     ]);
+    const handleMouseEnter = ()=>{
+        const dist = calculateScroll();
+        setIsHovered(true);
+    };
+    const handleMouseLeave = ()=>{
+        setIsHovered(false);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col gap-3",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center justify-between px-1",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: `inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold shadow-xs ${badgeBg}`,
+                        children: badgeText
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/transformation.tsx",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "text-grey text-xs font-medium",
+                        children: subtitle
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/transformation.tsx",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/web/transformation.tsx",
+                lineNumber: 71,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                ref: containerRef,
+                onMouseEnter: handleMouseEnter,
+                onMouseLeave: handleMouseLeave,
+                onTouchStart: handleMouseEnter,
+                className: "group relative h-[460px] sm:h-[540px] lg:h-[600px] w-full overflow-hidden rounded-[26px] border border-border bg-card shadow-xs transition-all duration-300 hover:border-primary/40 hover:shadow-lg cursor-pointer select-none",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        ref: imgRef,
+                        src: src,
+                        alt: alt,
+                        onLoad: calculateScroll,
+                        className: "w-full h-auto block transform-gpu transition-transform ease-in-out",
+                        style: {
+                            transform: isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+                            transitionDuration: isHovered ? `${duration}s` : "2.5s"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/transformation.tsx",
+                        lineNumber: 88,
+                        columnNumber: 9
+                    }, this),
+                    maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute bottom-4 right-4 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-3 py-1.5 text-[11px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover:opacity-40 shadow-xs",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__["ArrowDown"], {
+                                className: "h-3 w-3 animate-bounce text-primary"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/web/transformation.tsx",
+                                lineNumber: 103,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "Hover to scroll"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/web/transformation.tsx",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/web/transformation.tsx",
+                        lineNumber: 102,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/web/transformation.tsx",
+                lineNumber: 81,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/web/transformation.tsx",
+        lineNumber: 69,
+        columnNumber: 5
+    }, this);
+}
+_s(ScrollCard, "bKwH57Sd/VSSDonggmoFOtvhK5g=");
+_c = ScrollCard;
+function Transformation() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "section-3",
         className: "py-6 sm:py-8 lg:py-8",
@@ -2756,8 +2855,8 @@ function Transformation() {
                                     children: "Website redesign"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 47,
-                                    columnNumber: 5
+                                    lineNumber: 118,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "mt-3 text-[32px] leading-[1.06] sm:text-[42px]",
@@ -2769,136 +2868,79 @@ function Transformation() {
                                             children: "Very different"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 51,
-                                            columnNumber: 7
+                                            lineNumber: 122,
+                                            columnNumber: 15
                                         }, this),
                                         " first impression."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 49,
-                                    columnNumber: 5
+                                    lineNumber: 120,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 46,
-                            columnNumber: 3
+                            lineNumber: 117,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
                             delay: 80,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-ink-soft w-full text-[15px] leading-relaxed",
-                                children: "Most businesses don't have a traffic problem, they have a credibility problem. Drag the handle to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
+                                children: "Most businesses don't have a traffic problem, they have a credibility problem. Hover over each preview to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 56,
-                                columnNumber: 5
+                                lineNumber: 127,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 55,
-                            columnNumber: 3
+                            lineNumber: 126,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 45,
+                    lineNumber: 116,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
                     delay: 120,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        ref: trackRef,
-                        onPointerDown: (e)=>{
-                            dragging.current = true;
-                            setFromClientX(e.clientX);
-                        },
-                        className: "border-border bg-card relative mt-10 aspect-[16/10] w-full cursor-ew-resize touch-none overflow-hidden rounded-[26px] border select-none sm:aspect-[16/9]",
+                        className: "mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                src: "/assets/after.png",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScrollCard, {
+                                src: "/assets/beforenew.png",
+                                alt: "Outdated website before the redesign",
+                                badgeText: "BEFORE",
+                                badgeBg: "bg-ink text-primary-foreground",
+                                subtitle: "Outdated Design"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/web/transformation.tsx",
+                                lineNumber: 139,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScrollCard, {
+                                src: "/assets/afternew.png",
                                 alt: "Modern redesigned website after the Bombay Blokes rebuild",
-                                width: 1200,
-                                height: 800,
-                                loading: "lazy",
-                                className: "absolute inset-0 h-full w-full object-git object-top"
+                                badgeText: "AFTER",
+                                badgeBg: "bg-accent-yellow text-ink font-bold",
+                                subtitle: "Modern Redesign"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 74,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "absolute inset-0",
-                                style: {
-                                    clipPath: `inset(0 ${100 - pos}% 0 0)`
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/assets/before.png",
-                                    alt: "Outdated website before the redesign",
-                                    width: 1200,
-                                    height: 800,
-                                    loading: "lazy",
-                                    className: "absolute inset-0 h-full w-full object-cover object-top"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 86,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 82,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "bg-ink text-primary-foreground absolute top-4 left-4 rounded-full px-3 py-1 text-[11px] font-bold",
-                                children: "Before"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 96,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "bg-accent-yellow text-ink absolute top-4 right-4 rounded-full px-3 py-1 text-[11px] font-bold",
-                                children: "After"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 99,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-accent-yellow absolute inset-y-0 w-[3px]",
-                                style: {
-                                    left: `${pos}%`
-                                },
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "bg-accent-yellow text-ink absolute top-1/2 left-1/2 grid h-11 w-11 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full shadow-lg",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$move$2d$horizontal$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoveHorizontal$3e$__["MoveHorizontal"], {
-                                        className: "h-4 w-4"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 108,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 107,
-                                    columnNumber: 15
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 103,
+                                lineNumber: 146,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 66,
+                        lineNumber: 138,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 65,
+                    lineNumber: 137,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2915,62 +2957,62 @@ function Transformation() {
                                             children: o.number
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 119,
-                                            columnNumber: 9
+                                            lineNumber: 162,
+                                            columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 118,
-                                        columnNumber: 7
+                                        lineNumber: 161,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "font-display text-[30px] leading-none font-extrabold",
                                         children: o.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 124,
-                                        columnNumber: 7
+                                        lineNumber: 167,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-grey mt-2 text-sm",
                                         children: o.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 128,
-                                        columnNumber: 7
+                                        lineNumber: 171,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 117,
-                                columnNumber: 5
+                                lineNumber: 160,
+                                columnNumber: 15
                             }, this)
                         }, o.value, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 116,
-                            columnNumber: 3
+                            lineNumber: 159,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 114,
+                    lineNumber: 157,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/transformation.tsx",
-            lineNumber: 44,
+            lineNumber: 115,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/transformation.tsx",
-        lineNumber: 43,
+        lineNumber: 114,
         columnNumber: 5
     }, this);
 }
-_s(Transformation, "Rh3ea6c291Br6V1Vyt/eHBVLWxE=");
-_c = Transformation;
-var _c;
-__turbopack_context__.k.register(_c, "Transformation");
+_c1 = Transformation;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "ScrollCard");
+__turbopack_context__.k.register(_c1, "Transformation");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
