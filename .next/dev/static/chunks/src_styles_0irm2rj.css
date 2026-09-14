@@ -573,6 +573,10 @@
     bottom: 0;
   }
 
+  .bottom-3 {
+    bottom: calc(var(--spacing) * 3);
+  }
+
   .bottom-4 {
     bottom: calc(var(--spacing) * 4);
   }
@@ -599,10 +603,6 @@
 
   .left-2 {
     left: calc(var(--spacing) * 2);
-  }
-
-  .left-4 {
-    left: calc(var(--spacing) * 4);
   }
 
   .left-\[50\%\] {
@@ -836,18 +836,6 @@
     aspect-ratio: 2 / 1.05;
   }
 
-  .aspect-\[3\/4\] {
-    aspect-ratio: 3 / 4;
-  }
-
-  .aspect-\[9\/18\] {
-    aspect-ratio: 9 / 18;
-  }
-
-  .aspect-\[16\/10\] {
-    aspect-ratio: 16 / 10;
-  }
-
   .aspect-square {
     aspect-ratio: 1;
   }
@@ -965,6 +953,18 @@
 
   .h-\[300px\] {
     height: 300px;
+  }
+
+  .h-\[380px\] {
+    height: 380px;
+  }
+
+  .h-\[420px\] {
+    height: 420px;
+  }
+
+  .h-\[440px\] {
+    height: 440px;
   }
 
   .h-\[460px\] {
@@ -1159,12 +1159,8 @@
     width: 1px;
   }
 
-  .w-\[3px\] {
-    width: 3px;
-  }
-
-  .w-\[62\%\] {
-    width: 62%;
+  .w-\[85\%\] {
+    width: 85%;
   }
 
   .w-\[92\%\] {
@@ -1179,8 +1175,8 @@
     width: 120px;
   }
 
-  .w-\[240px\] {
-    width: 240px;
+  .w-\[260px\] {
+    width: 260px;
   }
 
   .w-\[520px\] {
@@ -1283,8 +1279,8 @@
     min-width: 12rem;
   }
 
-  .min-w-\[300px\] {
-    min-width: 300px;
+  .min-w-\[280px\] {
+    min-width: 280px;
   }
 
   .min-w-\[var\(--radix-select-trigger-width\)\] {
@@ -1469,10 +1465,6 @@
 
   .cursor-default {
     cursor: default;
-  }
-
-  .cursor-ew-resize {
-    cursor: ew-resize;
   }
 
   .cursor-pointer {
@@ -1813,6 +1805,16 @@
 
   .border-border {
     border-color: var(--border);
+  }
+
+  .border-border\/40 {
+    border-color: var(--border);
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-border\/40 {
+      border-color: color-mix(in oklab, var(--border) 40%, transparent);
+    }
   }
 
   .border-border\/50 {
@@ -2449,6 +2451,10 @@
 
   .text-\[10\.5px\] {
     font-size: 10.5px;
+  }
+
+  .text-\[10px\] {
+    font-size: 10px;
   }
 
   .text-\[11\.5px\] {
@@ -4197,10 +4203,6 @@
       aspect-ratio: 2 / .95;
     }
 
-    .sm\:aspect-\[16\/9\] {
-      aspect-ratio: 16 / 9;
-    }
-
     .sm\:h-9 {
       height: calc(var(--spacing) * 9);
     }
@@ -4219,6 +4221,14 @@
 
     .sm\:h-\[80px\] {
       height: 80px;
+    }
+
+    .sm\:h-\[480px\] {
+      height: 480px;
+    }
+
+    .sm\:h-\[520px\] {
+      height: 520px;
     }
 
     .sm\:h-\[540px\] {
@@ -4249,8 +4259,16 @@
       width: 18px;
     }
 
+    .sm\:w-\[62\%\] {
+      width: 62%;
+    }
+
     .sm\:w-\[150px\] {
       width: 150px;
+    }
+
+    .sm\:w-\[280px\] {
+      width: 280px;
     }
 
     .sm\:max-w-sm {

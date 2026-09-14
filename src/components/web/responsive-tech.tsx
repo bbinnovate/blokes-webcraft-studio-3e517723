@@ -1,6 +1,6 @@
-"use client"
-import { useState } from "react";
-import { Monitor, Smartphone, Tablet } from "lucide-react";
+"use client";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { ArrowDown, Monitor, Smartphone, Tablet } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
 import { StackCluster } from "./stack-cluster";
@@ -10,30 +10,134 @@ const devices = [
     id: "desktop",
     label: "Desktop",
     icon: Monitor,
-    img: "/assets/dextop.png",
+    img: "/assets/dextopnew.png",
     frameClass: "w-full max-w-[860px] rounded-xl",
-    imgClass: "aspect-[16/10]",
+    viewportHeightClass: "h-[380px] sm:h-[480px]",
     note: "Full-width editorial layout, multi-column grid, hover states.",
   },
   {
     id: "tablet",
     label: "Tablet",
     icon: Tablet,
-    img: "/assets/tab.png",
-    frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
-    imgClass: "aspect-[3/4]",
+    img: "/assets/tabnew.png",
+    frameClass: "w-[85%] sm:w-[62%] min-w-[280px] max-w-[460px] rounded-2xl",
+    viewportHeightClass: "h-[420px] sm:h-[520px]",
     note: "Two-column product grid, larger tap targets, condensed nav.",
   },
   {
     id: "mobile",
     label: "Mobile",
     icon: Smartphone,
-    img: "/assets/mobile.png",
-    frameClass: "w-[240px] rounded-[34px]",
-    imgClass: "aspect-[9/18]",
+    img: "/assets/mobielnew.png",
+    frameClass: "w-[260px] sm:w-[280px] rounded-[34px]",
+    viewportHeightClass: "h-[440px] sm:h-[520px]",
     note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
   },
 ] as const;
+
+type DeviceItem = (typeof devices)[number];
+
+function DeviceScrollFrame({ device }: { device: DeviceItem }) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [maxScroll, setMaxScroll] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [duration, setDuration] = useState(8);
+
+  const calculateScroll = useCallback(() => {
+    if (!containerRef.current || !imgRef.current) return 0;
+    const containerH = containerRef.current.clientHeight;
+    const containerW = containerRef.current.clientWidth;
+    const img = imgRef.current;
+
+    let fullHeight = img.offsetHeight || img.clientHeight;
+    if (img.naturalWidth && img.naturalHeight && containerW) {
+      const calculatedH = (img.naturalHeight * containerW) / img.naturalWidth;
+      fullHeight = Math.max(fullHeight, calculatedH);
+    }
+
+    if (fullHeight > containerH + 10) {
+      const dist = fullHeight - containerH;
+      setMaxScroll(dist);
+      const calculatedDuration = Math.max(4, Math.min(18, dist / 300));
+      setDuration(calculatedDuration);
+      return dist;
+    } else {
+      setMaxScroll(0);
+      return 0;
+    }
+  }, []);
+
+  useEffect(() => {
+    calculateScroll();
+    window.addEventListener("resize", calculateScroll);
+    return () => window.removeEventListener("resize", calculateScroll);
+  }, [calculateScroll]);
+
+  const handleMouseEnter = () => {
+    calculateScroll();
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      className={cn(
+        "border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500 relative group cursor-pointer select-none",
+        device.frameClass
+      )}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleMouseEnter}
+    >
+      {/* Device frame header */}
+      {device.id === "desktop" ? (
+        <div className="border-border bg-secondary flex items-center gap-1.5 border-b px-3 py-2">
+          <span className="bg-grey-light h-2 w-2 rounded-full" />
+          <span className="bg-grey-light h-2 w-2 rounded-full" />
+          <span className="bg-accent-yellow h-2 w-2 rounded-full" />
+        </div>
+      ) : (
+        <div className="flex justify-center py-1.5 bg-secondary border-b border-border/40">
+          <span className="bg-ink/20 h-1.5 w-14 rounded-full" />
+        </div>
+      )}
+
+      {/* Screen Viewport with Scroll on Hover */}
+      <div
+        ref={containerRef}
+        className={cn(
+          "relative overflow-hidden w-full bg-card",
+          device.viewportHeightClass
+        )}
+      >
+        <img
+          ref={imgRef}
+          src={device.img}
+          alt={`Website layout on ${device.label.toLowerCase()}`}
+          onLoad={calculateScroll}
+          className="w-full h-auto block transform-gpu transition-transform ease-in-out"
+          style={{
+            transform:
+              isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+            transitionDuration: isHovered ? `${duration}s` : "2.5s",
+          }}
+        />
+
+        {/* Scroll indicator overlay */}
+        {maxScroll > 0 && (
+          <div className="absolute bottom-3 right-3 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-2.5 py-1 text-[10px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover:opacity-40 shadow-xs">
+            <ArrowDown className="h-3 w-3 animate-bounce text-primary" />
+            <span>Hover to scroll</span>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export function ResponsiveTech() {
   const [active, setActive] = useState<(typeof devices)[number]["id"]>("desktop");
@@ -57,8 +161,8 @@ export function ResponsiveTech() {
                   onClick={() => setActive(d.id)}
                   aria-pressed={active === d.id}
                   className={cn(
-                    "inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all",
-                    active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink",
+                    "inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all cursor-pointer",
+                    active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink"
                   )}
                 >
                   <d.icon className="h-3.5 w-3.5" />
@@ -71,39 +175,12 @@ export function ResponsiveTech() {
 
         <Reveal delay={120}>
           <div className="border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-10">
-            <div
-              key={current.id}
-              className={cn(
-                "border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500",
-                current.frameClass,
-              )}
-            >
-              {current.id === "desktop" ? (
-                <div className="border-border bg-secondary flex items-center gap-1.5 border-b px-3 py-2">
-                  <span className="bg-grey-light h-2 w-2 rounded-full" />
-                  <span className="bg-grey-light h-2 w-2 rounded-full" />
-                  <span className="bg-accent-yellow h-2 w-2 rounded-full" />
-                </div>
-              ) : (
-                <div className="flex justify-center py-1.5">
-                  <span className="bg-ink/20 h-1.5 w-14 rounded-full" />
-                </div>
-              )}
-              <img
-                src={current.img}
-                alt={`Website layout on ${current.label.toLowerCase()}`}
-                width={1200}
-                height={1200}
-                loading="lazy"
-                className={cn("w-full object-fit object-top", current.imgClass)}
-              />
-            </div>
+            <DeviceScrollFrame key={current.id} device={current} />
             <p className="text-grey mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
               <span className="text-ink font-semibold">{current.label}:</span> {current.note}
             </p>
           </div>
         </Reveal>
-
       </div>
 
       <StackCluster />

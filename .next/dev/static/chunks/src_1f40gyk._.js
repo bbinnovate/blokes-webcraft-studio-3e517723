@@ -1431,6 +1431,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-down.js [app-client] (ecmascript) <export default as ArrowDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/monitor.js [app-client] (ecmascript) <export default as Monitor>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/smartphone.js [app-client] (ecmascript) <export default as Smartphone>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tablet$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tablet$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/tablet.js [app-client] (ecmascript) <export default as Tablet>");
@@ -1438,7 +1439,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/web/reveal.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$stack$2d$cluster$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/web/stack-cluster.tsx [app-client] (ecmascript)");
 ;
-var _s = __turbopack_context__.k.signature();
+var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
@@ -1450,32 +1451,186 @@ const devices = [
         id: "desktop",
         label: "Desktop",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"],
-        img: "/assets/dextop.png",
+        img: "/assets/dextopnew.png",
         frameClass: "w-full max-w-[860px] rounded-xl",
-        imgClass: "aspect-[16/10]",
+        viewportHeightClass: "h-[380px] sm:h-[480px]",
         note: "Full-width editorial layout, multi-column grid, hover states."
     },
     {
         id: "tablet",
         label: "Tablet",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tablet$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tablet$3e$__["Tablet"],
-        img: "/assets/tab.png",
-        frameClass: "w-[62%] min-w-[300px] max-w-[460px] rounded-2xl",
-        imgClass: "aspect-[3/4]",
+        img: "/assets/tabnew.png",
+        frameClass: "w-[85%] sm:w-[62%] min-w-[280px] max-w-[460px] rounded-2xl",
+        viewportHeightClass: "h-[420px] sm:h-[520px]",
         note: "Two-column product grid, larger tap targets, condensed nav."
     },
     {
         id: "mobile",
         label: "Mobile",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__["Smartphone"],
-        img: "/assets/mobile.png",
-        frameClass: "w-[240px] rounded-[34px]",
-        imgClass: "aspect-[9/18]",
+        img: "/assets/mobielnew.png",
+        frameClass: "w-[260px] sm:w-[280px] rounded-[34px]",
+        viewportHeightClass: "h-[440px] sm:h-[520px]",
         note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy."
     }
 ];
-function ResponsiveTech() {
+function DeviceScrollFrame({ device }) {
     _s();
+    const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const [maxScroll, setMaxScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(8);
+    const calculateScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useCallback"])({
+        "DeviceScrollFrame.useCallback[calculateScroll]": ()=>{
+            if (!containerRef.current || !imgRef.current) return 0;
+            const containerH = containerRef.current.clientHeight;
+            const containerW = containerRef.current.clientWidth;
+            const img = imgRef.current;
+            let fullHeight = img.offsetHeight || img.clientHeight;
+            if (img.naturalWidth && img.naturalHeight && containerW) {
+                const calculatedH = img.naturalHeight * containerW / img.naturalWidth;
+                fullHeight = Math.max(fullHeight, calculatedH);
+            }
+            if (fullHeight > containerH + 10) {
+                const dist = fullHeight - containerH;
+                setMaxScroll(dist);
+                const calculatedDuration = Math.max(4, Math.min(18, dist / 300));
+                setDuration(calculatedDuration);
+                return dist;
+            } else {
+                setMaxScroll(0);
+                return 0;
+            }
+        }
+    }["DeviceScrollFrame.useCallback[calculateScroll]"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "DeviceScrollFrame.useEffect": ()=>{
+            calculateScroll();
+            window.addEventListener("resize", calculateScroll);
+            return ({
+                "DeviceScrollFrame.useEffect": ()=>window.removeEventListener("resize", calculateScroll)
+            })["DeviceScrollFrame.useEffect"];
+        }
+    }["DeviceScrollFrame.useEffect"], [
+        calculateScroll
+    ]);
+    const handleMouseEnter = ()=>{
+        calculateScroll();
+        setIsHovered(true);
+    };
+    const handleMouseLeave = ()=>{
+        setIsHovered(false);
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500 relative group cursor-pointer select-none", device.frameClass),
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
+        onTouchStart: handleMouseEnter,
+        children: [
+            device.id === "desktop" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "border-border bg-secondary flex items-center gap-1.5 border-b px-3 py-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "bg-grey-light h-2 w-2 rounded-full"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/responsive-tech.tsx",
+                        lineNumber: 99,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "bg-grey-light h-2 w-2 rounded-full"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/responsive-tech.tsx",
+                        lineNumber: 100,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "bg-accent-yellow h-2 w-2 rounded-full"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/responsive-tech.tsx",
+                        lineNumber: 101,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/web/responsive-tech.tsx",
+                lineNumber: 98,
+                columnNumber: 9
+            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex justify-center py-1.5 bg-secondary border-b border-border/40",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "bg-ink/20 h-1.5 w-14 rounded-full"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/web/responsive-tech.tsx",
+                    lineNumber: 105,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/components/web/responsive-tech.tsx",
+                lineNumber: 104,
+                columnNumber: 9
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                ref: containerRef,
+                className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("relative overflow-hidden w-full bg-card", device.viewportHeightClass),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                        ref: imgRef,
+                        src: device.img,
+                        alt: `Website layout on ${device.label.toLowerCase()}`,
+                        onLoad: calculateScroll,
+                        className: "w-full h-auto block transform-gpu transition-transform ease-in-out",
+                        style: {
+                            transform: isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+                            transitionDuration: isHovered ? `${duration}s` : "2.5s"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/web/responsive-tech.tsx",
+                        lineNumber: 117,
+                        columnNumber: 9
+                    }, this),
+                    maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute bottom-3 right-3 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-2.5 py-1 text-[10px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover:opacity-40 shadow-xs",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__["ArrowDown"], {
+                                className: "h-3 w-3 animate-bounce text-primary"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/web/responsive-tech.tsx",
+                                lineNumber: 133,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                children: "Hover to scroll"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/web/responsive-tech.tsx",
+                                lineNumber: 134,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/web/responsive-tech.tsx",
+                        lineNumber: 132,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/web/responsive-tech.tsx",
+                lineNumber: 110,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/web/responsive-tech.tsx",
+        lineNumber: 87,
+        columnNumber: 5
+    }, this);
+}
+_s(DeviceScrollFrame, "bKwH57Sd/VSSDonggmoFOtvhK5g=");
+_c = DeviceScrollFrame;
+function ResponsiveTech() {
+    _s1();
     const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("desktop");
     const current = devices.find((d)=>d.id === active);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1494,7 +1649,7 @@ function ResponsiveTech() {
                                         children: "Responsive by default"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 47,
+                                        lineNumber: 151,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1502,13 +1657,13 @@ function ResponsiveTech() {
                                         children: "Over 70% of your visitors arrive on a phone. We design for them first."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 48,
+                                        lineNumber: 152,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 46,
+                                lineNumber: 150,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1518,36 +1673,36 @@ function ResponsiveTech() {
                                     children: devices.map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setActive(d.id),
                                             "aria-pressed": active === d.id,
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all", active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink"),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all cursor-pointer", active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink"),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(d.icon, {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 64,
+                                                    lineNumber: 168,
                                                     columnNumber: 19
                                                 }, this),
                                                 d.label
                                             ]
                                         }, d.id, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 55,
+                                            lineNumber: 159,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 53,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 52,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 45,
+                        lineNumber: 149,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1555,68 +1710,11 @@ function ResponsiveTech() {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-10",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500", current.frameClass),
-                                    children: [
-                                        current.id === "desktop" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-border bg-secondary flex items-center gap-1.5 border-b px-3 py-2",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "bg-grey-light h-2 w-2 rounded-full"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 83,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "bg-grey-light h-2 w-2 rounded-full"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 84,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "bg-accent-yellow h-2 w-2 rounded-full"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 85,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 82,
-                                            columnNumber: 17
-                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex justify-center py-1.5",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-ink/20 h-1.5 w-14 rounded-full"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                lineNumber: 89,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 88,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: current.img,
-                                            alt: `Website layout on ${current.label.toLowerCase()}`,
-                                            width: 1200,
-                                            height: 1200,
-                                            loading: "lazy",
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("w-full object-fit object-top", current.imgClass)
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 92,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, current.id, true, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DeviceScrollFrame, {
+                                    device: current
+                                }, current.id, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1630,7 +1728,7 @@ function ResponsiveTech() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 180,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -1638,42 +1736,43 @@ function ResponsiveTech() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 179,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                            lineNumber: 73,
+                            lineNumber: 177,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 72,
+                        lineNumber: 176,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 44,
+                lineNumber: 148,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$stack$2d$cluster$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StackCluster"], {}, void 0, false, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 109,
+                lineNumber: 186,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/responsive-tech.tsx",
-        lineNumber: 43,
+        lineNumber: 147,
         columnNumber: 5
     }, this);
 }
-_s(ResponsiveTech, "JcpiH+ZgiinRaOyjYuE4N+bkIIU=");
-_c = ResponsiveTech;
-var _c;
-__turbopack_context__.k.register(_c, "ResponsiveTech");
+_s1(ResponsiveTech, "JcpiH+ZgiinRaOyjYuE4N+bkIIU=");
+_c1 = ResponsiveTech;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "DeviceScrollFrame");
+__turbopack_context__.k.register(_c1, "ResponsiveTech");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
