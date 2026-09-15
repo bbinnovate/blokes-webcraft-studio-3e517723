@@ -3,5 +3,6 @@
   "/_not-found/page": "/_not-found",
   "/api/ads-enquiry/route": "/api/ads-enquiry",
   "/page": "/",
-  "/thank-you/page": "/thank-you"
+  "/thank-you/page": "/thank-you",
+  "/website-development/page": "/website-development"
 }

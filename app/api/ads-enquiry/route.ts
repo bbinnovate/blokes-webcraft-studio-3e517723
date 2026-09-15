@@ -278,6 +278,7 @@ export async function POST(req: Request) {
         "bdm@bombayblokes.com",
         "siddique@bombayblokes.com",
         "aryankuril09@gmail.com",
+        "aryan@bombayblokes.com",
       ];
       await sendOneSignalEmail({
         apiKey: ONE_SIGNAL_API_KEY,

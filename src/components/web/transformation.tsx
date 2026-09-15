@@ -23,7 +23,9 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [maxScroll, setMaxScroll] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [duration, setDuration] = useState(8);
+  const [duration, setDuration] = useState(12);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isInView, setIsInView] = useState(false);
 
   const calculateScroll = useCallback(() => {
     if (!containerRef.current || !imgRef.current) return 0;
@@ -40,8 +42,8 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
     if (fullHeight > containerH + 10) {
       const dist = fullHeight - containerH;
       setMaxScroll(dist);
-      // Speed: ~300px per second, duration between 4s and 16s
-      const calculatedDuration = Math.max(4, Math.min(16, dist / 300));
+      // Speed: ~100px per second, duration between 12s and 25s
+      const calculatedDuration = Math.max(12, Math.min(25, dist / 100));
       setDuration(calculatedDuration);
       return dist;
     } else {
@@ -56,14 +58,39 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
     return () => window.removeEventListener("resize", calculateScroll);
   }, [calculateScroll]);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]) {
+          setIsInView(entries[0].isIntersecting);
+        }
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   const handleMouseEnter = () => {
-    const dist = calculateScroll();
+    calculateScroll();
     setIsHovered(true);
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  const shouldScroll = isHovered || (isMobile && isInView);
 
   return (
     <div className="flex flex-col gap-3">
@@ -92,8 +119,8 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
           onLoad={calculateScroll}
           className="w-full h-auto block transform-gpu transition-transform ease-in-out"
           style={{
-            transform: isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
-            transitionDuration: isHovered ? `${duration}s` : "2.5s",
+            transform: shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+            transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(8, duration * 0.8)}s`,
           }}
         />
 
@@ -101,7 +128,7 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
         {maxScroll > 0 && (
           <div className="absolute bottom-4 right-4 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-3 py-1.5 text-[11px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover:opacity-40 shadow-xs">
             <ArrowDown className="h-3 w-3 animate-bounce text-primary" />
-            <span>Hover to scroll</span>
+            <span>{isMobile ? "Scroll preview" : "Hover to scroll"}</span>
           </div>
         )}
       </div>

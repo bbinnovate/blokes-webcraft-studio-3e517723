@@ -120,7 +120,7 @@ export function CaseStudies() {
                       <ArrowUpRight className="text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </div>
                     <h3 className="mt-3 text-[24px] leading-tight sm:text-[30px]">{s.headline}</h3>
-                    <p className="text-grey mt-1.5 text-[13px] font-semibold">{s.client}</p>
+           
                     <p className="text-ink-soft mt-4 text-[14.5px] leading-relaxed">{s.problem}</p>
                     <ul className="mt-6 space-y-2.5">
                       {s.did.map((d) => (

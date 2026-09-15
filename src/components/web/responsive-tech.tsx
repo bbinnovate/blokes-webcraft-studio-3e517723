@@ -1,6 +1,6 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowDown, Monitor, Smartphone, Tablet } from "lucide-react";
+import { ArrowDown, Monitor, Smartphone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
 import { StackCluster } from "./stack-cluster";
@@ -10,25 +10,17 @@ const devices = [
     id: "desktop",
     label: "Desktop",
     icon: Monitor,
-    img: "/assets/dextopnew.png",
+    img: "/assets/dextopnew2.png",
     frameClass: "w-full max-w-[860px] rounded-xl",
     viewportHeightClass: "h-[380px] sm:h-[480px]",
     note: "Full-width editorial layout, multi-column grid, hover states.",
   },
-  {
-    id: "tablet",
-    label: "Tablet",
-    icon: Tablet,
-    img: "/assets/tabnew.png",
-    frameClass: "w-[85%] sm:w-[62%] min-w-[280px] max-w-[460px] rounded-2xl",
-    viewportHeightClass: "h-[420px] sm:h-[520px]",
-    note: "Two-column product grid, larger tap targets, condensed nav.",
-  },
+
   {
     id: "mobile",
     label: "Mobile",
     icon: Smartphone,
-    img: "/assets/mobielnew.png",
+    img: "/assets/mobilenew2.png",
     frameClass: "w-[260px] sm:w-[280px] rounded-[34px]",
     viewportHeightClass: "h-[440px] sm:h-[520px]",
     note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
@@ -42,7 +34,9 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [maxScroll, setMaxScroll] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [duration, setDuration] = useState(8);
+  const [duration, setDuration] = useState(22);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isInView, setIsInView] = useState(false);
 
   const calculateScroll = useCallback(() => {
     if (!containerRef.current || !imgRef.current) return 0;
@@ -59,7 +53,8 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
     if (fullHeight > containerH + 10) {
       const dist = fullHeight - containerH;
       setMaxScroll(dist);
-      const calculatedDuration = Math.max(4, Math.min(18, dist / 300));
+      // Extra slow speed: ~30px per second, duration between 22s and 45s
+      const calculatedDuration = Math.max(22, Math.min(45, dist / 30));
       setDuration(calculatedDuration);
       return dist;
     } else {
@@ -74,6 +69,29 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
     return () => window.removeEventListener("resize", calculateScroll);
   }, [calculateScroll]);
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]) {
+          setIsInView(entries[0].isIntersecting);
+        }
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, []);
+
   const handleMouseEnter = () => {
     calculateScroll();
     setIsHovered(true);
@@ -82,6 +100,8 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
   const handleMouseLeave = () => {
     setIsHovered(false);
   };
+
+  const shouldScroll = isHovered || (isMobile && isInView);
 
   return (
     <div
@@ -122,8 +142,8 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
           className="w-full h-auto block transform-gpu transition-transform ease-in-out"
           style={{
             transform:
-              isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
-            transitionDuration: isHovered ? `${duration}s` : "2.5s",
+              shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+            transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(18, duration)}s`,
           }}
         />
 
@@ -131,7 +151,7 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
         {maxScroll > 0 && (
           <div className="absolute bottom-3 right-3 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-2.5 py-1 text-[10px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover:opacity-40 shadow-xs">
             <ArrowDown className="h-3 w-3 animate-bounce text-primary" />
-            <span>Hover to scroll</span>
+            <span>{isMobile ? "Scroll preview" : "Hover to scroll"}</span>
           </div>
         )}
       </div>
@@ -140,7 +160,7 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
 }
 
 export function ResponsiveTech() {
-  const [active, setActive] = useState<(typeof devices)[number]["id"]>("desktop");
+  const [active, setActive] = useState<(typeof devices)[number]["id"]>("mobile");
   const current = devices.find((d) => d.id === active)!;
 
   return (

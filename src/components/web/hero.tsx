@@ -30,9 +30,9 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-5 text-[38px] leading-[1.02] sm:text-[54px] lg:text-[66px]">
-              Websites that sell 
-              <br className="hidden sm:block" /> your business <span className="hl">while you sleep.</span>
-            </h1>
+  Websites that grow
+  <br className="hidden sm:block" /> your business <span className="hl">while you sleep.</span>
+</h1>
           </Reveal>
 
           <Reveal delay={140}>

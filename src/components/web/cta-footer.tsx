@@ -54,13 +54,13 @@ export function CtaFooter() {
       </section>
 
      <footer className="w-full">
-      <div className="mx-auto container py-5 mt-3 ">
+      <div className="mx-auto container py-5 mt-3  lg:mb-0 mb-10">
         {/* Top Section */}
       {/* Top Section */}
 <div className="flex items-center justify-between w-full">
   {/* Logo */}
   <div className="hidden sm:flex justify-start relative">
-    <Link href="/">
+    <Link href="/website-development">
       <Image
         src="/assets/bblogo.webp"
         alt="Bombay Blokes Logo"
@@ -179,9 +179,9 @@ export function CtaFooter() {
 </div>
 
         {/* Bottom Section */}
-     <div className="body4 lg:mt-6 mt-2 border-t pt-4 lg:pt-1 flex flex-col gap-4 md:flex-row md:justify-center md:items-center black-text text-sm">
+<div className="body4 lg:mt-6 mt-2 border-t pt-4 lg:pt-1 flex flex-col gap-4 md:flex-row md:justify-center md:items-center black-text text-sm">
   {/* Copyright */}
-  <p className="text-center mt-2 body4">
+  <p className="text-left lg:text-center lg:mt-2 mt-0 body4">
     Copyright ©{new Date().getFullYear()} Bombay Blokes. All rights
     reserved.
   </p>

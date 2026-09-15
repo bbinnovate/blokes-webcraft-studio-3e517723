@@ -52,6 +52,12 @@
       "regex": "^/thank\\-you(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/thank\\-you(?:/)?$"
+    },
+    {
+      "page": "/website-development",
+      "regex": "^/website\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/website\\-development(?:/)?$"
     }
   ],
   "dataRoutes": [],

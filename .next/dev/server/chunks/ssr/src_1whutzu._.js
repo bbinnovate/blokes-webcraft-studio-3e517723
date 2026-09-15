@@ -442,14 +442,6 @@ function CaseStudies() {
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-grey mt-1.5 text-[13px] font-semibold",
-                                                        children: s.client
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 123,
-                                                        columnNumber: 21
-                                                    }, this),
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                         className: "text-ink-soft mt-4 text-[14.5px] leading-relaxed",
                                                         children: s.problem
                                                     }, void 0, false, {
@@ -1329,7 +1321,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-down.js [app-ssr] (ecmascript) <export default as ArrowDown>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/monitor.js [app-ssr] (ecmascript) <export default as Monitor>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/smartphone.js [app-ssr] (ecmascript) <export default as Smartphone>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tablet$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Tablet$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/tablet.js [app-ssr] (ecmascript) <export default as Tablet>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/utils.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/web/reveal.tsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$stack$2d$cluster$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/web/stack-cluster.tsx [app-ssr] (ecmascript)");
@@ -1345,25 +1336,16 @@ const devices = [
         id: "desktop",
         label: "Desktop",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$monitor$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Monitor$3e$__["Monitor"],
-        img: "/assets/dextopnew.png",
+        img: "/assets/dextopnew2.png",
         frameClass: "w-full max-w-[860px] rounded-xl",
         viewportHeightClass: "h-[380px] sm:h-[480px]",
         note: "Full-width editorial layout, multi-column grid, hover states."
     },
     {
-        id: "tablet",
-        label: "Tablet",
-        icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$tablet$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Tablet$3e$__["Tablet"],
-        img: "/assets/tabnew.png",
-        frameClass: "w-[85%] sm:w-[62%] min-w-[280px] max-w-[460px] rounded-2xl",
-        viewportHeightClass: "h-[420px] sm:h-[520px]",
-        note: "Two-column product grid, larger tap targets, condensed nav."
-    },
-    {
         id: "mobile",
         label: "Mobile",
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$smartphone$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Smartphone$3e$__["Smartphone"],
-        img: "/assets/mobielnew.png",
+        img: "/assets/mobilenew2.png",
         frameClass: "w-[260px] sm:w-[280px] rounded-[34px]",
         viewportHeightClass: "h-[440px] sm:h-[520px]",
         note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy."
@@ -1374,7 +1356,9 @@ function DeviceScrollFrame({ device }) {
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [maxScroll, setMaxScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(8);
+    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(22);
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isInView, setIsInView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const calculateScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
         if (!containerRef.current || !imgRef.current) return 0;
         const containerH = containerRef.current.clientHeight;
@@ -1388,7 +1372,8 @@ function DeviceScrollFrame({ device }) {
         if (fullHeight > containerH + 10) {
             const dist = fullHeight - containerH;
             setMaxScroll(dist);
-            const calculatedDuration = Math.max(4, Math.min(18, dist / 300));
+            // Extra slow speed: ~30px per second, duration between 22s and 45s
+            const calculatedDuration = Math.max(22, Math.min(45, dist / 30));
             setDuration(calculatedDuration);
             return dist;
         } else {
@@ -1403,6 +1388,26 @@ function DeviceScrollFrame({ device }) {
     }, [
         calculateScroll
     ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const checkMobile = ()=>{
+            setIsMobile(window.innerWidth < 768);
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return ()=>window.removeEventListener("resize", checkMobile);
+    }, []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!containerRef.current) return;
+        const observer = new IntersectionObserver((entries)=>{
+            if (entries[0]) {
+                setIsInView(entries[0].isIntersecting);
+            }
+        }, {
+            threshold: 0.25
+        });
+        observer.observe(containerRef.current);
+        return ()=>observer.disconnect();
+    }, []);
     const handleMouseEnter = ()=>{
         calculateScroll();
         setIsHovered(true);
@@ -1410,6 +1415,7 @@ function DeviceScrollFrame({ device }) {
     const handleMouseLeave = ()=>{
         setIsHovered(false);
     };
+    const shouldScroll = isHovered || isMobile && isInView;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["cn"])("border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500 relative group cursor-pointer select-none", device.frameClass),
         onMouseEnter: handleMouseEnter,
@@ -1423,27 +1429,27 @@ function DeviceScrollFrame({ device }) {
                         className: "bg-grey-light h-2 w-2 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 99,
+                        lineNumber: 119,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "bg-grey-light h-2 w-2 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 100,
+                        lineNumber: 120,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "bg-accent-yellow h-2 w-2 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 101,
+                        lineNumber: 121,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 98,
+                lineNumber: 118,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex justify-center py-1.5 bg-secondary border-b border-border/40",
@@ -1451,12 +1457,12 @@ function DeviceScrollFrame({ device }) {
                     className: "bg-ink/20 h-1.5 w-14 rounded-full"
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                    lineNumber: 105,
+                    lineNumber: 125,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 104,
+                lineNumber: 124,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1470,12 +1476,12 @@ function DeviceScrollFrame({ device }) {
                         onLoad: calculateScroll,
                         className: "w-full h-auto block transform-gpu transition-transform ease-in-out",
                         style: {
-                            transform: isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
-                            transitionDuration: isHovered ? `${duration}s` : "2.5s"
+                            transform: shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+                            transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(18, duration)}s`
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 117,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, this),
                     maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1485,37 +1491,37 @@ function DeviceScrollFrame({ device }) {
                                 className: "h-3 w-3 animate-bounce text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 133,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Hover to scroll"
+                                children: isMobile ? "Scroll preview" : "Hover to scroll"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 134,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 132,
+                        lineNumber: 152,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 110,
+                lineNumber: 130,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/responsive-tech.tsx",
-        lineNumber: 87,
+        lineNumber: 107,
         columnNumber: 5
     }, this);
 }
 function ResponsiveTech() {
-    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("desktop");
+    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("mobile");
     const current = devices.find((d)=>d.id === active);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "py-6 sm:py-8 lg:py-8",
@@ -1533,7 +1539,7 @@ function ResponsiveTech() {
                                         children: "Responsive by default"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 171,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1541,13 +1547,13 @@ function ResponsiveTech() {
                                         children: "Over 70% of your visitors arrive on a phone. We design for them first."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 172,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 150,
+                                lineNumber: 170,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1563,30 +1569,30 @@ function ResponsiveTech() {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 168,
+                                                    lineNumber: 188,
                                                     columnNumber: 19
                                                 }, this),
                                                 d.label
                                             ]
                                         }, d.id, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 159,
+                                            lineNumber: 179,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 156,
+                                lineNumber: 176,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 149,
+                        lineNumber: 169,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1598,7 +1604,7 @@ function ResponsiveTech() {
                                     device: current
                                 }, current.id, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 178,
+                                    lineNumber: 198,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1612,7 +1618,7 @@ function ResponsiveTech() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 180,
+                                            lineNumber: 200,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -1620,35 +1626,35 @@ function ResponsiveTech() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 179,
+                                    lineNumber: 199,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                            lineNumber: 177,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 176,
+                        lineNumber: 196,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 148,
+                lineNumber: 168,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$stack$2d$cluster$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["StackCluster"], {}, void 0, false, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 186,
+                lineNumber: 206,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/responsive-tech.tsx",
-        lineNumber: 147,
+        lineNumber: 167,
         columnNumber: 5
     }, this);
 }
@@ -1764,7 +1770,7 @@ function SiteNav() {
                 className: "container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5 lg:flex lg:justify-between",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/",
+                        href: "/website-development",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             src: "/assets/bblogo.webp",
                             alt: "Bombay Blokes Logo",
@@ -1801,7 +1807,7 @@ function SiteNav() {
                         className: "flex items-center gap-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: "#quote",
+                                href: "#audit",
                                 className: "bg-ink text-primary-foreground hover:bg-ink-soft hidden rounded-full px-5 py-2.5 text-sm font-semibold transition-all hover:-translate-y-0.5 sm:inline-flex",
                                 children: "Get a free website audit"
                             }, void 0, false, {
@@ -2609,7 +2615,9 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRef"])(null);
     const [maxScroll, setMaxScroll] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [isHovered, setIsHovered] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(8);
+    const [duration, setDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(12);
+    const [isMobile, setIsMobile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [isInView, setIsInView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const calculateScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useCallback"])(()=>{
         if (!containerRef.current || !imgRef.current) return 0;
         const containerH = containerRef.current.clientHeight;
@@ -2623,8 +2631,8 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
         if (fullHeight > containerH + 10) {
             const dist = fullHeight - containerH;
             setMaxScroll(dist);
-            // Speed: ~300px per second, duration between 4s and 16s
-            const calculatedDuration = Math.max(4, Math.min(16, dist / 300));
+            // Speed: ~100px per second, duration between 12s and 25s
+            const calculatedDuration = Math.max(12, Math.min(25, dist / 100));
             setDuration(calculatedDuration);
             return dist;
         } else {
@@ -2639,13 +2647,34 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
     }, [
         calculateScroll
     ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const checkMobile = ()=>{
+            setIsMobile(window.innerWidth < 768);
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return ()=>window.removeEventListener("resize", checkMobile);
+    }, []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        if (!containerRef.current) return;
+        const observer = new IntersectionObserver((entries)=>{
+            if (entries[0]) {
+                setIsInView(entries[0].isIntersecting);
+            }
+        }, {
+            threshold: 0.25
+        });
+        observer.observe(containerRef.current);
+        return ()=>observer.disconnect();
+    }, []);
     const handleMouseEnter = ()=>{
-        const dist = calculateScroll();
+        calculateScroll();
         setIsHovered(true);
     };
     const handleMouseLeave = ()=>{
         setIsHovered(false);
     };
+    const shouldScroll = isHovered || isMobile && isInView;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex flex-col gap-3",
         children: [
@@ -2657,7 +2686,7 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                         children: badgeText
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 72,
+                        lineNumber: 99,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2665,13 +2694,13 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                         children: subtitle
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 77,
+                        lineNumber: 104,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/transformation.tsx",
-                lineNumber: 71,
+                lineNumber: 98,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2688,12 +2717,12 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                         onLoad: calculateScroll,
                         className: "w-full h-auto block transform-gpu transition-transform ease-in-out",
                         style: {
-                            transform: isHovered && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
-                            transitionDuration: isHovered ? `${duration}s` : "2.5s"
+                            transform: shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+                            transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(8, duration * 0.8)}s`
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 88,
+                        lineNumber: 115,
                         columnNumber: 9
                     }, this),
                     maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2703,32 +2732,32 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                                 className: "h-3 w-3 animate-bounce text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 103,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                children: "Hover to scroll"
+                                children: isMobile ? "Scroll preview" : "Hover to scroll"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 104,
+                                lineNumber: 131,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 102,
+                        lineNumber: 129,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/transformation.tsx",
-                lineNumber: 81,
+                lineNumber: 108,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/transformation.tsx",
-        lineNumber: 69,
+        lineNumber: 96,
         columnNumber: 5
     }, this);
 }
@@ -2749,7 +2778,7 @@ function Transformation() {
                                     children: "Website redesign"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 145,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2762,20 +2791,20 @@ function Transformation() {
                                             children: "Very different"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 122,
+                                            lineNumber: 149,
                                             columnNumber: 15
                                         }, this),
                                         " first impression."
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/transformation.tsx",
-                                    lineNumber: 120,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 117,
+                            lineNumber: 144,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -2785,18 +2814,18 @@ function Transformation() {
                                 children: "Most businesses don't have a traffic problem, they have a credibility problem. Hover over each preview to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 127,
+                                lineNumber: 154,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 126,
+                            lineNumber: 153,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 116,
+                    lineNumber: 143,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -2812,7 +2841,7 @@ function Transformation() {
                                 subtitle: "Outdated Design"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 139,
+                                lineNumber: 166,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ScrollCard, {
@@ -2823,18 +2852,18 @@ function Transformation() {
                                 subtitle: "Modern Redesign"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 146,
+                                lineNumber: 173,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 138,
+                        lineNumber: 165,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 137,
+                    lineNumber: 164,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2851,12 +2880,12 @@ function Transformation() {
                                             children: o.number
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 162,
+                                            lineNumber: 189,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 188,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2864,7 +2893,7 @@ function Transformation() {
                                         children: o.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 167,
+                                        lineNumber: 194,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2872,34 +2901,34 @@ function Transformation() {
                                         children: o.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 198,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 160,
+                                lineNumber: 187,
                                 columnNumber: 15
                             }, this)
                         }, o.value, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 159,
+                            lineNumber: 186,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 157,
+                    lineNumber: 184,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/transformation.tsx",
-            lineNumber: 115,
+            lineNumber: 142,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/transformation.tsx",
-        lineNumber: 114,
+        lineNumber: 141,
         columnNumber: 5
     }, this);
 }

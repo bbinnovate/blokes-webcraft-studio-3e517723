@@ -31,7 +31,7 @@ export function SiteNav() {
       )}
     >
       <div className="container grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3.5 lg:flex lg:justify-between">
-        <Link href="/">
+        <Link href="/website-development">
           <Image
             src="/assets/bblogo.webp"
             alt="Bombay Blokes Logo"
@@ -55,7 +55,7 @@ export function SiteNav() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#quote"
+            href="#audit"
             className="bg-ink text-primary-foreground hover:bg-ink-soft hidden rounded-full px-5 py-2.5 text-sm font-semibold transition-all hover:-translate-y-0.5 sm:inline-flex"
           >
             Get a free website audit
