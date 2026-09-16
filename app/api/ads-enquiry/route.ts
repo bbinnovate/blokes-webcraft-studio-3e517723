@@ -293,11 +293,11 @@ export async function POST(req: Request) {
     });
 
     await sendEmail({
-      to: "aryan@bombayblokes.com",
-      // to: ["hello@bombayblokes.com", 
-      //   "bdm@bombayblokes.com", 
-      //   "siddique@bombayblokes.com", 
-      //   "aryankuril09@gmail.com"],
+      // to: "aryan@bombayblokes.com",
+      to: ["hello@bombayblokes.com", 
+        "bdm@bombayblokes.com", 
+        "siddique@bombayblokes.com", 
+        "aryankuril09@gmail.com"],
       subject: `New Lead From - ${formatTitleCase(payload.name || "-")} for Website Development`,
       html: buildAdminEmail(payload),
       fromName: "BB Forms",
