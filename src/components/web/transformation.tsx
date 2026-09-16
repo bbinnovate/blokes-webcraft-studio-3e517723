@@ -164,7 +164,7 @@ export function Transformation() {
         <Reveal delay={120}>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             <ScrollCard
-              src="/assets/beforenew.png"
+              src="/assets/before2.png"
               alt="Outdated website before the redesign"
               badgeText="BEFORE"
               badgeBg="bg-ink text-primary-foreground"

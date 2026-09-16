@@ -8,40 +8,45 @@ const studies = [
     img: "/assets/SCS2.jpg",
     client: "SCS Sports",
     type: "Shopify ecommerce development",
-    headline: "A bigger catalogue needs a better experience.",
+    headline: "A bigger catalogue needed a better experience.",
     problem:
-      "SCS had a strong product range, but its old storefront made products harder to discover and shop. We rebuilt the experience around better navigation, mobile UX and performance.",
+      "SCS’s outdated storefront made discovery, navigation and mobile shopping harder than they needed to be. We rebuilt the Shopify experience around performance and conversion.",
+
     did: [
-      "Rebuilt the Shopify 2.0 storefront with a new visual direction",
-      "Improved navigation, collections, search, filters and product discovery",
-      "Optimised mobile performance, custom functionality and integrations",
+      "Rebuilt Shopify 2.0 storefront",
+      "Improved navigation, search & filters",
+      "Optimised mobile performance & UX",
     ],
+
     stats: [
       { k: "Shopify 2.0", v: "Custom storefront" },
       { k: "Custom UX", v: "Search, filters & discovery" },
       { k: "Performance", v: "Mobile-first optimisation" },
     ],
   },
+
   {
     img: "/assets/MrBloxnew.jpg",
     client: "Mr. Blox",
     type: "Custom Shopify website development",
-    headline: "A new toy brand, built to spark curiosity.",
+    headline: "A new toy brand, built from scratch.",
     problem:
-      "Mr. Blox was launching without an existing website, so we built its ecommerce experience from scratch. The focus was on bringing its playful identity, products and learning benefits together in a simple shopping journey.",
+      "Mr. Blox launched without a website, so we designed and built its ecommerce storefront from the ground up.",
+
     did: [
-      "Designed the complete UI/UX and custom frontend",
-      "Built the Shopify 2.0 store with custom Liquid development",
-      "Integrated payments, shipping, third-party tools and Klaviyo",
+      "Designed complete UI/UX",
+      "Built custom Shopify 2.0 frontend",
+      "Integrated payments, shipping & Klaviyo",
     ],
+
     stats: [
       {
-        k: "Built from scratch",
-        v: "UI/UX + custom frontend",
+        k: "UI/UX + Development",
+        v: "End-to-end build",
       },
       {
         k: "Shopify 2.0",
-        v: "Liquid development",
+        v: "Custom frontend",
       },
       {
         k: "Ecommerce",
@@ -49,30 +54,33 @@ const studies = [
       },
     ],
   },
+
   {
     img: "/assets/SuperSoxnew.jpg",
     client: "SuperSox",
     type: "Shopify ecommerce development",
-    headline: "From brand to checkout, built from scratch.",
+    headline: "A new storefront for a growing brand.",
     problem:
-      "SuperSox needed a completely new digital storefront to bring its products, brand and shopping experience together. We designed and developed the entire ecommerce experience with scalability, discovery and performance in mind.",
+      "SuperSox needed a completely new digital experience. We designed and built a scalable Shopify store from discovery to checkout.",
+
     did: [
-      "Designed the complete UI/UX and ecommerce experience",
-      "Built Shopify 2.0 with custom Liquid, search, filters and cart",
-      "Integrated payments, shipping, WhatsApp, Klaviyo, SEO and analytics",
+      "Designed complete UI/UX",
+      "Built custom Shopify 2.0 experience",
+      "Integrated cart, WhatsApp, Klaviyo & analytics",
     ],
+
     stats: [
       {
         k: "UI/UX + Development",
-        v: "End-to-end ecommerce build",
+        v: "End-to-end build",
       },
       {
         k: "Shopify 2.0",
-        v: "Custom Liquid development",
+        v: "Custom storefront",
       },
       {
         k: "Growth Ready",
-        v: "SEO, analytics & integrations",
+        v: "Analytics & integrations",
       },
     ],
   },
