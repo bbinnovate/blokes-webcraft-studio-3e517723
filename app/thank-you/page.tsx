@@ -6,7 +6,6 @@ import { Check } from "lucide-react";
 import { Toaster } from "@/components/ui/sonner";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import { useSearchParams } from "next/navigation";
 
 /* 🎉 CONFETTI ON PAGE LOAD */
 const shootBottomSideConfetti = async () => {
@@ -45,19 +44,20 @@ const shootBottomSideConfetti = async () => {
 };
 
 export default function ThankYouPage() {
-  const searchParams = useSearchParams();
-
   useEffect(() => {
     shootBottomSideConfetti();
+    const conversionKeyword =
+      new URLSearchParams(window.location.search).get("conversion") ||
+      "website-audit-submitted";
     const trackingWindow = window as Window & {
       dataLayer?: Array<Record<string, string>>;
     };
     trackingWindow.dataLayer = trackingWindow.dataLayer || [];
     trackingWindow.dataLayer.push({
       event: "website_audit_submitted",
-      conversion_keyword: searchParams.get("conversion") || "website-audit-submitted",
+      conversion_keyword: conversionKeyword,
     });
-  }, [searchParams]);
+  }, []);
 
   return (
     <main className="bg-background overflow-x-hidden flex flex-col min-h-screen">
