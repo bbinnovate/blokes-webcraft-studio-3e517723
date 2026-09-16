@@ -1,18 +1,56 @@
 import { NextResponse } from "next/server";
-import { initializeApp, getApps, cert } from "firebase-admin/app";
-import { getFirestore } from "firebase-admin/firestore";
+import { sendEmail } from "@/lib/email-sender";
 
 type EnquiryPayload = {
   name?: string;
   phone?: string;
   email?: string;
+  brand?: string;
   website?: string;
-  service?: string;
+  instagram?: string;
   budget?: string;
+  challenge?: string;
+  goals?: string;
   date?: string;
   time?: string;
   source?: string;
+  service?: string;
+  utm_source?: string;
+  utm_medium?: string;
+  utm_campaign?: string;
+  utm_content?: string;
+  utm_term?: string;
+  utmSource?: string;
+  utmMedium?: string;
+  utmCampaign?: string;
+  utmContent?: string;
+  utmTerm?: string;
 };
+
+function buildEmailBody(payload: EnquiryPayload) {
+  const lines = [
+    "BB Forms — New Audit Request — Bombay Blokes",
+    "",
+    `Name: ${payload.name || "-"}`,
+    `Phone: ${payload.phone || "-"}`,
+    `Email: ${payload.email || "-"}`,
+    `Brand: ${payload.brand || "-"}`,
+    `Website: ${payload.website || "-"}`,
+    `Instagram: ${payload.instagram || "-"}`,
+    `Monthly ad budget: ${payload.budget || "-"}`,
+    `Biggest marketing challenge: ${payload.challenge || "-"}`,
+    `Growth goals: ${payload.goals || "-"}`,
+    `Date: ${payload.date || "-"}`,
+    `Time: ${payload.time || "-"}`,
+    `Source: ${payload.source || "landing-page"}`,
+  ];
+  if (payload.utm_source) lines.push(`UTM Source: ${payload.utm_source}`);
+  if (payload.utm_medium) lines.push(`UTM Medium: ${payload.utm_medium}`);
+  if (payload.utm_campaign) lines.push(`UTM Campaign: ${payload.utm_campaign}`);
+  if (payload.utm_content) lines.push(`UTM Content: ${payload.utm_content}`);
+  if (payload.utm_term) lines.push(`UTM Term: ${payload.utm_term}`);
+  return lines.join("\n");
+}
 
 function escapeHtml(value: string) {
   return value.replace(/[&<>"]/g, (character) => {
@@ -26,8 +64,23 @@ function escapeHtml(value: string) {
   });
 }
 
+function formatTitleCase(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function capitalizeFirstLetter(value: string) {
+  const trimmed = value.trim();
+  return trimmed
+    ? trimmed.charAt(0).toUpperCase() + trimmed.slice(1)
+    : trimmed;
+}
+
 function buildUserEmail(payload: EnquiryPayload) {
-  const name = escapeHtml(payload.name || "there");
+  const name = escapeHtml(formatTitleCase(payload.name || "there"));
+  const brand = escapeHtml(payload.brand || payload.website || payload.instagram || "-");
 
   return `
 <!DOCTYPE html>
@@ -35,23 +88,35 @@ function buildUserEmail(payload: EnquiryPayload) {
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bombay Blokes - Website Audit Request Received</title>
+    <title>Bombay Blokes - Ads Audit Request Received</title>
   </head>
-  <body style="margin:0; padding:0; background:#f5f5f5; color:#222222; font-family:Arial, Helvetica, sans-serif;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f5f5f5; padding:24px 12px;">
-      <tr>
-        <td align="center">
-          <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background:#ffffff; border:2px solid #fab31e; border-radius:20px 20px 0 0; overflow:hidden;">
-            <tr>
-              <td style="padding:32px 32px 24px; background:#fff9eb;">
+<body style="margin:0; padding:0; background:#ffffff; color:#222222; font-family:Arial, Helvetica, sans-serif; text-align:center;">
+<table
+  role="presentation"
+  width="600"
+  cellpadding="0"
+  cellspacing="0"
+  border="0"
+    align="center"
+  style="
+    width:600px;
+    max-width:600px;
+    background:#ffffff url('https://firebasestorage.googleapis.com/v0/b/bombay-blokes-4c284.firebasestorage.app/o/blogimages%2FEmail-Background.png?alt=media&token=01ed6e19-5b99-4969-bcb3-578c02786d26') top center / cover no-repeat;
+    overflow:hidden;
+  "
+>
+  <tr>
+    <td align="center" >
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background:transparent; border:2px solid #fab31e; border-radius:20px 20px 0 0; overflow:hidden;">            <tr>
+<td style="padding:32px 32px 24px; background:transparent;">
                 <p style="margin:0 0 8px; color:#f7b21a; font-size:26px; font-weight:700; line-height:1.2;">Hey ${name},</p>
                 <h1 style="margin:0; color:#111111; font-size:32px; line-height:1.2;">Bombay Blokes here...</h1>
               </td>
             </tr>
             <tr>
-              <td style="padding:28px 32px 12px;">
-                <p style="margin:0; font-size:15px; line-height:23px;">Thanks for requesting your free website audit. Our team has received your details and will review your current website setup.</p>
-                <p style="margin:16px 0 0; font-size:15px; line-height:23px;"><strong>A senior strategist will get in touch within 24 working hours.</strong></p>
+              <td style="padding:0px 32px 12px;">
+                <p style="margin:0; font-size:15px; line-height:23px;">Thanks for requesting your free ads audit. Our team has received your details and will review your current marketing setup.</p>
+                <p style="margin:16px 0 0; font-size:15px; line-height:23px;"><strong>A strategist will get in touch within 24 working hours.</strong></p>
               </td>
             </tr>
             <tr>
@@ -70,9 +135,8 @@ function buildUserEmail(payload: EnquiryPayload) {
                   <tr><td style="padding:5px 0; width:170px;"><strong>Name</strong></td><td style="padding:5px 0;">${name}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Email</strong></td><td style="padding:5px 0;">${escapeHtml(payload.email || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Phone</strong></td><td style="padding:5px 0;">${escapeHtml(payload.phone || "-")}</td></tr>
-                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>Website</strong></td><td style="padding:5px 0; word-break:break-word;">${escapeHtml(payload.website || "-")}</td></tr>
-                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>Service Needed</strong></td><td style="padding:5px 0; word-break:break-word;">${escapeHtml(payload.service || "-")}</td></tr>
-                  <tr><td style="padding:5px 0;"><strong>Approximate Budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
+                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>Brand / link</strong></td><td style="padding:5px 0; word-break:break-word;">${brand}</td></tr>
+                  <tr><td style="padding:5px 0;"><strong>Monthly ad budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
                 </table>
               </td>
             </tr>
@@ -85,7 +149,7 @@ function buildUserEmail(payload: EnquiryPayload) {
               <td style="padding:0 32px 28px;">
                 <h2 style="margin:0 0 10px; font-size:19px; line-height:1.3;">What happens next?</h2>
                 <p style="margin:0; font-size:14px; line-height:22px; color:#444444;">We'll review your enquiry, identify the biggest opportunities, and reach out to discuss the next steps. If we need anything else before the audit, we'll contact you directly.</p>
-                <p style="margin:20px 0 0; font-size:14px; line-height:22px;"><strong>Need to speak sooner?</strong><br /><a href="tel:+919819167856" style="color:#222222; text-decoration:none;">+91 981-916-7856</a> &nbsp;|&nbsp; <a href="mailto:hello@bombayblokes.com" style="color:#222222; text-decoration:none;">hello@bombayblokes.com</a></p>
+                <p style="margin:20px 0 0; font-size:14px; line-height:22px;"><strong>Need to speak sooner?</strong><br /><a href="tel:+919833037816" style="color:#222222; text-decoration:none;">+91 9833037816</a> &nbsp;|&nbsp; <a href="mailto:hello@bombayblokes.com" style="color:#222222; text-decoration:none;">hello@bombayblokes.com</a></p>
                 <p style="margin:24px 0 0; font-size:14px; line-height:22px;">Warm regards,<br /><strong>Bombay Blokes</strong><br /><a href="https://www.bombayblokes.com" style="color:#222222;">bombayblokes.com</a></p>
               </td>
             </tr>
@@ -104,109 +168,26 @@ function buildUserEmail(payload: EnquiryPayload) {
 }
 
 function buildAdminEmail(payload: EnquiryPayload) {
+  const isSocialMediaEnquiry = payload.source === "social-media-hero";
+  const profile = escapeHtml(payload.website || payload.instagram || "-");
+
+  const utmTermLine = payload.utm_term
+    ? `<p><strong>UTM Term:</strong> ${escapeHtml(payload.utm_term)}</p>`
+    : "";
+
   return `
-    <h3>New Website Audit Request</h3>
-    <p><strong>Name:</strong> ${escapeHtml(payload.name || "-")}</p>
+    <h3>BB Forms — New Ads Audit Request</h3>
+    <p><strong>Name:</strong> ${formatTitleCase(payload.name || "-")}</p>
     <p><strong>Phone:</strong> ${escapeHtml(payload.phone || "-")}</p>
     <p><strong>Email:</strong> ${escapeHtml(payload.email || "-")}</p>
-    <p><strong>Website:</strong> ${escapeHtml(payload.website || "-")}</p>
-    <p><strong>Service Needed:</strong> ${escapeHtml(payload.service || "-")}</p>
-    <p><strong>Approximate Budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
+    ${isSocialMediaEnquiry
+      ? `<p><strong>Instagram / website:</strong> ${profile}</p>`
+      : `<p><strong>Brand / website / Instagram:</strong> ${escapeHtml(payload.brand || payload.website || payload.instagram || "-")}</p>`}
+    <p><strong>Monthly ad budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
     <p><strong>Date:</strong> ${escapeHtml(payload.date || "-")}</p>
     <p><strong>Source:</strong> ${escapeHtml(payload.source || "website-audit")}</p>
+    ${utmTermLine}
   `;
-}
-
-async function saveToFirebase(payload: EnquiryPayload) {
-  let saved = false;
-  const serviceAccountStr = process.env['FIREBASE_SERVICE_ACCOUNT'];
-  if (serviceAccountStr) {
-    try {
-      if (!getApps().length) {
-        const serviceAccount = JSON.parse(serviceAccountStr);
-        initializeApp({
-          credential: cert(serviceAccount),
-        });
-      }
-      const db = getFirestore();
-      await db.collection("enquiries").add({
-        ...payload,
-        createdAt: new Date().toISOString(),
-      });
-      console.log("Saved enquiry to Firestore (admin SDK).");
-      saved = true;
-    } catch (err) {
-      console.error("Firebase Admin SDK error:", err);
-    }
-  }
-
-  if (!saved) {
-    const projectId = process.env['NEXT_PUBLIC_FIREBASE_PROJECT_ID'];
-    const apiKey = process.env['NEXT_PUBLIC_FIREBASE_API_KEY'];
-    if (projectId && apiKey) {
-      try {
-        const url = `https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/enquiries?key=${apiKey}`;
-        const fields: Record<string, any> = {};
-        for (const [k, v] of Object.entries(payload)) {
-          fields[k] = { stringValue: String(v ?? "") };
-        }
-        fields["createdAt"] = { stringValue: new Date().toISOString() };
-
-        const res = await fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ fields }),
-        });
-        if (!res.ok) {
-          console.error("Firestore REST save failed:", await res.text());
-        } else {
-          console.log("Saved enquiry to Firestore (REST API).");
-        }
-      } catch (err) {
-        console.error("Firestore REST API error:", err);
-      }
-    }
-  }
-}
-
-async function sendOneSignalEmail({
-  apiKey,
-  appId,
-  toEmails,
-  subject,
-  html,
-}: {
-  apiKey: string;
-  appId: string;
-  toEmails: string[];
-  subject: string;
-  html: string;
-}) {
-  try {
-    const res = await fetch("https://api.onesignal.com/notifications", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-        Authorization: apiKey.startsWith("Basic ") || apiKey.startsWith("Key ") ? apiKey : `Key ${apiKey}`,
-      },
-      body: JSON.stringify({
-        app_id: appId,
-        target_channel: "email",
-        email_subject: subject,
-        email_body: html,
-        include_email_tokens: toEmails,
-      }),
-    });
-
-    if (!res.ok) {
-      const errorText = await res.text();
-      console.error(`OneSignal email to ${toEmails.join(", ")} failed:`, errorText);
-    } else {
-      console.log(`OneSignal email sent successfully to ${toEmails.join(", ")}`);
-    }
-  } catch (err) {
-    console.error(`OneSignal email error for ${toEmails.join(", ")}:`, err);
-  }
 }
 
 export async function POST(req: Request) {
@@ -226,72 +207,129 @@ export async function POST(req: Request) {
     }
 
     const now = new Date();
+
+    const service =
+      body.service?.trim() ||
+      (body.source?.toLowerCase().includes("social")
+        ? "social media"
+        : body.source?.toLowerCase().includes("paid")
+          ? "paid marketing"
+          : body.source?.toLowerCase().includes("performance")
+            ? "performance marketing"
+            : "");
+
+    const utm_source = body.utm_source?.trim() || body.utmSource?.trim() || "";
+    const utm_medium = body.utm_medium?.trim() || body.utmMedium?.trim() || "";
+    const utm_campaign = body.utm_campaign?.trim() || body.utmCampaign?.trim() || "";
+    const utm_content = body.utm_content?.trim() || body.utmContent?.trim() || "";
+    const utm_term = body.utm_term?.trim() || body.utmTerm?.trim() || "";
+
     const payload: EnquiryPayload = {
       name: body.name.trim(),
       phone: body.phone.trim(),
       email: body.email.trim(),
+      brand: body.brand?.trim() || "",
       website: body.website?.trim() || "",
-      service: body.service?.trim() || "",
+      instagram: body.instagram?.trim() || "",
       budget: body.budget?.trim() || "",
+      challenge: body.challenge?.trim() || "",
+      goals: body.goals?.trim() || "",
       date: body.date || now.toLocaleDateString("en-IN", { dateStyle: "medium" }),
       time: body.time || now.toLocaleTimeString("en-IN", { timeStyle: "short" }),
       source: body.source || "website-audit",
+      service,
+      utm_source,
+      utm_medium,
+      utm_campaign,
+      utm_content,
+      utm_term,
+      utmSource: utm_source,
+      utmMedium: utm_medium,
+      utmCampaign: utm_campaign,
+      utmContent: utm_content,
+      utmTerm: utm_term,
     };
 
-    // 1. Save form data in Firebase database
-    await saveToFirebase(payload);
+    console.log("[ADS ENQUIRY PAYLOAD SENT TO WEBHOOK]:", JSON.stringify(payload, null, 2));
 
-    // 2. Save enquiry to Google Sheet if Webhook URL is configured
-    const googleSheetWebhook = process.env['GOOGLE_SHEET_WEBHOOK_URL'];
+    // Save enquiry to Google Sheet
+    const googleSheetWebhook = process.env["GOOGLE_SHEET_WEBHOOK_URL"];
+
     if (googleSheetWebhook) {
       try {
         const sheetResponse = await fetch(googleSheetWebhook, {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+          },
           body: JSON.stringify(payload),
         });
+
         if (!sheetResponse.ok) {
-          console.error("Google Sheet save failed:", await sheetResponse.text());
+          console.error(
+            "Google Sheet save failed:",
+            await sheetResponse.text()
+          );
         }
       } catch (sheetError) {
+        // Do not break the existing enquiry flow
         console.error("Google Sheet error:", sheetError);
       }
     }
 
-    // 3. Send email to both the user and the admin using OneSignal
-    const ONE_SIGNAL_API_KEY = process.env['ONESIGNAL_REST_API_KEY'] || process.env['ONE_SIGNAL_API_KEY'];
-    const ONE_SIGNAL_APP_ID = process.env['NEXT_PUBLIC_ONESIGNAL_APP_ID'] || process.env['ONE_SIGNAL_APP_ID'];
+    const message = buildEmailBody(payload);
+
+    await sendEmail({
+      to: payload.email as string, 
+      subject: `Request Received for a Free Website Development Audit | Bombay Blokes`,
+      html: buildUserEmail(payload),
+      fromName: "Bombay Blokes",
+      fromAddress: "hello@bombayblokes.com",
+    });
+
+    await sendEmail({
+      to: "aryan@bombayblokes.com",
+      // to: ["hello@bombayblokes.com", 
+      //   "bdm@bombayblokes.com", 
+      //   "siddique@bombayblokes.com", 
+      //   "aryankuril09@gmail.com"],
+      subject: `New Lead From - ${formatTitleCase(payload.name || "-")} for Website Development`,
+      html: buildAdminEmail(payload),
+      fromName: "BB Forms",
+      fromAddress: "hello@bombayblokes.com",
+      replyTo: payload.email,
+    });
+
+    const ONE_SIGNAL_API_KEY = process.env["ONE_SIGNAL_API_KEY"];
+    const ONE_SIGNAL_APP_ID = process.env["ONE_SIGNAL_APP_ID"];
+    const ONE_SIGNAL_EMAIL_SEGMENT = process.env["ONE_SIGNAL_EMAIL_SEGMENT"] || "Employees";
 
     if (ONE_SIGNAL_API_KEY && ONE_SIGNAL_APP_ID) {
-      // Send User Email
-      await sendOneSignalEmail({
-        apiKey: ONE_SIGNAL_API_KEY,
-        appId: ONE_SIGNAL_APP_ID,
-        toEmails: [payload.email as string],
-        subject: `Your free ${payload.service} audit request is received | Bombay Blokes`,
-        html: buildUserEmail(payload),
+      const response = await fetch("https://onesignal.com/api/v1/notifications", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+          Authorization: `Basic ${ONE_SIGNAL_API_KEY}`,
+        },
+        body: JSON.stringify({
+          app_id: ONE_SIGNAL_APP_ID,
+          headings: { en: "BB Forms — New Audit Request" },
+          contents: { en: message },
+          included_segments: [ONE_SIGNAL_EMAIL_SEGMENT],
+          data: payload,
+        }),
       });
 
-      // Send Admin Email
-      const adminEmails = [
-        "hello@bombayblokes.com",
-        "bdm@bombayblokes.com",
-        "siddique@bombayblokes.com",
-        "aryankuril09@gmail.com",
-        "aryan@bombayblokes.com",
-      ];
-      await sendOneSignalEmail({
-        apiKey: ONE_SIGNAL_API_KEY,
-        appId: ONE_SIGNAL_APP_ID,
-        toEmails: adminEmails,
-         subject: `New Lead From - ${payload.name} form ${payload.service}`,
-        html: buildAdminEmail(payload),
-      });
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.error("OneSignal notification failed:", errorText);
+      }
     } else {
-      console.warn("OneSignal env vars not configured.");
+      console.warn("OneSignal env vars not configured — enquiry logged only.");
+      console.info(message);
     }
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, data: payload });
   } catch (err) {
     console.error("ads-enquiry error:", err);
     return NextResponse.json(
