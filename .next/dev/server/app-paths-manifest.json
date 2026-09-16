@@ -1,6 +1,5 @@
 {
   "/api/ads-enquiry/route": "app/api/ads-enquiry/route.js",
-  "/page": "app/page.js",
   "/thank-you/page": "app/thank-you/page.js",
   "/website-development/page": "app/website-development/page.js"
 }

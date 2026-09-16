@@ -645,13 +645,21 @@ function LeadForm({ id = "audit" }) {
         e.preventDefault();
         setStatus("loading");
         const formData = new FormData(e.currentTarget);
+        const searchParams = new URLSearchParams(window.location.search);
         const payload = {
             name: formData.get("name"),
             phone: formData.get("phone"),
             email: formData.get("email"),
             website: formData.get("website"),
             service: formData.get("service"),
-            budget: formData.get("budget")
+            budget: formData.get("budget"),
+            // Keep ad attribution with the lead instead of only in the landing-page URL.
+            utm_source: searchParams.get("utm_source") || "",
+            utm_medium: searchParams.get("utm_medium") || "",
+            utm_campaign: searchParams.get("utm_campaign") || "",
+            utm_content: searchParams.get("utm_content") || "",
+            utm_term: searchParams.get("utm_term") || "",
+            gclid: searchParams.get("gclid") || ""
         };
         try {
             const res = await fetch("/api/ads-enquiry", {
@@ -669,7 +677,22 @@ function LeadForm({ id = "audit" }) {
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].success("Request received", {
                 description: "A senior strategist will call you within one working day."
             });
-            router.push("/thank-you");
+            const thankYouParams = new URLSearchParams({
+                conversion: "website-audit-submitted"
+            });
+            // Preserve attribution on the conversion page for GTM/Google Ads and reporting.
+            [
+                "utm_source",
+                "utm_medium",
+                "utm_campaign",
+                "utm_content",
+                "utm_term",
+                "gclid"
+            ].forEach((key)=>{
+                const value = searchParams.get(key);
+                if (value) thankYouParams.set(key, value);
+            });
+            router.push(`/thank-you?${thankYouParams.toString()}`);
         } catch (err) {
             setStatus("idle");
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"].error("Submission failed", {
@@ -693,7 +716,7 @@ function LeadForm({ id = "audit" }) {
                                 children: "Get a free website audit"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 78,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -701,13 +724,13 @@ function LeadForm({ id = "audit" }) {
                                 children: "Tell us where your site is today. We'll send a page-by-page teardown with what's costing you enquiries."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 81,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 77,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -715,13 +738,13 @@ function LeadForm({ id = "audit" }) {
                         children: "Free"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 86,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 76,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             status === "done" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -733,12 +756,12 @@ function LeadForm({ id = "audit" }) {
                             className: "h-5 w-5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 94,
+                            lineNumber: 114,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 93,
+                        lineNumber: 113,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -746,7 +769,7 @@ function LeadForm({ id = "audit" }) {
                         children: "Thanks — we've got it."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 96,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -754,13 +777,13 @@ function LeadForm({ id = "audit" }) {
                         children: "Your audit lands in your inbox within 24 hours, along with a call from a senior strategist."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 97,
+                        lineNumber: 117,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 92,
+                lineNumber: 112,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 onSubmit: onSubmit,
@@ -776,7 +799,7 @@ function LeadForm({ id = "audit" }) {
                                 className: field
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 105,
+                                lineNumber: 125,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -788,13 +811,13 @@ function LeadForm({ id = "audit" }) {
                                 className: field
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 106,
+                                lineNumber: 126,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 104,
+                        lineNumber: 124,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -805,7 +828,7 @@ function LeadForm({ id = "audit" }) {
                         className: field
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 115,
+                        lineNumber: 135,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -814,7 +837,7 @@ function LeadForm({ id = "audit" }) {
                         className: field
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 116,
+                        lineNumber: 136,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -829,20 +852,20 @@ function LeadForm({ id = "audit" }) {
                                 children: "What do you need built?"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 118,
+                                lineNumber: 138,
                                 columnNumber: 13
                             }, this),
                             services.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                     children: s
                                 }, s, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 117,
+                        lineNumber: 137,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -857,20 +880,20 @@ function LeadForm({ id = "audit" }) {
                                 children: "Approximate budget"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 126,
+                                lineNumber: 146,
                                 columnNumber: 13
                             }, this),
                             budgets.map((b)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                     children: b
                                 }, b, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 130,
+                                    lineNumber: 150,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 125,
+                        lineNumber: 145,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -881,7 +904,7 @@ function LeadForm({ id = "audit" }) {
                             className: "h-4 w-4 animate-spin"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 139,
+                            lineNumber: 159,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
@@ -890,18 +913,18 @@ function LeadForm({ id = "audit" }) {
                                     className: "h-4 w-4 transition-transform group-hover:translate-x-1"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 143,
+                                    lineNumber: 163,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 141,
+                            lineNumber: 161,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 133,
+                        lineNumber: 153,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -909,19 +932,19 @@ function LeadForm({ id = "audit" }) {
                         children: "No sales pressure. No spam. Your details stay with our Mumbai team."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 147,
+                        lineNumber: 167,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 103,
+                lineNumber: 123,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/lead-form.tsx",
-        lineNumber: 72,
+        lineNumber: 92,
         columnNumber: 5
     }, this);
 }

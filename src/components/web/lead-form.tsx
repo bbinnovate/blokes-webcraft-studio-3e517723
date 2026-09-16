@@ -28,6 +28,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
     setStatus("loading");
 
     const formData = new FormData(e.currentTarget);
+    const searchParams = new URLSearchParams(window.location.search);
     const payload = {
       name: formData.get("name") as string,
       phone: formData.get("phone") as string,
@@ -35,6 +36,13 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
       website: formData.get("website") as string,
       service: formData.get("service") as string,
       budget: formData.get("budget") as string,
+      // Keep ad attribution with the lead instead of only in the landing-page URL.
+      utm_source: searchParams.get("utm_source") || "",
+      utm_medium: searchParams.get("utm_medium") || "",
+      utm_campaign: searchParams.get("utm_campaign") || "",
+      utm_content: searchParams.get("utm_content") || "",
+      utm_term: searchParams.get("utm_term") || "",
+      gclid: searchParams.get("gclid") || "",
     };
 
     try {
@@ -56,7 +64,19 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
       toast.success("Request received", {
         description: "A senior strategist will call you within one working day.",
       });
-      router.push("/thank-you");
+      const thankYouParams = new URLSearchParams({
+        conversion: "website-audit-submitted",
+      });
+
+      // Preserve attribution on the conversion page for GTM/Google Ads and reporting.
+      ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "gclid"].forEach(
+        (key) => {
+          const value = searchParams.get(key);
+          if (value) thankYouParams.set(key, value);
+        }
+      );
+
+      router.push(`/thank-you?${thankYouParams.toString()}`);
     } catch (err) {
       setStatus("idle");
       toast.error("Submission failed", {

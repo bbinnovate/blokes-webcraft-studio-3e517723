@@ -13,9 +13,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sonner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/sonner.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
+;
 ;
 ;
 ;
@@ -63,17 +65,26 @@ var _s = __turbopack_context__.k.signature();
 };
 function ThankYouPage() {
     _s();
+    const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "ThankYouPage.useEffect": ()=>{
             shootBottomSideConfetti();
+            const trackingWindow = window;
+            trackingWindow.dataLayer = trackingWindow.dataLayer || [];
+            trackingWindow.dataLayer.push({
+                event: "website_audit_submitted",
+                conversion_keyword: searchParams.get("conversion") || "website-audit-submitted"
+            });
         }
-    }["ThankYouPage.useEffect"], []);
+    }["ThankYouPage.useEffect"], [
+        searchParams
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
         className: "bg-background overflow-x-hidden flex flex-col min-h-screen",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$site$2d$nav$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SiteNav"], {}, void 0, false, {
                 fileName: "[project]/app/thank-you/page.tsx",
-                lineNumber: 53,
+                lineNumber: 64,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -113,17 +124,17 @@ function ThankYouPage() {
                                     className: "h-7 w-7"
                                 }, void 0, false, {
                                     fileName: "[project]/app/thank-you/page.tsx",
-                                    lineNumber: 79,
+                                    lineNumber: 90,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/thank-you/page.tsx",
-                                lineNumber: 70,
+                                lineNumber: 81,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/thank-you/page.tsx",
-                            lineNumber: 59,
+                            lineNumber: 70,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
@@ -148,7 +159,7 @@ function ThankYouPage() {
                             children: "Thanks we've got it."
                         }, void 0, false, {
                             fileName: "[project]/app/thank-you/page.tsx",
-                            lineNumber: 84,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -169,40 +180,44 @@ function ThankYouPage() {
                             children: "Your audit lands in your inbox within 24 hours, along with a call from a senior strategist."
                         }, void 0, false, {
                             fileName: "[project]/app/thank-you/page.tsx",
-                            lineNumber: 102,
+                            lineNumber: 113,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/thank-you/page.tsx",
-                    lineNumber: 56,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/thank-you/page.tsx",
-                lineNumber: 55,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$cta$2d$footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CtaFooter"], {}, void 0, false, {
                 fileName: "[project]/app/thank-you/page.tsx",
-                lineNumber: 119,
+                lineNumber: 130,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$sonner$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {
                 position: "top-center"
             }, void 0, false, {
                 fileName: "[project]/app/thank-you/page.tsx",
-                lineNumber: 121,
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/thank-you/page.tsx",
-        lineNumber: 52,
+        lineNumber: 63,
         columnNumber: 5
     }, this);
 }
-_s(ThankYouPage, "OD7bBpZva5O2jO+Puf00hKivP7c=");
+_s(ThankYouPage, "wpYCjx3Iuh0YGg4csUQIo9F8Zhk=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
+    ];
+});
 _c = ThankYouPage;
 var _c;
 __turbopack_context__.k.register(_c, "ThankYouPage");

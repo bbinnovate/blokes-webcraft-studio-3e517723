@@ -86,6 +86,7 @@ function buildEmailBody(payload) {
     if (payload.utm_campaign) lines.push(`UTM Campaign: ${payload.utm_campaign}`);
     if (payload.utm_content) lines.push(`UTM Content: ${payload.utm_content}`);
     if (payload.utm_term) lines.push(`UTM Term: ${payload.utm_term}`);
+    if (payload.gclid) lines.push(`Google Click ID: ${payload.gclid}`);
     return lines.join("\n");
 }
 function escapeHtml(value) {
@@ -196,7 +197,8 @@ function buildUserEmail(payload) {
 function buildAdminEmail(payload) {
     const isSocialMediaEnquiry = payload.source === "social-media-hero";
     const profile = escapeHtml(payload.website || payload.instagram || "-");
-    const utmTermLine = payload.utm_term ? `<p><strong>UTM Term:</strong> ${escapeHtml(payload.utm_term)}</p>` : "";
+    // Keep the email concise; the Sheet retains the complete attribution payload.
+    const utmKeywordLine = payload.utm_term ? `<p><strong>UTM Keyword:</strong> ${escapeHtml(payload.utm_term)}</p>` : "";
     return `
     <h3>BB Forms — New Ads Audit Request</h3>
     <p><strong>Name:</strong> ${formatTitleCase(payload.name || "-")}</p>
@@ -206,7 +208,7 @@ function buildAdminEmail(payload) {
     <p><strong>Monthly ad budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
     <p><strong>Date:</strong> ${escapeHtml(payload.date || "-")}</p>
     <p><strong>Source:</strong> ${escapeHtml(payload.source || "website-audit")}</p>
-    ${utmTermLine}
+    ${utmKeywordLine}
   `;
 }
 async function POST(req) {
@@ -236,6 +238,7 @@ async function POST(req) {
         const utm_campaign = body.utm_campaign?.trim() || body.utmCampaign?.trim() || "";
         const utm_content = body.utm_content?.trim() || body.utmContent?.trim() || "";
         const utm_term = body.utm_term?.trim() || body.utmTerm?.trim() || "";
+        const gclid = body.gclid?.trim() || "";
         const payload = {
             name: body.name.trim(),
             phone: body.phone.trim(),
@@ -263,7 +266,8 @@ async function POST(req) {
             utmMedium: utm_medium,
             utmCampaign: utm_campaign,
             utmContent: utm_content,
-            utmTerm: utm_term
+            utmTerm: utm_term,
+            gclid
         };
         console.log("[ADS ENQUIRY PAYLOAD SENT TO WEBHOOK]:", JSON.stringify(payload, null, 2));
         // Save enquiry to Google Sheet
