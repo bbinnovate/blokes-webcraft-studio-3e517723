@@ -46,16 +46,12 @@ const shootBottomSideConfetti = async () => {
 export default function ThankYouPage() {
   useEffect(() => {
     shootBottomSideConfetti();
-    const conversionKeyword =
-      new URLSearchParams(window.location.search).get("conversion") ||
-      "website-audit-submitted";
     const trackingWindow = window as Window & {
       dataLayer?: Array<Record<string, string>>;
     };
     trackingWindow.dataLayer = trackingWindow.dataLayer || [];
     trackingWindow.dataLayer.push({
-      event: "website_audit_submitted",
-      conversion_keyword: conversionKeyword,
+      event: "website-audit-submitted",
     });
   }, []);
 
