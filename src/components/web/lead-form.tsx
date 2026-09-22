@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
 
 const services = [
   "New website design + build",
@@ -21,7 +20,6 @@ const budgets = [
 
 export function LeadForm({ id = "audit" }: { id?: string }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
-  const router = useRouter();
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -76,7 +74,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
         }
       );
 
-      router.push(`/thank-you?${thankYouParams.toString()}`);
+      window.location.assign(`/thank-you?${thankYouParams.toString()}`);
     } catch (err) {
       setStatus("idle");
       toast.error("Submission failed", {
