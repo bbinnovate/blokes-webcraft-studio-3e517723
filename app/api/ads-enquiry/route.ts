@@ -138,7 +138,7 @@ function buildUserEmail(payload: EnquiryPayload) {
                   <tr><td style="padding:5px 0;"><strong>Email</strong></td><td style="padding:5px 0;">${escapeHtml(payload.email || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Phone</strong></td><td style="padding:5px 0;">${escapeHtml(payload.phone || "-")}</td></tr>
                   <tr><td style="padding:5px 0; vertical-align:top;"><strong>Brand / link</strong></td><td style="padding:5px 0; word-break:break-word;">${brand}</td></tr>
-                  <tr><td style="padding:5px 0;"><strong>Monthly ad budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
+                  <tr><td style="padding:5px 0;"><strong>Budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
                 </table>
               </td>
             </tr>
@@ -186,7 +186,7 @@ function buildAdminEmail(payload: EnquiryPayload) {
     ${isSocialMediaEnquiry
       ? `<p><strong>Instagram / website:</strong> ${profile}</p>`
       : `<p><strong>Brand / website / Instagram:</strong> ${escapeHtml(payload.brand || payload.website || payload.instagram || "-")}</p>`}
-    <p><strong>Monthly ad budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
+    <p><strong>Budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
     <p><strong>Date:</strong> ${escapeHtml(payload.date || "-")}</p>
     <p><strong>Source:</strong> ${escapeHtml(payload.source || "website-audit")}</p>
     ${utmKeywordLine}
