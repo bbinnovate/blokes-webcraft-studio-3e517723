@@ -11,7 +11,14 @@ const stack = [
   { name: "Node.js", note: "APIs & logic", slug: "nodedotjs", ring: 2, t: 0.84, d: "0.3s" },
   { name: "Webflow", note: "Marketing sites", slug: "webflow", ring: 3, t: 0.16, d: "1.2s" },
   { name: "HubSpot", note: "CRM sync", slug: "hubspot", ring: 3, t: 0.39, d: "2.1s" },
-  { name: "Google Analytics", note: "Measurement", slug: "googleanalytics", ring: 3, t: 0.61, d: "1.1s" },
+  {
+    name: "Google Analytics",
+    note: "Measurement",
+    slug: "googleanalytics",
+    ring: 3,
+    t: 0.61,
+    d: "1.1s",
+  },
   { name: "Razorpay", note: "Payments", slug: "razorpay", ring: 3, t: 0.84, d: "1.8s" },
 ];
 
@@ -23,11 +30,12 @@ export function StackCluster() {
       <Reveal className="text-center">
         <p className="eyebrow">Platforms & stack</p>
         <h3 className="mx-auto mt-3 max-w-4xl text-[28px] leading-[1.08] sm:text-[38px]">
-          We pick the platform that fits your business <span className="hl">not the one we like selling.</span>
+          We pick the platform that fits your business{" "}
+          <span className="hl">not the one we like selling.</span>
         </h3>
         <p className="text-ink-soft mx-auto mt-4 max-w-xl text-[15px] leading-relaxed">
-          Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at
-          scale? A custom React build. You own every account, every repo and every login.
+          Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at scale?
+          A custom React build. You own every account, every repo and every login.
         </p>
       </Reveal>
 
@@ -46,7 +54,7 @@ export function StackCluster() {
             aria-hidden
             viewBox="0 0 100 44"
             preserveAspectRatio="none"
-            className="text-grey-light absolute inset-0 h-full w-full"
+            className="text-ink-soft-light absolute inset-0 h-full w-full"
           >
             {[1, 2, 3].map((r) => (
               <path
@@ -87,7 +95,7 @@ export function StackCluster() {
                 </span>
                 <div className="hidden pr-1 whitespace-nowrap sm:block">
                   <p className="font-display text-[12.5px] leading-none font-extrabold">{s.name}</p>
-                  <p className="text-grey mt-1 text-[10.5px] leading-none">{s.note}</p>
+                  <p className="text-ink-soft mt-1 text-[10.5px] leading-none">{s.note}</p>
                 </div>
               </div>
             );
@@ -110,7 +118,7 @@ export function StackCluster() {
           </div>
         </div>
 
-        <p className="text-grey mt-8 text-center text-[12px] sm:hidden">
+        <p className="text-ink-soft mt-8 text-center text-[12px] sm:hidden">
           Shopify · WordPress · Webflow · React · Next.js · Node.js · Razorpay · HubSpot · GA4
         </p>
       </Reveal>

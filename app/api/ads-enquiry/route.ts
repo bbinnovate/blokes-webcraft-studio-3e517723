@@ -138,6 +138,7 @@ function buildUserEmail(payload: EnquiryPayload) {
                   <tr><td style="padding:5px 0;"><strong>Email</strong></td><td style="padding:5px 0;">${escapeHtml(payload.email || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Phone</strong></td><td style="padding:5px 0;">${escapeHtml(payload.phone || "-")}</td></tr>
                   <tr><td style="padding:5px 0; vertical-align:top;"><strong>Brand / link</strong></td><td style="padding:5px 0; word-break:break-word;">${brand}</td></tr>
+                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>What you need to build</strong></td><td style="padding:5px 0;">${escapeHtml(payload.service || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
                 </table>
               </td>
@@ -187,6 +188,7 @@ function buildAdminEmail(payload: EnquiryPayload) {
       ? `<p><strong>Instagram / website:</strong> ${profile}</p>`
       : `<p><strong>Brand / website / Instagram:</strong> ${escapeHtml(payload.brand || payload.website || payload.instagram || "-")}</p>`}
     <p><strong>Budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
+    <p><strong>What you need to build:</strong> ${escapeHtml(payload.service || "-")}</p>
     <p><strong>Date:</strong> ${escapeHtml(payload.date || "-")}</p>
     <p><strong>Source:</strong> ${escapeHtml(payload.source || "website-audit")}</p>
     ${utmKeywordLine}
@@ -293,9 +295,10 @@ export async function POST(req: Request) {
     });
 
     await sendEmail({
-      to: ["hello@bombayblokes.com", 
-        "bdm@bombayblokes.com", 
-        "siddique@bombayblokes.com", 
+      to: [
+        // "hello@bombayblokes.com", 
+        // "bdm@bombayblokes.com", 
+        // "siddique@bombayblokes.com", 
         "aryankuril09@gmail.com"],
       subject: `New Lead From - ${formatTitleCase(payload.name || "-")} for Website Development`,
       html: buildAdminEmail(payload),

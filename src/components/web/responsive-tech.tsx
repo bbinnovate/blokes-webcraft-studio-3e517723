@@ -86,7 +86,7 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
           setIsInView(entries[0].isIntersecting);
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.25 },
     );
     observer.observe(containerRef.current);
     return () => observer.disconnect();
@@ -107,7 +107,7 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
     <div
       className={cn(
         "border-ink/85 bg-card animate-[scale-in_0.45s_cubic-bezier(0.22,1,0.36,1)] overflow-hidden border-[6px] shadow-[0_40px_70px_-45px_rgba(29,29,29,0.55)] transition-all duration-500 relative group cursor-pointer select-none",
-        device.frameClass
+        device.frameClass,
       )}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -129,10 +129,7 @@ function DeviceScrollFrame({ device }: { device: DeviceItem }) {
       {/* Screen Viewport with Scroll on Hover */}
       <div
         ref={containerRef}
-        className={cn(
-          "relative overflow-hidden w-full bg-card",
-          device.viewportHeightClass
-        )}
+        className={cn("relative overflow-hidden w-full bg-card", device.viewportHeightClass)}
       >
         <img
           ref={imgRef}
@@ -182,7 +179,9 @@ export function ResponsiveTech() {
                   aria-pressed={active === d.id}
                   className={cn(
                     "inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all cursor-pointer",
-                    active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink"
+                    active === d.id
+                      ? "bg-ink text-primary-foreground"
+                      : "text-ink-soft hover:text-ink",
                   )}
                 >
                   <d.icon className="h-3.5 w-3.5" />
@@ -196,7 +195,7 @@ export function ResponsiveTech() {
         <Reveal delay={120}>
           <div className="border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-10">
             <DeviceScrollFrame key={current.id} device={current} />
-            <p className="text-grey mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
+            <p className="text-ink-soft mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
               <span className="text-ink font-semibold">{current.label}:</span> {current.note}
             </p>
           </div>

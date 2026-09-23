@@ -1,22 +1,17 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { ArrowRight, Check, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 
 const services = [
-  "New website design + build",
-  "Website redesign",
-  "Shopify / ecommerce store",
-  "Web app or custom platform",
+  "Business / Corporate Website",
+  "E-commerce Website",
+  "Custom Solution /Web Application",
+  "Mobile App",
+  "Landing Page",
 ];
 
-const budgets = [
-  "Under ₹1 lakh",
-  "₹1 – 3 lakh",
-  "₹3 – 8 lakh",
-  "₹8 lakh+",
-  "Not sure yet",
-];
+const budgets = ["Under ₹1 lakh", "₹1 – 3 lakh", "₹3 lakh+", "Not sure yet"];
 
 export function LeadForm({ id = "audit" }: { id?: string }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
@@ -71,7 +66,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
         (key) => {
           const value = searchParams.get(key);
           if (value) thankYouParams.set(key, value);
-        }
+        },
       );
 
       window.location.assign(`/thank-you?${thankYouParams.toString()}`);
@@ -84,7 +79,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
   }
 
   const field =
-    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-ink outline-none transition-all placeholder:text-grey-light focus:border-ink focus:ring-4 focus:ring-accent-yellow/30";
+    "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-ink outline-none transition-all placeholder:text-ink-soft-light focus:border-ink focus:ring-4 focus:ring-accent-yellow/30";
 
   return (
     <div
@@ -94,16 +89,15 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <h2 className="text-[19px] leading-tight font-extrabold sm:text-[21px]">
-            Get a free website audit
+            Get help to grow your business
           </h2>
-          <p className="text-grey mt-1.5 text-[13px] leading-relaxed">
-            Tell us where your site is today. We'll send a page-by-page teardown with what's
-            costing you enquiries.
+          <p className="text-ink-soft mt-1.5 text-[13px] leading-relaxed">
+           Tell us what you’re trying to achieve. We’ll help you figure out the right website, strategy, and next steps for your business.
           </p>
         </div>
-        <span className="bg-accent-yellow text-ink hidden shrink-0 rounded-full px-3 py-1 text-[11px] font-bold sm:block">
+        {/* <span className="bg-accent-yellow text-ink hidden shrink-0 rounded-full px-3 py-1 text-[11px] font-bold sm:block">
           Free
-        </span>
+        </span> */}
       </div>
 
       {status === "done" ? (
@@ -112,7 +106,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
             <Check className="h-5 w-5" />
           </span>
           <p className="font-display mt-4 text-lg font-extrabold">Thanks — we've got it.</p>
-          <p className="text-grey mt-1.5 text-sm">
+          <p className="text-ink-soft mt-1.5 text-sm">
             Your audit lands in your inbox within 24 hours, along with a call from a senior
             strategist.
           </p>
@@ -162,7 +156,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
               </>
             )}
           </button>
-          <p className="text-grey-light text-center text-[11px] leading-relaxed">
+          <p className="text-ink-soft text-center text-[11px] leading-relaxed">
             No sales pressure. No spam. Your details stay with our Mumbai team.
           </p>
         </form>

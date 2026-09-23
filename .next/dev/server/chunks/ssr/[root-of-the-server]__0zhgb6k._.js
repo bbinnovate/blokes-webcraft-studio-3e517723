@@ -408,7 +408,7 @@ function Capabilities() {
                             children: "What we build"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/capabilities.tsx",
-                            lineNumber: 60,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -416,13 +416,13 @@ function Capabilities() {
                             children: "A full-stack web design and development agency, from first sketch to final launch, and everything that keeps it running after."
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/capabilities.tsx",
-                            lineNumber: 61,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/capabilities.tsx",
-                    lineNumber: 59,
+                    lineNumber: 52,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -438,12 +438,12 @@ function Capabilities() {
                                             className: "h-5 w-5"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/capabilities.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 65,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/capabilities.tsx",
-                                        lineNumber: 70,
+                                        lineNumber: 64,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -451,15 +451,15 @@ function Capabilities() {
                                         children: it.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/capabilities.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 67,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-grey mt-2.5 text-[14px] leading-relaxed",
+                                        className: "text-ink-soft mt-2.5 text-[14px] leading-relaxed",
                                         children: it.body
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/capabilities.tsx",
-                                        lineNumber: 74,
+                                        lineNumber: 68,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -469,39 +469,39 @@ function Capabilities() {
                                                 children: t
                                             }, t, false, {
                                                 fileName: "[project]/src/components/web/capabilities.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 71,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/capabilities.tsx",
-                                        lineNumber: 75,
+                                        lineNumber: 69,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/capabilities.tsx",
-                                lineNumber: 69,
+                                lineNumber: 63,
                                 columnNumber: 15
                             }, this)
                         }, it.title, false, {
                             fileName: "[project]/src/components/web/capabilities.tsx",
-                            lineNumber: 68,
+                            lineNumber: 62,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/capabilities.tsx",
-                    lineNumber: 66,
+                    lineNumber: 60,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/web/capabilities.tsx",
-            lineNumber: 58,
+            lineNumber: 51,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/capabilities.tsx",
-        lineNumber: 57,
+        lineNumber: 50,
         columnNumber: 5
     }, this);
 }
@@ -1066,7 +1066,7 @@ function Faq() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-grey mt-4 text-[14.5px] leading-relaxed",
+                            className: "text-ink-soft mt-4 text-[14.5px] leading-relaxed",
                             children: "Still unsure? Ask us on a call — we'll tell you honestly if we're not the right fit."
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/faq.tsx",
@@ -1090,7 +1090,7 @@ function Faq() {
                                 className: "border-border border-b",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$accordion$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["AccordionTrigger"], {
-                                        className: "font-display py-5 text-left text-[16px] font-extrabold hover:no-underline sm:text-[17px]",
+                                        className: "font-display py-5 text-left text-[16px] font-bold hover:no-underline sm:text-[17px]",
                                         children: f.q
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/faq.tsx",
@@ -1098,7 +1098,7 @@ function Faq() {
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$accordion$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["AccordionContent"], {
-                                        className: "text-grey pb-5 text-[14.5px] leading-relaxed",
+                                        className: "text-ink-soft pb-5 text-[14.5px] leading-relaxed",
                                         children: f.a
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/faq.tsx",
@@ -1154,7 +1154,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$
 const proofPills = [
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"],
-        text: "Sites that load under 2 seconds"
+        text: "Designed to help your business grow"
     },
     {
         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"],
@@ -1308,7 +1308,7 @@ function Hero() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-grey mt-1.5 text-[12.5px]",
+                                                    className: "text-ink-soft mt-1.5 text-[15px]",
                                                     children: "4.8 average from 80+ Google reviews"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
@@ -1332,7 +1332,7 @@ function Hero() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-grey text-[12.5px]",
+                                                    className: "text-ink-soft text-[12.5px]",
                                                     children: "Websites launched"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",
@@ -1356,7 +1356,7 @@ function Hero() {
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-grey text-[12.5px]",
+                                                    className: "text-ink-soft text-[12.5px]",
                                                     children: "Typical launch timeline"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/hero.tsx",

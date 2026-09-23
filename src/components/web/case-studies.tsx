@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Reveal } from "./reveal";
@@ -96,11 +96,12 @@ export function CaseStudies() {
             <div>
               <p className="eyebrow">Selected work</p>
               <h2 className="mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]">
-               The website did the selling.<span className="hl"> Here's proof.</span>
+                The website did the selling.<span className="hl"> Here's proof.</span>
               </h2>
             </div>
-            <p className="text-grey text-sm lg:max-w-sm lg:text-right">
-             Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency.
+            <p className="text-ink-soft text-sm lg:max-w-sm lg:text-right">
+              Four live builds designed, developed, and launched end-to-end by our Mumbai web
+              development agency.
             </p>
           </div>
         </Reveal>
@@ -125,10 +126,10 @@ export function CaseStudies() {
                       <p className="eyebrow">
                         {String(i + 1).padStart(2, "0")} — {s.type}
                       </p>
-                      <ArrowUpRight className="text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                      <ArrowUpRight className="text-ink-soft group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                     </div>
                     <h3 className="mt-3 text-[24px] leading-tight sm:text-[30px]">{s.headline}</h3>
-           
+
                     <p className="text-ink-soft mt-4 text-[14.5px] leading-relaxed">{s.problem}</p>
                     <ul className="mt-6 space-y-2.5">
                       {s.did.map((d) => (
@@ -144,7 +145,7 @@ export function CaseStudies() {
                           <dt className="font-display text-[15px] font-extrabold sm:text-[20px]">
                             {st.k}
                           </dt>
-                          <dd className="text-grey mt-1 text-[12px] leading-snug">{st.v}</dd>
+                          <dd className="text-ink-soft mt-1 text-[12px] leading-snug">{st.v}</dd>
                         </div>
                       ))}
                     </dl>

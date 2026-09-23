@@ -14,11 +14,10 @@ interface ScrollCardProps {
   src: string;
   alt: string;
   badgeText: string;
-  badgeBg: string;
   subtitle: string;
 }
 
-function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps) {
+function ScrollCard({ src, alt, badgeText, subtitle }: ScrollCardProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
   const [maxScroll, setMaxScroll] = useState(0);
@@ -32,7 +31,7 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
     const containerH = containerRef.current.clientHeight;
     const containerW = containerRef.current.clientWidth;
     const img = imgRef.current;
-    
+
     let fullHeight = img.offsetHeight || img.clientHeight;
     if (img.naturalWidth && img.naturalHeight && containerW) {
       const calculatedH = (img.naturalHeight * containerW) / img.naturalWidth;
@@ -75,7 +74,7 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
           setIsInView(entries[0].isIntersecting);
         }
       },
-      { threshold: 0.25 }
+      { threshold: 0.25 },
     );
     observer.observe(containerRef.current);
     return () => observer.disconnect();
@@ -95,14 +94,14 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
   return (
     <div className="flex flex-col gap-3">
       {/* Label header above preview */}
-      <div className="flex items-center justify-between px-1">
+      <div className="flex items-center justify-center px-1">
         <span
-          className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold shadow-xs ${badgeBg}`}
+          className="inline-flex items-center font-bold text-3xl"
         >
-          {badgeText}
+          <span className="hl">{badgeText}</span>
         </span>
-        <span className="text-grey text-xs font-medium">{subtitle}</span>
-      </div>
+        {/* <span className="text-ink-soft text-xs font-medium">{subtitle}</span> */}
+       </div>
 
       {/* Screenshot box */}
       <div
@@ -119,7 +118,8 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }: ScrollCardProps)
           onLoad={calculateScroll}
           className="w-full h-auto block transform-gpu transition-transform ease-in-out"
           style={{
-            transform: shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+            transform:
+              shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
             transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(8, duration * 0.8)}s`,
           }}
         />
@@ -145,36 +145,33 @@ export function Transformation() {
             <p className="eyebrow">Website redesign</p>
 
             <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-              Same business.{" "}
-              <span className="hl">Very different</span> first impression.
+              Same business. <span className="hl">Very different</span> first impression.
             </h2>
           </Reveal>
 
           <Reveal delay={80}>
             <p className="text-ink-soft w-full text-[15px] leading-relaxed">
-              Most businesses don't have a traffic problem, they have a credibility
-              problem. Hover over each preview to see what a professional website development
-              agency actually changes: sharper hierarchy, faster loads, one obvious
-              next step, and copy written for the buyer, not the brochure.
+              Most businesses don't have a traffic problem, they have a credibility problem. Hover
+              over each preview to see what a professional website development agency actually
+              changes: sharper hierarchy, faster loads, one obvious next step, and copy written for
+              the buyer, not the brochure.
             </p>
           </Reveal>
         </div>
 
         {/* Side-by-side Before and After preview cards */}
         <Reveal delay={120}>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          <div className="mt-15 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8">
             <ScrollCard
               src="/assets/before2.png"
               alt="Outdated website before the redesign"
               badgeText="BEFORE"
-              badgeBg="bg-ink text-primary-foreground"
               subtitle="Outdated Design"
             />
             <ScrollCard
               src="/assets/afternew.png"
               alt="Modern redesigned website after the Bombay Blokes rebuild"
               badgeText="AFTER"
-              badgeBg="bg-accent-yellow text-ink font-bold"
               subtitle="Modern Redesign"
             />
           </div>
@@ -186,16 +183,12 @@ export function Transformation() {
             <Reveal key={o.value} delay={i * 80}>
               <div className="border-border bg-card h-full rounded-2xl border p-5">
                 <div className="mb-5 flex items-center justify-between">
-                  <span className="text-grey text-xs font-bold tracking-wider">
-                    {o.number}
-                  </span>
+                  <span className="text-ink-soft text-xs font-bold tracking-wider">{o.number}</span>
                 </div>
 
-                <p className="font-display text-[30px] leading-none font-extrabold">
-                  {o.value}
-                </p>
+                <p className="font-display text-[30px] leading-none font-extrabold">{o.value}</p>
 
-                <p className="text-grey mt-2 text-sm">{o.label}</p>
+                <p className="text-ink-soft mt-2 text-sm">{o.label}</p>
               </div>
             </Reveal>
           ))}

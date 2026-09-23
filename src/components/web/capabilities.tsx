@@ -1,11 +1,4 @@
-import {
-  Layout,
-  ShoppingBag,
-  Code2,
-  Gauge,
-  Search,
-  Wrench,
-} from "lucide-react";
+import { Layout, ShoppingBag, Code2, Gauge, Search, Wrench } from "lucide-react";
 import { Reveal } from "./reveal";
 
 const items = [
@@ -59,7 +52,8 @@ export function Capabilities() {
         <Reveal>
           <p className="eyebrow">What we build</p>
           <h2 className="mt-3 max-w-5xl text-[32px] leading-[1.06] sm:text-[42px]">
-           A full-stack web design and development agency, from first sketch to final launch, and everything that keeps it running after.
+            A full-stack web design and development agency, from first sketch to final launch, and
+            everything that keeps it running after.
           </h2>
         </Reveal>
 
@@ -71,7 +65,7 @@ export function Capabilities() {
                   <it.icon className="h-5 w-5" />
                 </span>
                 <h3 className="mt-5 text-[19px] font-extrabold">{it.title}</h3>
-                <p className="text-grey mt-2.5 text-[14px] leading-relaxed">{it.body}</p>
+                <p className="text-ink-soft mt-2.5 text-[14px] leading-relaxed">{it.body}</p>
                 <ul className="mt-5 flex flex-wrap gap-2 pt-1">
                   {it.tags.map((t) => (
                     <li

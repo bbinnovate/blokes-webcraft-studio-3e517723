@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { Gauge, TrendingUp } from "lucide-react";
 
@@ -30,7 +30,7 @@ export function HeroVisual() {
           <span className="bg-grey-light h-2 w-2 rounded-full" />
           <span className="bg-grey-light h-2 w-2 rounded-full" />
           <span className="bg-accent-yellow h-2 w-2 rounded-full" />
-          <span className="border-border text-grey ml-3 hidden rounded-full border bg-white px-3 py-1 text-[10.5px] sm:block">
+          <span className="border-border text-ink-soft ml-3 hidden rounded-full border bg-white px-3 py-1 text-[10.5px] sm:block">
             yourbrand.com
           </span>
         </div>
@@ -78,7 +78,7 @@ export function HeroVisual() {
         <Gauge className="text-ink h-4 w-4" />
         <div>
           <p className="font-display text-[17px] leading-none font-extrabold">{score}</p>
-          <p className="text-grey mt-1 text-[10.5px] leading-none">PageSpeed score</p>
+          <p className="text-ink-soft mt-1 text-[10.5px] leading-none">PageSpeed score</p>
         </div>
       </div>
 
@@ -89,7 +89,7 @@ export function HeroVisual() {
         <TrendingUp className="text-ink h-4 w-4" />
         <div>
           <p className="font-display text-[17px] leading-none font-extrabold">+42%</p>
-          <p className="text-grey mt-1 text-[10.5px] leading-none">enquiries after launch</p>
+          <p className="text-ink-soft mt-1 text-[10.5px] leading-none">enquiries after launch</p>
         </div>
       </div>
     </div>

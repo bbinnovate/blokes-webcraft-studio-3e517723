@@ -46,7 +46,7 @@ export function Faq() {
           <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
             Questions worth asking any web development agency.
           </h2>
-          <p className="text-grey mt-4 text-[14.5px] leading-relaxed">
+          <p className="text-ink-soft mt-4 text-[14.5px] leading-relaxed">
             Still unsure? Ask us on a call — we'll tell you honestly if we're not the right fit.
           </p>
         </Reveal>
@@ -55,10 +55,10 @@ export function Faq() {
           <Accordion type="single" collapsible className="border-border border-t">
             {faqs.map((f) => (
               <AccordionItem key={f.q} value={f.q} className="border-border border-b">
-                <AccordionTrigger className="font-display py-5 text-left text-[16px] font-extrabold hover:no-underline sm:text-[17px]">
+                <AccordionTrigger className="font-display py-5 text-left text-[16px] font-bold hover:no-underline sm:text-[17px]">
                   {f.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-grey pb-5 text-[14.5px] leading-relaxed">
+                <AccordionContent className="text-ink-soft pb-5 text-[14.5px] leading-relaxed">
                   {f.a}
                 </AccordionContent>
               </AccordionItem>

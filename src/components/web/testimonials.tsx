@@ -164,20 +164,13 @@ export function Testimonials() {
                     <figcaption className="border-border mt-6 shrink-0 border-t pt-5">
                       <div className="mb-2 flex gap-1">
                         {Array.from({ length: 5 }).map((_, s) => (
-                          <Star
-                            key={s}
-                            className="fill-accent-yellow text-accent-yellow h-3 w-3"
-                          />
+                          <Star key={s} className="fill-accent-yellow text-accent-yellow h-3 w-3" />
                         ))}
                       </div>
 
-                      <p className="font-display text-[14px] font-extrabold">
-                        {q.name}
-                      </p>
+                      <p className="font-display text-[14px] font-extrabold">{q.name}</p>
 
-                      <p className="text-grey text-[12.5px]">
-                        {q.role}
-                      </p>
+                      <p className="text-ink-soft text-[12.5px]">{q.role}</p>
                     </figcaption>
                   </figure>
                 </Reveal>
@@ -216,9 +209,7 @@ export function Testimonials() {
               aria-label={`Go to testimonial ${i + 1}`}
               onClick={() => emblaApi?.scrollTo(i)}
               className={`h-1.5 rounded-full transition-all ${
-                selected === i
-                  ? "w-8 bg-secondary"
-                  : "bg-border w-3"
+                selected === i ? "w-8 bg-secondary" : "bg-border w-3"
               }`}
             />
           ))}

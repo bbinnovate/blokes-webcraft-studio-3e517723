@@ -383,7 +383,7 @@ function CaseStudies() {
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
                                                     lineNumber: 99,
-                                                    columnNumber: 44
+                                                    columnNumber: 45
                                                 }, this)
                                             ]
                                         }, void 0, true, {
@@ -398,7 +398,7 @@ function CaseStudies() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-grey text-sm lg:max-w-sm lg:text-right",
+                                    className: "text-ink-soft text-sm lg:max-w-sm lg:text-right",
                                     children: "Four live builds designed, developed, and launched end-to-end by our Mumbai web development agency."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
@@ -437,12 +437,12 @@ function CaseStudies() {
                                                     className: "h-[240px] w-full object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] lg:h-full lg:min-h-[420px]"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                                    lineNumber: 114,
+                                                    lineNumber: 115,
                                                     columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 114,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -460,20 +460,20 @@ function CaseStudies() {
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 125,
+                                                                lineNumber: 126,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
-                                                                className: "text-grey group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                                                                className: "text-ink-soft group-hover:text-ink h-5 w-5 shrink-0 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 128,
+                                                                lineNumber: 129,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 124,
+                                                        lineNumber: 125,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -481,7 +481,7 @@ function CaseStudies() {
                                                         children: s.headline
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 130,
+                                                        lineNumber: 131,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -489,7 +489,7 @@ function CaseStudies() {
                                                         children: s.problem
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 132,
+                                                        lineNumber: 133,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -501,19 +501,19 @@ function CaseStudies() {
                                                                         className: "bg-accent-yellow mt-2 h-1.5 w-1.5 shrink-0 rounded-full"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 136,
+                                                                        lineNumber: 137,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     d
                                                                 ]
                                                             }, d, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 135,
+                                                                lineNumber: 136,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 133,
+                                                        lineNumber: 134,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -525,53 +525,53 @@ function CaseStudies() {
                                                                         children: st.k
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 144,
+                                                                        lineNumber: 145,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
-                                                                        className: "text-grey mt-1 text-[12px] leading-snug",
+                                                                        className: "text-ink-soft mt-1 text-[12px] leading-snug",
                                                                         children: st.v
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                        lineNumber: 147,
+                                                                        lineNumber: 148,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, st.v, true, {
                                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                                lineNumber: 143,
+                                                                lineNumber: 144,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                                        lineNumber: 141,
+                                                        lineNumber: 142,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                                lineNumber: 123,
+                                                lineNumber: 124,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/case-studies.tsx",
-                                        lineNumber: 112,
+                                        lineNumber: 113,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/case-studies.tsx",
-                                    lineNumber: 111,
+                                    lineNumber: 112,
                                     columnNumber: 15
                                 }, this)
                             }, s.client, false, {
                                 fileName: "[project]/src/components/web/case-studies.tsx",
-                                lineNumber: 110,
+                                lineNumber: 111,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/case-studies.tsx",
-                        lineNumber: 108,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, this)
                 ]
@@ -648,12 +648,12 @@ function StickyCard({ children, index, total }) {
             children: children
         }, void 0, false, {
             fileName: "[project]/src/components/web/case-studies.tsx",
-            lineNumber: 206,
+            lineNumber: 207,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/web/case-studies.tsx",
-        lineNumber: 202,
+        lineNumber: 203,
         columnNumber: 5
     }, this);
 }
@@ -679,31 +679,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/sonner/dist/index.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
 ;
 ;
 ;
-;
 const services = [
-    "New website design + build",
-    "Website redesign",
-    "Shopify / ecommerce store",
-    "Web app or custom platform"
+    "Business / Corporate Website",
+    "E-commerce Website",
+    "Custom Solution /Web Application",
+    "Mobile App",
+    "Landing Page"
 ];
 const budgets = [
     "Under ₹1 lakh",
     "₹1 – 3 lakh",
-    "₹3 – 8 lakh",
-    "₹8 lakh+",
+    "₹3 lakh+",
     "Not sure yet"
 ];
 function LeadForm({ id = "audit" }) {
     _s();
     const [status, setStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("idle");
-    const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
     async function onSubmit(e) {
         e.preventDefault();
         setStatus("loading");
@@ -755,7 +752,7 @@ function LeadForm({ id = "audit" }) {
                 const value = searchParams.get(key);
                 if (value) thankYouParams.set(key, value);
             });
-            router.push(`/thank-you?${thankYouParams.toString()}`);
+            window.location.assign(`/thank-you?${thankYouParams.toString()}`);
         } catch (err) {
             setStatus("idle");
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["toast"].error("Submission failed", {
@@ -763,51 +760,41 @@ function LeadForm({ id = "audit" }) {
             });
         }
     }
-    const field = "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-ink outline-none transition-all placeholder:text-grey-light focus:border-ink focus:ring-4 focus:ring-accent-yellow/30";
+    const field = "w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-ink outline-none transition-all placeholder:text-ink-soft-light focus:border-ink focus:ring-4 focus:ring-accent-yellow/30";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         id: id,
         className: "border-border bg-card scroll-mt-28 rounded-[26px] border p-5 shadow-[0_28px_70px_-40px_rgba(29,29,29,0.45)] sm:p-7",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-start justify-between gap-4",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "min-w-0",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-[19px] leading-tight font-extrabold sm:text-[21px]",
-                                children: "Get a free website audit"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 98,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-grey mt-1.5 text-[13px] leading-relaxed",
-                                children: "Tell us where your site is today. We'll send a page-by-page teardown with what's costing you enquiries."
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 101,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 97,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "bg-accent-yellow text-ink hidden shrink-0 rounded-full px-3 py-1 text-[11px] font-bold sm:block",
-                        children: "Free"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 106,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "min-w-0",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                            className: "text-[19px] leading-tight font-extrabold sm:text-[21px]",
+                            children: "Get help to grow your business"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/web/lead-form.tsx",
+                            lineNumber: 91,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-ink-soft mt-1.5 text-[13px] leading-relaxed",
+                            children: "Tell us what you’re trying to achieve. We’ll help you figure out the right website, strategy, and next steps for your business."
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/web/lead-form.tsx",
+                            lineNumber: 94,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/components/web/lead-form.tsx",
+                    lineNumber: 90,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 96,
+                lineNumber: 89,
                 columnNumber: 7
             }, this),
             status === "done" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -819,12 +806,12 @@ function LeadForm({ id = "audit" }) {
                             className: "h-5 w-5"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 114,
+                            lineNumber: 106,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 113,
+                        lineNumber: 105,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -832,21 +819,21 @@ function LeadForm({ id = "audit" }) {
                         children: "Thanks — we've got it."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 116,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-grey mt-1.5 text-sm",
+                        className: "text-ink-soft mt-1.5 text-sm",
                         children: "Your audit lands in your inbox within 24 hours, along with a call from a senior strategist."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 117,
+                        lineNumber: 109,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 112,
+                lineNumber: 104,
                 columnNumber: 9
             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                 onSubmit: onSubmit,
@@ -862,7 +849,7 @@ function LeadForm({ id = "audit" }) {
                                 className: field
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 125,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -874,13 +861,13 @@ function LeadForm({ id = "audit" }) {
                                 className: field
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 126,
+                                lineNumber: 118,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 124,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -891,7 +878,7 @@ function LeadForm({ id = "audit" }) {
                         className: field
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 135,
+                        lineNumber: 127,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -900,7 +887,7 @@ function LeadForm({ id = "audit" }) {
                         className: field
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 136,
+                        lineNumber: 128,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -915,20 +902,20 @@ function LeadForm({ id = "audit" }) {
                                 children: "What do you need built?"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 138,
+                                lineNumber: 130,
                                 columnNumber: 13
                             }, this),
                             services.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                     children: s
                                 }, s, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 134,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 137,
+                        lineNumber: 129,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -943,20 +930,20 @@ function LeadForm({ id = "audit" }) {
                                 children: "Approximate budget"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/lead-form.tsx",
-                                lineNumber: 146,
+                                lineNumber: 138,
                                 columnNumber: 13
                             }, this),
                             budgets.map((b)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                     children: b
                                 }, b, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 145,
+                        lineNumber: 137,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -967,7 +954,7 @@ function LeadForm({ id = "audit" }) {
                             className: "h-4 w-4 animate-spin"
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 159,
+                            lineNumber: 151,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                             children: [
@@ -976,46 +963,42 @@ function LeadForm({ id = "audit" }) {
                                     className: "h-4 w-4 transition-transform group-hover:translate-x-1"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/lead-form.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 155,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/lead-form.tsx",
-                            lineNumber: 161,
+                            lineNumber: 153,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 153,
+                        lineNumber: 145,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-grey-light text-center text-[11px] leading-relaxed",
+                        className: "text-ink-soft text-center text-[11px] leading-relaxed",
                         children: "No sales pressure. No spam. Your details stay with our Mumbai team."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/lead-form.tsx",
-                        lineNumber: 167,
+                        lineNumber: 159,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/lead-form.tsx",
-                lineNumber: 123,
+                lineNumber: 115,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/lead-form.tsx",
-        lineNumber: 92,
+        lineNumber: 85,
         columnNumber: 5
     }, this);
 }
-_s(LeadForm, "J0zW6PYpuSOXDV1c9LSBVEp9MOQ=", false, function() {
-    return [
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
-    ];
-});
+_s(LeadForm, "PrSSnJYnmPMLjC7rLJ6w5budhnU=");
 _c = LeadForm;
 var _c;
 __turbopack_context__.k.register(_c, "LeadForm");
@@ -1301,20 +1284,20 @@ function Process() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/web/process.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "bg-border h-px flex-1"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/process.tsx",
-                                        lineNumber: 86,
+                                        lineNumber: 87,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 82,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1323,7 +1306,7 @@ function Process() {
                                 children: "Book a 20-minute scoping call"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/process.tsx",
-                                lineNumber: 88,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)
                         ]
@@ -1361,15 +1344,15 @@ function Process() {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 118,
+                                    lineNumber: 115,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-display text-[15px] font-extrabold transition-colors duration-500", isActive ? "text-accent-yellow" : "text-grey-light"),
+                                    className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("font-display text-[15px] font-extrabold transition-colors duration-500", isActive ? "text-accent-yellow" : "text-ink-soft-light"),
                                     children: s.n
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 131,
+                                    lineNumber: 128,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1380,21 +1363,21 @@ function Process() {
                                             children: s.t
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/process.tsx",
-                                            lineNumber: 140,
+                                            lineNumber: 137,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-grey max-w-xl overflow-hidden text-[14px] leading-relaxed transition-all duration-500", isActive ? "mt-2 max-h-32 opacity-100" : "max-h-0 opacity-0 sm:max-h-32 sm:mt-2 sm:opacity-100"),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-ink-soft max-w-xl overflow-hidden text-[14px] leading-relaxed transition-all duration-500", isActive ? "mt-2 max-h-32 opacity-100" : "max-h-0 opacity-0 sm:max-h-32 sm:mt-2 sm:opacity-100"),
                                             children: s.d
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/process.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 138,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 136,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1402,19 +1385,19 @@ function Process() {
                                     children: s.out
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/process.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 149,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, s.n, true, {
                             fileName: "[project]/src/components/web/process.tsx",
-                            lineNumber: 105,
+                            lineNumber: 102,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/process.tsx",
-                    lineNumber: 97,
+                    lineNumber: 98,
                     columnNumber: 9
                 }, this)
             ]
@@ -1629,7 +1612,7 @@ function DeviceScrollFrame({ device }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 137,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1639,20 +1622,20 @@ function DeviceScrollFrame({ device }) {
                                 className: "h-3 w-3 animate-bounce text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 153,
+                                lineNumber: 150,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: isMobile ? "Scroll preview" : "Hover to scroll"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 154,
+                                lineNumber: 151,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 152,
+                        lineNumber: 149,
                         columnNumber: 11
                     }, this)
                 ]
@@ -1690,7 +1673,7 @@ function ResponsiveTech() {
                                         children: "Responsive by default"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 168,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1698,13 +1681,13 @@ function ResponsiveTech() {
                                         children: "Over 70% of your visitors arrive on a phone. We design for them first."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                        lineNumber: 172,
+                                        lineNumber: 169,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 170,
+                                lineNumber: 167,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1714,36 +1697,36 @@ function ResponsiveTech() {
                                     children: devices.map((d)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             onClick: ()=>setActive(d.id),
                                             "aria-pressed": active === d.id,
-                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all cursor-pointer", active === d.id ? "bg-ink text-primary-foreground" : "text-grey hover:text-ink"),
+                                            className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("inline-flex items-center gap-2 rounded-full px-4 py-2 text-[13px] font-semibold transition-all cursor-pointer", active === d.id ? "bg-ink text-primary-foreground" : "text-ink-soft hover:text-ink"),
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(d.icon, {
                                                     className: "h-3.5 w-3.5"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 187,
                                                     columnNumber: 19
                                                 }, this),
                                                 d.label
                                             ]
                                         }, d.id, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 179,
+                                            lineNumber: 176,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 174,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                lineNumber: 176,
+                                lineNumber: 173,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 169,
+                        lineNumber: 166,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -1755,11 +1738,11 @@ function ResponsiveTech() {
                                     device: current
                                 }, current.id, false, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 198,
+                                    lineNumber: 197,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-grey mt-6 max-w-md text-center text-[13.5px] leading-relaxed",
+                                    className: "text-ink-soft mt-6 max-w-md text-center text-[13.5px] leading-relaxed",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-ink font-semibold",
@@ -1769,7 +1752,7 @@ function ResponsiveTech() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                            lineNumber: 200,
+                                            lineNumber: 199,
                                             columnNumber: 15
                                         }, this),
                                         " ",
@@ -1777,35 +1760,35 @@ function ResponsiveTech() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/responsive-tech.tsx",
-                                    lineNumber: 199,
+                                    lineNumber: 198,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/web/responsive-tech.tsx",
-                            lineNumber: 197,
+                            lineNumber: 196,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/responsive-tech.tsx",
-                        lineNumber: 196,
+                        lineNumber: 195,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 168,
+                lineNumber: 165,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$stack$2d$cluster$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StackCluster"], {}, void 0, false, {
                 fileName: "[project]/src/components/web/responsive-tech.tsx",
-                lineNumber: 206,
+                lineNumber: 205,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/responsive-tech.tsx",
-        lineNumber: 167,
+        lineNumber: 164,
         columnNumber: 5
     }, this);
 }
@@ -2189,25 +2172,26 @@ function StackCluster() {
                         children: "Platforms & stack"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 24,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                         className: "mx-auto mt-3 max-w-4xl text-[28px] leading-[1.08] sm:text-[38px]",
                         children: [
-                            "We pick the platform that fits your business ",
+                            "We pick the platform that fits your business",
+                            " ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "hl",
                                 children: "not the one we like selling."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                lineNumber: 26,
-                                columnNumber: 56
+                                lineNumber: 34,
+                                columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 25,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2215,13 +2199,13 @@ function StackCluster() {
                         children: "Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at scale? A custom React build. You own every account, every repo and every login."
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 28,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                lineNumber: 23,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
@@ -2238,14 +2222,14 @@ function StackCluster() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                lineNumber: 37,
+                                lineNumber: 45,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                 "aria-hidden": true,
                                 viewBox: "0 0 100 44",
                                 preserveAspectRatio: "none",
-                                className: "text-grey-light absolute inset-0 h-full w-full",
+                                className: "text-ink-soft-light absolute inset-0 h-full w-full",
                                 children: [
                                     1,
                                     2,
@@ -2258,12 +2242,12 @@ function StackCluster() {
                                         strokeDasharray: "1 1.6"
                                     }, r, false, {
                                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 60,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                lineNumber: 45,
+                                lineNumber: 53,
                                 columnNumber: 11
                             }, this),
                             stack.map((s)=>{
@@ -2290,12 +2274,12 @@ function StackCluster() {
                                                 className: "h-4 w-4 sm:h-[18px] sm:w-[18px]"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                lineNumber: 79,
+                                                lineNumber: 87,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 78,
+                                            lineNumber: 86,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2306,27 +2290,27 @@ function StackCluster() {
                                                     children: s.name
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                    lineNumber: 89,
+                                                    lineNumber: 97,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-grey mt-1 text-[10.5px] leading-none",
+                                                    className: "text-ink-soft mt-1 text-[10.5px] leading-none",
                                                     children: s.note
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                                    lineNumber: 90,
+                                                    lineNumber: 98,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 96,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, s.name, true, {
                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 77,
                                     columnNumber: 15
                                 }, this);
                             }),
@@ -2344,7 +2328,7 @@ function StackCluster() {
                                             className: "mx-auto h-9 w-9 object-contain sm:h-12 sm:w-12"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 98,
+                                            lineNumber: 106,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2352,44 +2336,44 @@ function StackCluster() {
                                             children: "Your build"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                            lineNumber: 106,
+                                            lineNumber: 114,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                    lineNumber: 97,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                                lineNumber: 96,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 36,
+                        lineNumber: 44,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-grey mt-8 text-center text-[12px] sm:hidden",
+                        className: "text-ink-soft mt-8 text-center text-[12px] sm:hidden",
                         children: "Shopify · WordPress · Webflow · React · Next.js · Node.js · Razorpay · HubSpot · GA4"
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/stack-cluster.tsx",
-                        lineNumber: 113,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/stack-cluster.tsx",
-                lineNumber: 34,
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/stack-cluster.tsx",
-        lineNumber: 22,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }
@@ -2675,15 +2659,15 @@ function Testimonials() {
                                                         children: q.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                                        lineNumber: 174,
+                                                        lineNumber: 171,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "text-grey text-[12.5px]",
+                                                        className: "text-ink-soft text-[12.5px]",
                                                         children: q.role
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/web/testimonials.tsx",
-                                                        lineNumber: 178,
+                                                        lineNumber: 173,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
@@ -2730,12 +2714,12 @@ function Testimonials() {
                                 className: "size-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 197,
+                                lineNumber: 190,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 191,
+                            lineNumber: 184,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2747,18 +2731,18 @@ function Testimonials() {
                                 className: "size-4"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/testimonials.tsx",
-                                lineNumber: 206,
+                                lineNumber: 199,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 200,
+                            lineNumber: 193,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 190,
+                    lineNumber: 183,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2770,12 +2754,12 @@ function Testimonials() {
                             className: `h-1.5 rounded-full transition-all ${selected === i ? "w-8 bg-secondary" : "bg-border w-3"}`
                         }, `dot-${q.name}-${i}`, false, {
                             fileName: "[project]/src/components/web/testimonials.tsx",
-                            lineNumber: 213,
+                            lineNumber: 206,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/testimonials.tsx",
-                    lineNumber: 211,
+                    lineNumber: 204,
                     columnNumber: 9
                 }, this)
             ]
@@ -2841,7 +2825,7 @@ const outcomes = [
         label: "Analytics, tracking & integrations"
     }
 ];
-function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
+function ScrollCard({ src, alt, badgeText, subtitle }) {
     _s();
     const containerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const imgRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
@@ -2929,28 +2913,25 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
         className: "flex flex-col gap-3",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex items-center justify-between px-1",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: `inline-flex items-center gap-1.5 rounded-full px-3.5 py-1 text-xs font-bold shadow-xs ${badgeBg}`,
+                className: "flex items-center justify-center px-1",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "inline-flex items-center font-bold text-3xl",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "hl",
                         children: badgeText
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 99,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-grey text-xs font-medium",
-                        children: subtitle
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 104,
-                        columnNumber: 9
+                        lineNumber: 101,
+                        columnNumber: 11
                     }, this)
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "[project]/src/components/web/transformation.tsx",
+                    lineNumber: 98,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/src/components/web/transformation.tsx",
-                lineNumber: 98,
+                lineNumber: 97,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2972,7 +2953,7 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 115,
+                        lineNumber: 114,
                         columnNumber: 9
                     }, this),
                     maxScroll > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3001,13 +2982,13 @@ function ScrollCard({ src, alt, badgeText, badgeBg, subtitle }) {
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/web/transformation.tsx",
-                lineNumber: 108,
+                lineNumber: 107,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/web/transformation.tsx",
-        lineNumber: 96,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 }
@@ -3036,15 +3017,14 @@ function Transformation() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                     className: "mt-3 text-[32px] leading-[1.06] sm:text-[42px]",
                                     children: [
-                                        "Same business.",
-                                        " ",
+                                        "Same business. ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "hl",
                                             children: "Very different"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 149,
-                                            columnNumber: 15
+                                            lineNumber: 148,
+                                            columnNumber: 30
                                         }, this),
                                         " first impression."
                                     ]
@@ -3066,12 +3046,12 @@ function Transformation() {
                                 children: "Most businesses don't have a traffic problem, they have a credibility problem. Hover over each preview to see what a professional website development agency actually changes: sharper hierarchy, faster loads, one obvious next step, and copy written for the buyer, not the brochure."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 154,
+                                lineNumber: 153,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 153,
+                            lineNumber: 152,
                             columnNumber: 11
                         }, this)
                     ]
@@ -3083,39 +3063,37 @@ function Transformation() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$web$2f$reveal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Reveal"], {
                     delay: 120,
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8",
+                        className: "mt-15 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScrollCard, {
                                 src: "/assets/before2.png",
                                 alt: "Outdated website before the redesign",
                                 badgeText: "BEFORE",
-                                badgeBg: "bg-ink text-primary-foreground",
                                 subtitle: "Outdated Design"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 166,
+                                lineNumber: 165,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ScrollCard, {
                                 src: "/assets/afternew.png",
                                 alt: "Modern redesigned website after the Bombay Blokes rebuild",
                                 badgeText: "AFTER",
-                                badgeBg: "bg-accent-yellow text-ink font-bold",
                                 subtitle: "Modern Redesign"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 173,
+                                lineNumber: 171,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/web/transformation.tsx",
-                        lineNumber: 165,
+                        lineNumber: 164,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 164,
+                    lineNumber: 163,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3128,16 +3106,16 @@ function Transformation() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "mb-5 flex items-center justify-between",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-grey text-xs font-bold tracking-wider",
+                                            className: "text-ink-soft text-xs font-bold tracking-wider",
                                             children: o.number
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/web/transformation.tsx",
-                                            lineNumber: 189,
+                                            lineNumber: 186,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 185,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3145,31 +3123,31 @@ function Transformation() {
                                         children: o.value
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 194,
+                                        lineNumber: 189,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-grey mt-2 text-sm",
+                                        className: "text-ink-soft mt-2 text-sm",
                                         children: o.label
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/web/transformation.tsx",
-                                        lineNumber: 198,
+                                        lineNumber: 191,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/web/transformation.tsx",
-                                lineNumber: 187,
+                                lineNumber: 184,
                                 columnNumber: 15
                             }, this)
                         }, o.value, false, {
                             fileName: "[project]/src/components/web/transformation.tsx",
-                            lineNumber: 186,
+                            lineNumber: 183,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/web/transformation.tsx",
-                    lineNumber: 184,
+                    lineNumber: 181,
                     columnNumber: 9
                 }, this)
             ]

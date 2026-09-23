@@ -4,7 +4,7 @@ import { HeroVisual } from "./hero-visual";
 import { Reveal } from "./reveal";
 
 const proofPills = [
-  { icon: Zap, text: "Sites that load under 2 seconds" },
+  { icon: Zap, text: "Designed to help your business grow" },
   { icon: ShieldCheck, text: "Built to convert, not just look good" },
 ];
 
@@ -63,15 +63,15 @@ export function Hero() {
                     <Star key={i} className="fill-accent-yellow text-accent-yellow h-3.5 w-3.5" />
                   ))}
                 </div>
-                <p className="text-grey mt-1.5 text-[12.5px]">4.8 average from 80+ Google reviews</p>
+                <p className="text-ink-soft mt-1.5 text-[15px]">4.8 average from 80+ Google reviews</p>
               </div>
               <div>
                 <p className="font-display text-xl font-extrabold">250+</p>
-                <p className="text-grey text-[12.5px]">Websites launched</p>
+                <p className="text-ink-soft text-[12.5px]">Websites launched</p>
               </div>
               <div>
                 <p className="font-display text-xl font-extrabold">6–8 weeks</p>
-                <p className="text-grey text-[12.5px]">Typical launch timeline</p>
+                <p className="text-ink-soft text-[12.5px]">Typical launch timeline</p>
               </div>
             </div>
           </Reveal>

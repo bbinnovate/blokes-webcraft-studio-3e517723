@@ -61,7 +61,6 @@ export default function ThankYouPage() {
 
       <section className="py-24 sm:py-32 flex-1 flex items-center justify-center px-4 min-h-screen">
         <div className="w-full text-center flex flex-col items-center">
-
           {/* Check Animation */}
           <motion.span
             initial={{ scale: 0, opacity: 0 }}
@@ -114,12 +113,11 @@ export default function ThankYouPage() {
               delay: 0.8,
               ease: "easeOut",
             }}
-            className="text-grey mt-5 max-w-2xl text-base sm:text-lg leading-relaxed"
+            className="text-ink-soft mt-5 max-w-2xl text-base sm:text-lg leading-relaxed"
           >
-            Your audit lands in your inbox within 24 hours, along with a call
-            from a senior strategist.
+            Your audit lands in your inbox within 24 hours, along with a call from a senior
+            strategist.
           </motion.p>
-
         </div>
       </section>
 

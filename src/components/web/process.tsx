@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
@@ -74,10 +74,11 @@ export function Process() {
           <Reveal>
             <p className="eyebrow">How we work</p>
             <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-Our web design and development process runs on one rule: no surprises.
+              Our web design and development process runs on one rule: no surprises.
             </h2>
             <p className="text-ink-soft mt-5 max-w-md text-[15px] leading-relaxed">
-             We give you a named project lead, a shared timeline, and a real deliverable at every stage.
+              We give you a named project lead, a shared timeline, and a real deliverable at every
+              stage.
             </p>
             <div className="mt-7 flex items-center gap-3">
               <span className="font-display text-[13px] font-extrabold">
@@ -86,7 +87,7 @@ Our web design and development process runs on one rule: no surprises.
               <span className="bg-border h-px flex-1" />
             </div>
             <a
-                href="#audit"
+              href="#audit"
               className="bg-ink text-primary-foreground mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold transition-transform hover:-translate-y-0.5"
             >
               Book a 20-minute scoping call
@@ -94,11 +95,7 @@ Our web design and development process runs on one rule: no surprises.
           </Reveal>
         </div>
 
-        <ol
-          ref={listRef}
-          className="border-border border-t"
-          onMouseLeave={() => setPaused(false)}
-        >
+        <ol ref={listRef} className="border-border border-t" onMouseLeave={() => setPaused(false)}>
           {steps.map((s, i) => {
             const isActive = i === active;
             return (
@@ -131,7 +128,7 @@ Our web design and development process runs on one rule: no surprises.
                 <span
                   className={cn(
                     "font-display text-[15px] font-extrabold transition-colors duration-500",
-                    isActive ? "text-accent-yellow" : "text-grey-light",
+                    isActive ? "text-accent-yellow" : "text-ink-soft-light",
                   )}
                 >
                   {s.n}
@@ -140,8 +137,10 @@ Our web design and development process runs on one rule: no surprises.
                   <h3 className="text-[19px] font-extrabold">{s.t}</h3>
                   <p
                     className={cn(
-                      "text-grey max-w-xl overflow-hidden text-[14px] leading-relaxed transition-all duration-500",
-                      isActive ? "mt-2 max-h-32 opacity-100" : "max-h-0 opacity-0 sm:max-h-32 sm:mt-2 sm:opacity-100",
+                      "text-ink-soft max-w-xl overflow-hidden text-[14px] leading-relaxed transition-all duration-500",
+                      isActive
+                        ? "mt-2 max-h-32 opacity-100"
+                        : "max-h-0 opacity-0 sm:max-h-32 sm:mt-2 sm:opacity-100",
                     )}
                   >
                     {s.d}
