@@ -163,7 +163,7 @@ function buildUserEmail(payload) {
                   <tr><td style="padding:5px 0; width:170px;"><strong>Name</strong></td><td style="padding:5px 0;">${name}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Email</strong></td><td style="padding:5px 0;">${escapeHtml(payload.email || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Phone</strong></td><td style="padding:5px 0;">${escapeHtml(payload.phone || "-")}</td></tr>
-                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>Brand / link</strong></td><td style="padding:5px 0; word-break:break-word;">${brand}</td></tr>
+                  <tr><td style="padding:5px 0; vertical-align:top;"><strong>Brand / website</strong></td><td style="padding:5px 0; word-break:break-word;">${brand}</td></tr>
                   <tr><td style="padding:5px 0; vertical-align:top;"><strong>What you need to build</strong></td><td style="padding:5px 0;">${escapeHtml(payload.service || "-")}</td></tr>
                   <tr><td style="padding:5px 0;"><strong>Budget</strong></td><td style="padding:5px 0;">${escapeHtml(payload.budget || "-")}</td></tr>
                 </table>
@@ -205,7 +205,7 @@ function buildAdminEmail(payload) {
     <p><strong>Name:</strong> ${formatTitleCase(payload.name || "-")}</p>
     <p><strong>Phone:</strong> ${escapeHtml(payload.phone || "-")}</p>
     <p><strong>Email:</strong> ${escapeHtml(payload.email || "-")}</p>
-    ${isSocialMediaEnquiry ? `<p><strong>Instagram / website:</strong> ${profile}</p>` : `<p><strong>Brand / website / Instagram:</strong> ${escapeHtml(payload.brand || payload.website || payload.instagram || "-")}</p>`}
+    ${isSocialMediaEnquiry ? `<p><strong>Instagram / website:</strong> ${profile}</p>` : `<p><strong>Brand / website :</strong> ${escapeHtml(payload.brand || payload.website || payload.instagram || "-")}</p>`}
     <p><strong>Budget:</strong> ${escapeHtml(payload.budget || "-")}</p>
     <p><strong>What you need to build:</strong> ${escapeHtml(payload.service || "-")}</p>
     <p><strong>Date:</strong> ${escapeHtml(payload.date || "-")}</p>
@@ -301,9 +301,9 @@ async function POST(req) {
         });
         await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$email$2d$sender$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["sendEmail"])({
             to: [
-                // "hello@bombayblokes.com", 
-                // "bdm@bombayblokes.com", 
-                // "siddique@bombayblokes.com", 
+                "hello@bombayblokes.com",
+                "bdm@bombayblokes.com",
+                "siddique@bombayblokes.com",
                 "aryankuril09@gmail.com"
             ],
             subject: `New Lead From - ${formatTitleCase(payload.name || "-")} for Website Development`,
