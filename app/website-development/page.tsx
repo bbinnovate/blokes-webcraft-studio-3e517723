@@ -3,6 +3,7 @@ import { SiteNav } from "@/components/web/site-nav";
 import { Hero } from "@/components/web/hero";
 import { LogoMarquee } from "@/components/web/logo-marquee";
 import { Transformation } from "@/components/web/transformation";
+import { AffiliationsSlider } from "@/components/web/Affiliations-slider";
 import { Capabilities } from "@/components/web/capabilities";
 import { CaseStudies } from "@/components/web/case-studies";
 import { ResponsiveTech } from "@/components/web/responsive-tech";
@@ -20,6 +21,7 @@ export default function WebsiteDevelopmentPage() {
       <Hero />
       <LogoMarquee />
       <Transformation />
+      <AffiliationsSlider />
       <Capabilities />
       <CaseStudies />
       <ResponsiveTech />
