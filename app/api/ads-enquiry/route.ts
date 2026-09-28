@@ -14,6 +14,7 @@ type EnquiryPayload = {
   date?: string;
   time?: string;
   source?: string;
+  sheetName?: string;
   service?: string;
   utm_source?: string;
   utm_medium?: string;
@@ -243,6 +244,7 @@ export async function POST(req: Request) {
       date: body.date || now.toLocaleDateString("en-IN", { dateStyle: "medium" }),
       time: body.time || now.toLocaleTimeString("en-IN", { timeStyle: "short" }),
       source: body.source || "website-audit",
+      sheetName: body.sheetName || "Sheet2",
       service,
       utm_source,
       utm_medium,
@@ -296,9 +298,9 @@ export async function POST(req: Request) {
 
     await sendEmail({
       to: [
-        "hello@bombayblokes.com", 
-        "bdm@bombayblokes.com", 
-        "siddique@bombayblokes.com", 
+        // "hello@bombayblokes.com", 
+        // "bdm@bombayblokes.com", 
+        // "siddique@bombayblokes.com", 
         "aryankuril09@gmail.com"],
       subject: `New Lead From - ${formatTitleCase(payload.name || "-")} for Website Development`,
       html: buildAdminEmail(payload),

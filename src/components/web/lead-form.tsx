@@ -29,6 +29,8 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
       website: formData.get("website") as string,
       service: formData.get("service") as string,
       budget: formData.get("budget") as string,
+      source: "website-audit",
+      sheetName: "Sheet2",
       // Keep ad attribution with the lead instead of only in the landing-page URL.
       utm_source: searchParams.get("utm_source") || "",
       utm_medium: searchParams.get("utm_medium") || "",
