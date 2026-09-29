@@ -968,6 +968,10 @@
     height: 240px;
   }
 
+  .h-\[280px\] {
+    height: 280px;
+  }
+
   .h-\[300px\] {
     height: 300px;
   }
@@ -1954,6 +1958,10 @@
     .bg-background\/85 {
       background-color: color-mix(in oklab, var(--background) 85%, transparent);
     }
+  }
+
+  .bg-black {
+    background-color: var(--color-black);
   }
 
   .bg-black\/40 {
@@ -3076,6 +3084,10 @@
 
     .group-hover\/menu-item\:opacity-100:is(:where(.group\/menu-item):hover *) {
       opacity: 1;
+    }
+
+    .group-hover\/preview\:opacity-40:is(:where(.group\/preview):hover *) {
+      opacity: .4;
     }
   }
 
@@ -4225,6 +4237,10 @@
       height: 95px;
     }
 
+    .sm\:h-\[360px\] {
+      height: 360px;
+    }
+
     .sm\:h-\[480px\] {
       height: 480px;
     }
@@ -4570,6 +4586,10 @@
 
     .lg\:min-h-\[420px\] {
       min-height: 420px;
+    }
+
+    .lg\:min-h-\[440px\] {
+      min-height: 440px;
     }
 
     .lg\:w-\[150px\] {

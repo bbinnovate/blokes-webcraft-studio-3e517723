@@ -1,11 +1,119 @@
 "use client";
-import { ArrowUpRight } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { ArrowUpRight, ArrowDown } from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Reveal } from "./reveal";
+
+interface CaseStudyPreviewProps {
+  src: string;
+  alt: string;
+}
+
+function CaseStudyPreview({ src, alt }: CaseStudyPreviewProps) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const imgRef = useRef<HTMLImageElement | null>(null);
+  const [maxScroll, setMaxScroll] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
+  const [duration, setDuration] = useState(12);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const calculateScroll = useCallback(() => {
+    if (!containerRef.current || !imgRef.current) return 0;
+    const containerH = containerRef.current.clientHeight;
+    const containerW = containerRef.current.clientWidth;
+    const img = imgRef.current;
+
+    let fullHeight = img.offsetHeight || img.clientHeight;
+    if (img.naturalWidth && img.naturalHeight && containerW) {
+      const calculatedH = (img.naturalHeight * containerW) / img.naturalWidth;
+      fullHeight = Math.max(fullHeight, calculatedH);
+    }
+
+    if (fullHeight > containerH + 10) {
+      const dist = fullHeight - containerH;
+      setMaxScroll(dist);
+      // Speed: ~100px per second, duration between 12s and 25s
+      const calculatedDuration = Math.max(12, Math.min(25, dist / 100));
+      setDuration(calculatedDuration);
+      return dist;
+    } else {
+      setMaxScroll(0);
+      return 0;
+    }
+  }, []);
+
+  useEffect(() => {
+    calculateScroll();
+    window.addEventListener("resize", calculateScroll);
+    return () => window.removeEventListener("resize", calculateScroll);
+  }, [calculateScroll]);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const handleMouseEnter = () => {
+    if (!isMobile) {
+      calculateScroll();
+      setIsHovered(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (!isMobile) {
+      setIsHovered(false);
+    }
+  };
+
+  const handleClick = () => {
+    if (isMobile) {
+      calculateScroll();
+      setIsToggled((prev) => !prev);
+    }
+  };
+
+  const shouldScroll = isMobile ? isToggled : isHovered;
+
+  return (
+    <div
+      ref={containerRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onClick={handleClick}
+      className="group/preview relative h-[460px] sm:h-[540px] lg:h-[600px]  w-full overflow-hidden bg-black select-none cursor-pointer"
+    >
+      <img
+        ref={imgRef}
+        src={src}
+        alt={alt}
+        onLoad={calculateScroll}
+className="w-full h-auto block transform-gpu transition-transform ease-in-out object-cover"
+        style={{
+          transform:
+            shouldScroll && maxScroll > 0 ? `translateY(-${maxScroll}px)` : "translateY(0px)",
+          transitionDuration: shouldScroll ? `${duration}s` : `${Math.max(8, duration * 0.8)}s`,
+        }}
+      />
+
+      {/* Scroll indicator overlay */}
+      {maxScroll > 0 && (
+        <div className="absolute bottom-4 right-4 pointer-events-none z-10 flex items-center gap-1.5 rounded-full border border-border/60 bg-background/85 px-3 py-1.5 text-[11px] font-semibold text-foreground backdrop-blur-md transition-all duration-300 group-hover/preview:opacity-40 shadow-xs">
+          <ArrowDown className="h-3 w-3 animate-bounce text-primary" />
+          <span>{isMobile ? (isToggled ? "Tap to reset" : "Tap to scroll") : "Hover to scroll"}</span>
+        </div>
+      )}
+    </div>
+  );
+}
 
 const studies = [
   {
-    img: "/assets/SCS2.jpg",
+    img: "/assets/scs2.png",
     client: "SCS Sports",
     type: "Shopify ecommerce development",
     headline: "A bigger catalogue needed a better experience.",
@@ -26,7 +134,7 @@ const studies = [
   },
 
   {
-    img: "/assets/MrBloxnew.jpg",
+    img: "/assets/mrblox.png",
     client: "Mr. Blox",
     type: "Custom Shopify website development",
     headline: "A new toy brand, built from scratch.",
@@ -56,7 +164,7 @@ const studies = [
   },
 
   {
-    img: "/assets/SuperSoxnew.jpg",
+    img: "/assets/supersox2.png",
     client: "SuperSox",
     type: "Shopify ecommerce development",
     headline: "A new storefront for a growing brand.",
@@ -111,16 +219,10 @@ export function CaseStudies() {
             <StickyCard key={s.client} index={i} total={studies.length}>
               <div className="group border-border bg-card overflow-hidden rounded-[26px] border shadow-[0_40px_80px_-64px_rgba(29,29,29,0.45)]">
                 <div className="grid lg:grid-cols-2">
-                  <div className="bg-secondary overflow-hidden">
-                    <img
-                      src={s.img}
-                      alt={`${s.client} website case study`}
-                      width={1280}
-                      height={912}
-                      loading="lazy"
-                      className="h-[240px] w-full object-cover object-top transition-transform duration-[900ms] ease-out group-hover:scale-[1.03] lg:h-full lg:min-h-[420px]"
-                    />
-                  </div>
+                  <CaseStudyPreview
+                    src={s.img}
+                    alt={`${s.client} website case study`}
+                  />
                   <div className="p-6 sm:p-9">
                     <div className="flex items-start justify-between gap-4">
                       <p className="eyebrow">

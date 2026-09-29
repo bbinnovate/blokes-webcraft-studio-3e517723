@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../src/styles.css";
 import Script from "next/script";
 import SmoothScroll from "@/components/web/SmoothScroll";
+import Taxi from "@/components/web/Taxi";
 
 const title = "Bombay Blokes | Digital Marketing & Web Development Agency";
 
@@ -123,7 +124,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
-        <SmoothScroll>{children}</SmoothScroll>
+   <SmoothScroll>{children}</SmoothScroll>  <Taxi />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+import Taxi from "./TaxiMobile";
 export default function Mobilecta() {
   const [showCTA, setShowCTA] = useState(false);
 
@@ -28,7 +28,9 @@ export default function Mobilecta() {
   if (!showCTA) return null;
 
   return (
+
     <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between gap-3 rounded-t-[25px] bg-black/55 px-4 py-2.5 backdrop-blur-sm lg:hidden">
+      <Taxi/>
       <span className="text-sm font-medium text-white">
         Ready to grow?
       </span>

@@ -101,75 +101,11 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/components/web/Mobilecta.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/src/components/web/Mobilecta.tsx [app-client] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-__turbopack_context__.s([
-    "default",
-    ()=>Mobilecta
-]);
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-;
-var _s = __turbopack_context__.k.signature();
-"use client";
-;
-function Mobilecta() {
-    _s();
-    const [showCTA, setShowCTA] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Mobilecta.useEffect": ()=>{
-            const section = document.getElementById("section-3");
-            if (!section) return;
-            const observer = new IntersectionObserver({
-                "Mobilecta.useEffect": ([entry])=>{
-                    if (!entry) return;
-                    setShowCTA(entry.isIntersecting || entry.boundingClientRect.top < 0);
-                }
-            }["Mobilecta.useEffect"], {
-                threshold: 0
-            });
-            observer.observe(section);
-            return ({
-                "Mobilecta.useEffect": ()=>observer.disconnect()
-            })["Mobilecta.useEffect"];
-        }
-    }["Mobilecta.useEffect"], []);
-    if (!showCTA) return null;
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "fixed bottom-0 left-0 right-0 z-50 flex items-center justify-between gap-3 rounded-t-[25px] bg-black/55 px-4 py-2.5 backdrop-blur-sm lg:hidden",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                className: "text-sm font-medium text-white",
-                children: "Ready to grow?"
-            }, void 0, false, {
-                fileName: "[project]/src/components/web/Mobilecta.tsx",
-                lineNumber: 32,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                href: "#audit",
-                className: "shrink-0 rounded-full bg-accent-yellow px-4 py-2 text-xs font-bold tracking-wide text-secondary-foreground uppercase",
-                children: "Get free website audit"
-            }, void 0, false, {
-                fileName: "[project]/src/components/web/Mobilecta.tsx",
-                lineNumber: 37,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/components/web/Mobilecta.tsx",
-        lineNumber: 31,
-        columnNumber: 5
-    }, this);
-}
-_s(Mobilecta, "VcbgN/y3LxwIpkDMjGlCPmofCc4=");
-_c = Mobilecta;
-var _c;
-__turbopack_context__.k.register(_c, "Mobilecta");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
+var e = new Error("Could not parse module '[project]/src/components/web/Mobilecta.tsx'\n\nExpected ',', got 'ident'");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[project]/src/components/web/SectionPopup.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

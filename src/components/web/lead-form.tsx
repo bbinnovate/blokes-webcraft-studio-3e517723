@@ -11,10 +11,16 @@ const services = [
   "Landing Page",
 ];
 
-const budgets = ["Under ₹1 lakh", "₹1 – 3 lakh", "₹3 lakh+", "Not sure yet"];
+const landingBudgets = ["₹50k – 70k", "Under ₹1L"];
+const standardBudgets = ["₹1 – 3L", "₹3L+"];
 
 export function LeadForm({ id = "audit" }: { id?: string }) {
   const [status, setStatus] = useState<"idle" | "loading" | "done">("idle");
+  const [selectedService, setSelectedService] = useState<string>("");
+  const [selectedBudget, setSelectedBudget] = useState<string>("");
+
+  const budgets =
+    selectedService === "Landing Page" ? landingBudgets : standardBudgets;
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -128,20 +134,35 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
           </div>
           <input required name="email" type="email" placeholder="Work email" className={field} />
           <input name="website" placeholder="Current website (optional)" className={field} />
-          <select required name="service" defaultValue="" className={field}>
+          <select
+            required
+            name="service"
+            value={selectedService}
+            onChange={(e) => {
+              setSelectedService(e.target.value);
+              setSelectedBudget("");
+            }}
+            className={field}
+          >
             <option value="" disabled>
               What do you need built?
             </option>
             {services.map((s) => (
-              <option key={s}>{s}</option>
+              <option key={s} value={s}>{s}</option>
             ))}
           </select>
-          <select required name="budget" defaultValue="" className={field}>
+          <select
+            required
+            name="budget"
+            value={selectedBudget}
+            onChange={(e) => setSelectedBudget(e.target.value)}
+            className={field}
+          >
             <option value="" disabled>
               Approximate budget
             </option>
             {budgets.map((b) => (
-              <option key={b}>{b}</option>
+              <option key={b} value={b}>{b}</option>
             ))}
           </select>
           <button
