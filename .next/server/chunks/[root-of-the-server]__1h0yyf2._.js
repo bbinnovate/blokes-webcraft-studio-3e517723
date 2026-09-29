@@ -81,7 +81,7 @@ module.exports=[61724,(e,t,r)=>{t.exports=e.x("next/dist/compiled/next-server/ap
     </table>
   </body>
 </html>
-  `),fromName:"Bombay Blokes",fromAddress:"hello@bombayblokes.com"}),await r({to:["aryankuril09@gmail.com"],subject:`New Lead From - ${a(y.name||"-")} for Website Development`,html:(l="social-media-hero"===y.source,c=n(y.website||y.instagram||"-"),u=y.utm_term?`<p><strong>UTM Keyword:</strong> ${n(y.utm_term)}</p>`:"",`
+  `),fromName:"Bombay Blokes",fromAddress:"hello@bombayblokes.com"}),await r({to:["hello@bombayblokes.com","bdm@bombayblokes.com","siddique@bombayblokes.com","aryankuril09@gmail.com"],subject:`New Lead From - ${a(y.name||"-")} for Website Development`,html:(l="social-media-hero"===y.source,c=n(y.website||y.instagram||"-"),u=y.utm_term?`<p><strong>UTM Keyword:</strong> ${n(y.utm_term)}</p>`:"",`
     <h3>BB Forms — New Ads Audit Request</h3>
     <p><strong>Name:</strong> ${a(y.name||"-")}</p>
     <p><strong>Phone:</strong> ${n(y.phone||"-")}</p>
