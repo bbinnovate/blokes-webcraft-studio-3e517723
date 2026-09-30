@@ -298,7 +298,7 @@ export async function POST(req: Request) {
 
     await sendEmail({
       to: [
-        "hello@bombayblokes.com", 
+        // "hello@bombayblokes.com", 
         "bdm@bombayblokes.com", 
         "siddique@bombayblokes.com", 
         "aryankuril09@gmail.com"],

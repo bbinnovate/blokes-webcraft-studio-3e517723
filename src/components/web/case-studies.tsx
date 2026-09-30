@@ -113,7 +113,7 @@ className="w-full h-auto block transform-gpu transition-transform ease-in-out ob
 
 const studies = [
   {
-    img: "/assets/scs2.png",
+    img: "/assets/scs3.png",
     client: "SCS Sports",
     type: "Shopify ecommerce development",
     headline: "A bigger catalogue needed a better experience.",

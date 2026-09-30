@@ -11,8 +11,8 @@ const Taxi = () => {
 
   const getTaxiWidth = () => {
     if (typeof window === "undefined") return 120;
-    if (window.innerWidth < 480) return 70;
-    if (window.innerWidth < 768) return 90;
+    if (window.innerWidth < 480) return 100;
+    if (window.innerWidth < 768) return 110;
     return 120;
   };
 
