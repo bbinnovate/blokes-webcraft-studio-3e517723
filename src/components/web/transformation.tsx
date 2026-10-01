@@ -185,6 +185,7 @@ function ScrollCard({ src, alt, badgeText, subtitle }: ScrollCardProps) {
 
 export function Transformation() {
   const [activeTab, setActiveTab] = useState(0);
+  const [mobileCardMode, setMobileCardMode] = useState<"after" | "before">("after");
   const tabsRef = useRef<HTMLDivElement | null>(null);
   const currentProject = (projects[activeTab] || projects[0])!;
 
@@ -227,6 +228,7 @@ export function Transformation() {
         key={p.id}
         onClick={() => {
           setActiveTab(idx);
+          setMobileCardMode("after");
 
           // Keep the clicked tab and its nearby tabs visible
           const tab = tabsRef.current?.children[idx] as HTMLElement | undefined;
@@ -285,23 +287,59 @@ export function Transformation() {
           </div>
         </Reveal>
 
-        {/* Side-by-side Before and After preview cards */}
+        {/* Before and After preview cards */}
         <Reveal delay={120}>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8">
+          {/* Desktop view: side-by-side BEFORE & AFTER cards */}
+          <div className="mt-8 hidden md:grid md:grid-cols-2 gap-10 lg:gap-8">
             <ScrollCard
-              key={`${currentProject.id}-before`}
+              key={`${currentProject.id}-desktop-before`}
               src={currentProject.beforeSrc}
               alt={currentProject.beforeAlt}
               badgeText="BEFORE"
               subtitle="Outdated Design"
             />
             <ScrollCard
-              key={`${currentProject.id}-after`}
+              key={`${currentProject.id}-desktop-after`}
               src={currentProject.afterSrc}
               alt={currentProject.afterAlt}
               badgeText="AFTER"
               subtitle="Modern Redesign"
             />
+          </div>
+
+          {/* Mobile view: single card defaulting to AFTER with BEFORE/AFTER toggle button */}
+          <div className="mt-8 block md:hidden">
+            {mobileCardMode === "after" ? (
+              <ScrollCard
+                key={`${currentProject.id}-mobile-after`}
+                src={currentProject.afterSrc}
+                alt={currentProject.afterAlt}
+                badgeText="AFTER"
+                subtitle="Modern Redesign"
+              />
+            ) : (
+              <ScrollCard
+                key={`${currentProject.id}-mobile-before`}
+                src={currentProject.beforeSrc}
+                alt={currentProject.beforeAlt}
+                badgeText="BEFORE"
+                subtitle="Outdated Design"
+              />
+            )}
+
+            <div className="mt-4 flex justify-center">
+              <button
+                onClick={() =>
+                  setMobileCardMode((prev) => (prev === "after" ? "before" : "after"))
+                }
+                className="inline-flex items-center gap-2 rounded-full border border-border/80 bg-card px-6 py-2.5 text-xs font-semibold text-ink shadow-sm transition-all hover:bg-secondary active:scale-95 cursor-pointer"
+              >
+                <span>Switch to</span>
+                <span className="rounded-full bg-ink text-white px-2.5 py-0.5 text-[11px] font-bold uppercase">
+                  {mobileCardMode === "after" ? "BEFORE" : "AFTER"}
+                </span>
+              </button>
+            </div>
           </div>
         </Reveal>
 

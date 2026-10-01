@@ -12,7 +12,7 @@ const devices = [
     icon: Monitor,
     img: "/assets/dextopnew2.png",
     frameClass: "w-full max-w-[860px] rounded-xl",
-    viewportHeightClass: "h-[380px] sm:h-[480px]",
+    viewportHeightClass: "h-[380px] sm:h-[480px] lg:h-[520px]",
     note: "Full-width editorial layout, multi-column grid, hover states.",
   },
 
@@ -22,7 +22,7 @@ const devices = [
     icon: Smartphone,
     img: "/assets/mobilenew2.png",
     frameClass: "w-[260px] sm:w-[280px] rounded-[34px]",
-    viewportHeightClass: "h-[440px] sm:h-[520px]",
+    viewportHeightClass: "h-[440px] sm:h-[520px] lg:h-[520px]",
     note: "Single column, thumb-reach CTA bar, hamburger nav, sticky buy.",
   },
 ] as const;
@@ -204,7 +204,7 @@ export function ResponsiveTech() {
             </div>
 
             {/* Desktop view: show desktop and mobile side-by-side in one view */}
-            <div className="hidden lg:flex lg:flex-row lg:items-end lg:justify-center lg:gap-8 w-full max-w-6xl">
+            <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-8 w-full max-w-6xl">
               <div className="flex-1 min-w-0 max-w-[760px]">
                 <DeviceScrollFrame device={devices[0]} />
               </div>
