@@ -8,6 +8,11 @@ interface CaseStudyPreviewProps {
   alt: string;
 }
 
+
+
+
+
+
 function CaseStudyPreview({ src, alt }: CaseStudyPreviewProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
