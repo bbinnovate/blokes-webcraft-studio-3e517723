@@ -133,12 +133,11 @@ const handleCTA = () => {
 </span>
 
 <h6 className="black-text lg:mt-5 mt-3">
-  Let&apos;s build a website that works for your business.
+  Like what you see? 
 </h6>
 
 <p className="black-text mt-3 subtitle">
-  Get a fast, conversion-focused website built around your brand,
-  your customers, and your growth goals.
+ Get a full-stack Shopify store that looks like your brand, and work like your best salesperson.
 </p>
 
         

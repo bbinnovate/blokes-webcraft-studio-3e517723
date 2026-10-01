@@ -7,12 +7,12 @@ import { Reveal } from "./reveal";
 
 const quotes = [
   {
-    text: "I have been working with Bombay Blokes for app development and marketing, and it’s been a really solid experience. What stood out to me most was the trust and transparency (hard to find). The team has been very patient with all my requirements, kept me updated regularly, and delivered things pretty quickly without compromising on quality. Janki, Yash, Siddesh, and Khyaati did a great job building our mobile app from scratch within a tight timeline. On the marketing side, Karishma and Tisha went above and beyond to deeply understand my brand and get the narrative right. Overall, the team has been easy to work with, open to feedback, and willing to go the extra mile to get things right.",
+    text: "I’ve been working with Bombay Blokes for app development and marketing. Their trust, transparency and responsiveness really stood out. They built our app from scratch within a tight timeline while taking the time to truly understand our brand.",
     name: "Akshat Adani",
     role: "App Development & Marketing",
   },
   {
-    text: "I recently had the pleasure of working with Bombay Blokes, and I must say, they are an outstanding digital marketing agency. From the moment I contacted them for website design and development, they displayed utmost professionalism and dedication to delivering exceptional results. First and foremost, the team at Bombay Blokes is incredibly talented and knowledgeable. They took the time to understand my vision for the website and translated it into a stunning reality that exceeded my expectations. The team was always responsive, attentive, and ensured that all my requirements were met. They kept me updated at every stage and provided valuable insights and suggestions that greatly enhanced the overall user experience of my website. I wholeheartedly recommend Bombay Blokes for anyone seeking top-notch website development and designing services.",
+    text: "Bombay Blokes took the time to understand my vision and turned it into a website. They were responsive throughout, kept me updated at every stage, and brought valuable insights that improved the overall user experience.", 
     name: "Harjagit Dhanjal",
     role: "Website Design & Development",
   },
@@ -114,8 +114,11 @@ export function Testimonials() {
               <p className="eyebrow">Client voice</p>
 
               <h2 className="mt-3 max-w-2xl text-[32px] leading-[1.06] sm:text-[42px]">
-                What it's actually like to work with us.
+              Don’t take our word for it. 
               </h2>
+               <p className="text-ink-soft mt-2 max-w-md text-[15px] leading-relaxed">
+            We’d rather let our work speak
+            </p>
             </div>
 
             {/* Desktop arrows */}

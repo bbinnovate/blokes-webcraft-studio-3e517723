@@ -10,7 +10,7 @@ const proofPills = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-28 pb-14 lg:pt-36 lg:pb-20">
+    <section id="top" className="relative overflow-hidden pt-28 pb-14 lg:pt-30 lg:pb-20">
       <div
         aria-hidden
         className="pointer-events-none absolute -top-40 -right-32 h-[520px] w-[520px] rounded-full opacity-60 blur-3xl"
@@ -30,15 +30,15 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-5 text-[38px] leading-[1.02] sm:text-[54px] lg:text-[66px]">
-  Websites that grow
-  <br className="hidden sm:block" /> your business <span className="hl">while you sleep.</span>
+ More than an attractive website, 
+  <br className="hidden sm:block" /> we build your<span className="hl">360° digital storefront.</span>
 </h1>
           </Reveal>
 
           <Reveal delay={140}>
             <p className="text-ink-soft mt-5 max-w-xl text-[15px] leading-relaxed sm:text-[17px]">
-             We're a web design and development agency building fast, search-ready websites and Shopify stores for Indian brands, engineered so every visit has a real shot at becoming an enquiry.
-            </p>
+We design and develop websites and Shopify stores that bring your brand, products and business goals together into one unified experience.
+</p>
           </Reveal>
 
           <Reveal delay={200}>
@@ -63,15 +63,15 @@ export function Hero() {
                     <Star key={i} className="fill-accent-yellow text-accent-yellow h-3.5 w-3.5" />
                   ))}
                 </div>
-                <p className="text-ink-soft mt-1.5 text-[15px]">4.8 average from 80+ Google reviews</p>
+                <p className="text-ink-soft mt-1.5 text-[15px]">4.8 Loved by 80+ Google reviewers</p>
               </div>
               <div>
                 <p className="font-display text-xl font-extrabold">250+</p>
-                <p className="text-ink-soft text-[12.5px]">Websites launched</p>
+                <p className="text-ink-soft text-[12.5px]">Websites brought to life</p>
               </div>
               <div>
                 <p className="font-display text-xl font-extrabold">6–8 weeks</p>
-                <p className="text-ink-soft text-[12.5px]">Typical launch timeline</p>
+                <p className="text-ink-soft text-[12.5px]">Typical turnaround</p>
               </div>
             </div>
           </Reveal>

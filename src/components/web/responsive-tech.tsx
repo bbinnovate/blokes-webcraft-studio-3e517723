@@ -171,7 +171,8 @@ export function ResponsiveTech() {
             </h2>
           </Reveal>
           <Reveal delay={80}>
-            <div className="border-border bg-card inline-flex rounded-full border p-1">
+            {/* Tab controls - visible only on mobile/tablet */}
+            <div className="border-border bg-card inline-flex rounded-full border p-1 lg:hidden">
               {devices.map((d) => (
                 <button
                   key={d.id}
@@ -193,11 +194,24 @@ export function ResponsiveTech() {
         </div>
 
         <Reveal delay={120}>
-          <div className="border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-10">
-            <DeviceScrollFrame key={current.id} device={current} />
-            <p className="text-ink-soft mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
-              <span className="text-ink font-semibold">{current.label}:</span> {current.note}
-            </p>
+          <div className="border-border bg-secondary mt-10 flex min-h-[420px] flex-col items-center justify-center overflow-hidden rounded-[26px] border p-5 sm:min-h-[560px] sm:p-8 lg:p-10">
+            {/* Mobile / Tablet view: single tabbed device */}
+            <div className="flex flex-col items-center justify-center w-full lg:hidden">
+              <DeviceScrollFrame key={current.id} device={current} />
+              <p className="text-ink-soft mt-6 max-w-md text-center text-[13.5px] leading-relaxed">
+                <span className="text-ink font-semibold">{current.label}:</span> {current.note}
+              </p>
+            </div>
+
+            {/* Desktop view: show desktop and mobile side-by-side in one view */}
+            <div className="hidden lg:flex lg:flex-row lg:items-end lg:justify-center lg:gap-8 w-full max-w-6xl">
+              <div className="flex-1 min-w-0 max-w-[760px]">
+                <DeviceScrollFrame device={devices[0]} />
+              </div>
+              <div className="shrink-0">
+                <DeviceScrollFrame device={devices[1]} />
+              </div>
+            </div>
           </div>
         </Reveal>
       </div>

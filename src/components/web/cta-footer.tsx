@@ -17,12 +17,10 @@ export function CtaFooter() {
               <div className="relative grid gap-8 lg:grid-cols-[1.1fr_auto] lg:items-end">
                 <div>
                   <h2 className="max-w-2xl text-[32px] leading-[1.05] sm:text-[46px]">
-                    Let's find out what your website is costing you.
+                   Your website is a sales tool. Is it doing its job?
                   </h2>
                   <p className="mt-4 max-w-xl text-[15px] leading-relaxed opacity-80">
-                    Send us your URL. We'll return a free audit covering speed, mobile experience,
-                    messaging and the exact leaks losing you enquiries — plus what we'd do about
-                    it.
+                   Free audit. Get clarity on what’s wrong, why it matters, and what we’d do differently. 
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">

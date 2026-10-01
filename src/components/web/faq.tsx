@@ -9,31 +9,27 @@ import { Reveal } from "./reveal";
 export const faqs = [
   {
     q: "How long does it take to build a website?",
-    a: "A focused marketing site takes 4–6 weeks. A Shopify ecommerce build usually runs 6–10 weeks, and custom platforms are scoped after discovery. The biggest variable is how quickly content, product data and approvals come back from your side — we give you a shared timeline on day one.",
+    a: "Most website projects we work on have a turnaround time of 6–8 weeks, depending on the size and complexity. We’ll give you a timeline upfront and keep you updated throughout.",
   },
+
   {
-    q: "How much does website development cost in India?",
-    a: "Most business websites we build land between ₹1.2 lakh and ₹6 lakh depending on page count, custom design, integrations and ecommerce complexity. You receive a fixed, itemised quote before work begins, so there are no surprise invoices later.",
+    q: "How much will my website development cost?",
+    a: "It depends on the scope. We scope the project around your business, functionality and goals. You’ll always get a clear estimate before we begin.",
   },
+
   {
-    q: "Do you work on Shopify, or only custom builds?",
-    a: "Both. We're an experienced Shopify web development company for D2C and retail brands, and we also build on WordPress, Webflow and custom React stacks. We recommend the platform that matches your catalogue, team and roadmap — not the one that's easiest for us.",
+    q: "How do you choose the right tech for my website?",
+    a: "We start with your business, not a platform. We look at your current business and what it needs to be future-ready. Then and only then, do we recommend the technology that fits best.",
   },
+
   {
-    q: "Will the website actually bring enquiries, or just look good?",
-    a: "Every build starts with buyer research and a conversion map: what a visitor must see, in what order, before they act. We then track form starts, drop-offs and calls after launch, and keep optimising the pages that carry the most intent.",
+    q: "Will my new website be SEO-friendly?",
+    a: "Yes. We build websites with a clean structure, sensible page hierarchy, crawlable content, fast load times, mobile responsiveness, metadata, redirects and other technical SEO foundations in place. That said, SEO rankings also depend on a lot of other factors.",
   },
+
   {
-    q: "Can you redesign our existing site without losing SEO rankings?",
-    a: "Yes. We audit your current URLs, traffic and rankings, preserve the pages that earn, map 301 redirects, keep metadata and schema intact, and monitor Search Console closely for the first eight weeks post-launch.",
-  },
-  {
-    q: "Who owns the website and can our team update it?",
-    a: "You own everything — domain, hosting, codebase, CMS and analytics. We hand over documented access plus a walkthrough recording, and train your team to update pages, blogs and products without needing us.",
-  },
-  {
-    q: "Do you offer support after launch?",
-    a: "Yes. Care plans cover updates, backups, security patching, uptime monitoring and a monthly block of improvement hours. Many clients also run ongoing CRO experiments with us once traffic is flowing.",
+    q: "What happens after the website goes live?",
+    a: "Going live isn’t the point where we disappear. Once the website is launched, we can continue to help with maintenance, fixes, updates, new pages, integrations and ongoing improvements.",
   },
 ];
 
@@ -44,11 +40,19 @@ export function Faq() {
         <Reveal>
           <p className="eyebrow">FAQs</p>
           <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-            Questions worth asking any web development agency.
+          Frequently Asked Questions
           </h2>
-          <p className="text-ink-soft mt-4 text-[14.5px] leading-relaxed">
-            Still unsure? Ask us on a call — we'll tell you honestly if we're not the right fit.
-          </p>
+        <p className="text-ink-soft mt-4 text-[14.5px] leading-relaxed">
+  Got a question we haven’t answered?
+  <br />
+  Call us or shoot a message on{" "}
+  <a
+    href="tel:+919833037816"
+    className="text-[#FAB31E]"
+  >
+    +91 98330 37816
+  </a>
+</p>
         </Reveal>
 
         <Reveal delay={80}>

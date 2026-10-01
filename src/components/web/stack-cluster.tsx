@@ -30,12 +30,12 @@ export function StackCluster() {
       <Reveal className="text-center">
         <p className="eyebrow">Platforms & stack</p>
         <h3 className="mx-auto mt-3 max-w-4xl text-[28px] leading-[1.08] sm:text-[38px]">
-          We pick the platform that fits your business{" "}
-          <span className="hl">not the one we like selling.</span>
+         Matching the right tech to your{" "}
+          <span className="hl">business needs.</span>
         </h3>
         <p className="text-ink-soft mx-auto mt-4 max-w-xl text-[15px] leading-relaxed">
-          Selling products? Shopify. Publishing heavily? WordPress. Complex logic or speed at scale?
-          A custom React build. You own every account, every repo and every login.
+         The right technology shapes how your website performs, scales and drives business.
+
         </p>
       </Reveal>
 

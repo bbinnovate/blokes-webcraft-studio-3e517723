@@ -6,37 +6,37 @@ import { Reveal } from "./reveal";
 const steps = [
   {
     n: "01",
-    t: "Discovery & buyer mapping",
-    d: "We interview you and your sales team, study competitors, and map what a buyer needs to see before they enquire.",
-    out: "Sitemap + messaging brief",
+    t: "Discovery & Buyer Mapping",
+    d: "We get into the nitty-gritty of your business, your buyers, your competition and the market.",
+    out: "Sitemap + Messaging brief",
   },
 
   {
     n: "02",
-    t: "Wireframes & content strategy",
-    d: "Structure before styling. Every section earns its place, and the copy is written for the decision, not the word count.",
-    out: "Low-fi wireframes + copy deck",
+    t: "Wireframes & Content Strategy",
+    d: "We use buyer’s psychology to shape the hierarchy, wireframes and content, so every section moves the customer closer to a decision.",
+    out: "Low-fi wireframes + Copy deck",
   },
 
   {
     n: "03",
-    t: "Design system & UI",
-    d: "Type scale, colour, components, and motion designed desktop and mobile side by side so nothing breaks on a phone.",
+    t: "Design Frame & UI",
+    d: "We build your visual language, components and interactions across desktop and mobile aesthetics.",
     out: "Figma design system",
   },
 
   {
     n: "04",
-    t: "Development & integrations",
-    d: "Clean, componentised builds on Shopify, WordPress, or React as a web development agency that also runs Shopify ecommerce development, we wire in CRM, payments, WhatsApp, and analytics from day one.",
+    t: "Development & Integrations",
+    d: "We build the frontend, connect the backend, and wire every essential system; from payments and CRM to WhatsApp and analytics. Everything tested on staging before the launch.",
     out: "Staging build + QA sheet",
   },
 
   {
     n: "05",
-    t: "Speed, SEO & QA",
-    d: "Core Web Vitals, schema, redirects, cross-browser and real-device testing the technical SEO foundations checked before anything goes near production.",
-    out: "Launch readiness report",
+    t: "Speed, SEO, & QA",
+    d: "We build the frontend, connect the backend, and wire every essential system; from payments and CRM to WhatsApp and analytics. Everything tested on staging before the launch.",
+    out: "Launch-readiness report",
   },
 ];
 
@@ -74,11 +74,11 @@ export function Process() {
           <Reveal>
             <p className="eyebrow">How we work</p>
             <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-              Our web design and development process runs on one rule: no surprises.
+             Fully transparent. 
+From first brief to final build.
             </h2>
             <p className="text-ink-soft mt-5 max-w-md text-[15px] leading-relaxed">
-              We give you a named project lead, a shared timeline, and a real deliverable at every
-              stage.
+             A dedicated project lead, a shared timeline and clear deliverables at every stage. 
             </p>
             <div className="mt-7 flex items-center gap-3">
               <span className="font-display text-[13px] font-extrabold">

@@ -1,13 +1,63 @@
 "use client";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 import { Reveal } from "./reveal";
 
 const outcomes = [
-  { number: "01", value: "Fast", label: "Performance-first development" },
-  { number: "02", value: "Search-ready", label: "Technical SEO built in" },
-  { number: "03", value: "Conversion-focused", label: "UX designed around action" },
-  { number: "04", value: "Growth-ready", label: "Analytics, tracking & integrations" },
+  {
+    number: "01",
+    value: "Light-speed",
+    label: "Lean, performance-first builds",
+  },
+  {
+    number: "02",
+    value: "Built to convert",
+    label: "Persuasion-focused UI/UX",
+  },
+  {
+    number: "03",
+    value: "Search-ready",
+    label: "SEO baked into the build",
+  },
+  {
+    number: "04",
+    value: "Built to scale",
+    label: "Flexible, ready for integrations",
+  },
+];
+
+const projects = [
+  {
+    id: "project-1",
+    number: "01",
+    title: "Project One",
+    category: "E-commerce",
+    beforeSrc: "/assets/after-2.png",
+    beforeAlt: "Outdated website before the redesign",
+    afterSrc: "/assets/before-2.png",
+    afterAlt: "Modern redesigned website after the Bombay Blokes rebuild",
+  },
+  {
+    id: "project-2",
+    number: "02",
+    title: "Project Two",
+    category: "Sports & Retail",
+    beforeSrc: "/assets/Chatterboxafterbefore.png",
+    beforeAlt: "Legacy SCS Sports storefront before redesign",
+    afterSrc: "/assets/ChatterboxAfter.png",
+    afterAlt: "Rebuilt Shopify 2.0 SCS Sports storefront",
+  },
+  {
+    id: "project-3",
+    number: "03",
+    title: "Project Three",
+    category: "Direct-to-Consumer",
+    beforeSrc: "/assets/dancingleafbefore.png",
+    beforeAlt: "Legacy Mr. Blox storefront before custom build",
+    afterSrc: "/assets/dancingleafafter.png",
+    afterAlt: "Modern custom D2C Shopify experience for Mr. Blox",
+  },
 ];
 
 interface ScrollCardProps {
@@ -95,13 +145,10 @@ function ScrollCard({ src, alt, badgeText, subtitle }: ScrollCardProps) {
     <div className="flex flex-col gap-3">
       {/* Label header above preview */}
       <div className="flex items-center justify-center px-1">
-        <span
-          className="inline-flex items-center font-bold text-3xl"
-        >
+        <span className="inline-flex items-center font-bold text-3xl">
           <span className="hl">{badgeText}</span>
         </span>
-        {/* <span className="text-ink-soft text-xs font-medium">{subtitle}</span> */}
-       </div>
+      </div>
 
       {/* Screenshot box */}
       <div
@@ -137,6 +184,10 @@ function ScrollCard({ src, alt, badgeText, subtitle }: ScrollCardProps) {
 }
 
 export function Transformation() {
+  const [activeTab, setActiveTab] = useState(0);
+  const tabsRef = useRef<HTMLDivElement | null>(null);
+  const currentProject = (projects[activeTab] || projects[0])!;
+
   return (
     <section id="section-3" className="py-6 sm:py-8 lg:py-8">
       <div className="container">
@@ -145,32 +196,109 @@ export function Transformation() {
             <p className="eyebrow">Website redesign</p>
 
             <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-              Same business. <span className="hl">Very different</span> first impression.
+              Top 1% <span className="hl">websites</span> are never hard to navigate.
             </h2>
           </Reveal>
 
           <Reveal delay={80}>
             <p className="text-ink-soft w-full text-[15px] leading-relaxed">
-              Most businesses don't have a traffic problem, they have a credibility problem. Hover
-              over each preview to see what a professional website development agency actually
-              changes: sharper hierarchy, faster loads, one obvious next step, and copy written for
-              the buyer, not the brochure.
+              Browsers want to know what you do, your offerings, and where they can buy. So we build websites that make those things obvious - with better hierarchy, faster pages, clearer journeys, and flawless conversion copy.
             </p>
           </Reveal>
         </div>
 
+        {/* Project tabs & category label */}
+        <Reveal delay={100}>
+          <div className="mt-10 flex flex-col items-center justify-center">
+            {/* Pill tabs row */}
+          <div
+  ref={tabsRef}
+  className="flex w-full items-center justify-start gap-2.5 overflow-x-auto px-1 pb-1 sm:justify-center sm:gap-3.5"
+  style={{
+    scrollbarWidth: "none",
+    msOverflowStyle: "none",
+  }}
+>
+  {projects.map((p, idx) => {
+    const isActive = activeTab === idx;
+
+    return (
+      <button
+        key={p.id}
+        onClick={() => {
+          setActiveTab(idx);
+
+          // Keep the clicked tab and its nearby tabs visible
+          const tab = tabsRef.current?.children[idx] as HTMLElement | undefined;
+
+          if (tab && tabsRef.current) {
+            const container = tabsRef.current;
+            const tabLeft = tab.offsetLeft;
+            const tabRight = tabLeft + tab.offsetWidth;
+
+            const visibleLeft = container.scrollLeft;
+            const visibleRight =
+              visibleLeft + container.clientWidth;
+
+            if (tabRight > visibleRight) {
+              container.scrollTo({
+                left: tabRight - container.clientWidth + 16,
+                behavior: "smooth",
+              });
+            } else if (tabLeft < visibleLeft) {
+              container.scrollTo({
+                left: Math.max(0, tabLeft - 16),
+                behavior: "smooth",
+              });
+            }
+          }
+        }}
+        aria-pressed={isActive}
+        className={cn(
+          "inline-flex shrink-0 items-center gap-2 rounded-full px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-medium transition-all duration-300 cursor-pointer select-none",
+          isActive
+            ? "bg-[#1d1d1f] text-white shadow-md"
+            : "border border-border/80 bg-card text-ink hover:border-ink/40 hover:bg-secondary/50",
+        )}
+      >
+        <span
+          className={cn(
+            "font-mono text-[11px] sm:text-xs transition-colors",
+            isActive
+              ? "text-white/80 font-normal"
+              : "text-ink-soft/70 font-normal",
+          )}
+        >
+          {p.number}
+        </span>
+
+        <span className="font-semibold">{p.title}</span>
+      </button>
+    );
+  })}
+</div>
+
+            {/* Active project category tag */}
+            {/* <p className="mt-3 text-[13px] font-medium tracking-wide text-ink-soft/80 uppercase">
+              {currentProject.category}
+            </p> */}
+          </div>
+        </Reveal>
+
         {/* Side-by-side Before and After preview cards */}
         <Reveal delay={120}>
-          <div className="mt-15 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-8">
             <ScrollCard
-              src="/assets/after-2.png"
-              alt="Outdated website before the redesign"
+              key={`${currentProject.id}-before`}
+              src={currentProject.beforeSrc}
+              alt={currentProject.beforeAlt}
               badgeText="BEFORE"
               subtitle="Outdated Design"
             />
             <ScrollCard
-              src="/assets/before-2.png"
-              alt="Modern redesigned website after the Bombay Blokes rebuild"
+              key={`${currentProject.id}-after`}
+              src={currentProject.afterSrc}
+              alt={currentProject.afterAlt}
               badgeText="AFTER"
               subtitle="Modern Redesign"
             />

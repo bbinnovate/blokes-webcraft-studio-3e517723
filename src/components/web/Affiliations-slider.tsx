@@ -17,7 +17,7 @@ export function AffiliationsSlider() {
         {/* Heading */}
         <div className="mb-8 mx-auto w-full text-center">
           <h2 className="mt-3 text-[32px] leading-[1.06] sm:text-[42px]">
-           Our Affiliations
+          Our Digital Toolkit
           </h2>
         </div>
 

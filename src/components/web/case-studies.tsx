@@ -113,51 +113,60 @@ className="w-full h-auto block transform-gpu transition-transform ease-in-out ob
 
 const studies = [
   {
-    img: "/assets/scs3.png",
+    img: "/assets/scs.png",
     client: "SCS Sports",
-    type: "Shopify ecommerce development",
-    headline: "A bigger catalogue needed a better experience.",
+    type: "Shopify Ecommerce Development",
+    headline: "SCS is a multi-category sport equipment retailer.",
     problem:
-      "SCS’s outdated storefront made discovery, navigation and mobile shopping harder than they needed to be. We rebuilt the Shopify experience around performance and conversion.",
+      "SCS had the range, but their old storefront made it difficult to discover for their customers. We rebuilt the experience on Shopify 2.0, rethinking navigation, search, filters and product discovery across desktop and mobile. The goal was simple: make a big catalogue feel easier to shop. Products are easier to find, categories make more sense and the journey from browse to checkout has fewer unnecessary steps. Less digging. Faster decisions. A storefront built to keep up with the range.",
 
     did: [
       "Rebuilt Shopify 2.0 storefront",
-      "Improved navigation, search & filters",
-      "Optimised mobile performance & UX",
+      "Improved user journey",
+      "Mobile performance & UX",
     ],
 
     stats: [
-      { k: "Shopify 2.0", v: "Custom storefront" },
-      { k: "Custom UX", v: "Search, filters & discovery" },
-      { k: "Performance", v: "Mobile-first optimisation" },
+      {
+        k: "Shopify 2.0",
+        v: "Rebuilt storefront",
+      },
+      {
+        k: "User Journey",
+        v: "Improved browsing & shopping",
+      },
+      {
+        k: "Performance",
+        v: "Mobile performance & UX",
+      },
     ],
   },
 
   {
     img: "/assets/mrblox.png",
     client: "Mr. Blox",
-    type: "Custom Shopify website development",
-    headline: "A new toy brand, built from scratch.",
+    type: "Custom Shopify Build Development",
+    headline: "Mr. Blox is a new-age toy brand with no existing storefront.",
     problem:
-      "Mr. Blox launched without a website, so we designed and built its ecommerce storefront from the ground up.",
+      "Mr. Blox came to us with a new product, a new identity and no digital storefront to inherit. We built the Shopify experience from the ground up, creating a space that could introduce the brand, bring the products to life and make the path to purchase feel natural.",
 
     did: [
-      "Designed complete UI/UX",
-      "Built custom Shopify 2.0 frontend",
+      "End-to-end UI/UX",
+      "Custom Shopify 2.0 frontend",
       "Integrated payments, shipping & Klaviyo",
     ],
 
     stats: [
       {
-        k: "UI/UX + Development",
-        v: "End-to-end build",
+        k: "UI/UX",
+        v: "End-to-end experience",
       },
       {
         k: "Shopify 2.0",
         v: "Custom frontend",
       },
       {
-        k: "Ecommerce",
+        k: "Integrations",
         v: "Payments, shipping & Klaviyo",
       },
     ],
@@ -166,14 +175,15 @@ const studies = [
   {
     img: "/assets/supersox2.png",
     client: "SuperSox",
-    type: "Shopify ecommerce development",
-    headline: "A new storefront for a growing brand.",
+    type: "Shopify Ecommerce Development",
+    headline:
+      "SuperSox had 177+ products. We had a lot to navigate it into an end-to-end web experience.",
     problem:
-      "SuperSox needed a completely new digital experience. We designed and built a scalable Shopify store from discovery to checkout.",
+      "SuperSox had a wide catalogue spanning categories, audiences and use cases. We rebuilt their Shopify experience from discovery to checkout, creating a clearer way to navigate the range, find the right products and move through the store across every screen. We brought the entire shopping journey together into one cohesive experience.",
 
     did: [
-      "Designed complete UI/UX",
-      "Built custom Shopify 2.0 experience",
+      "End-to-end UI/UX",
+      "Custom Shopify 2.0",
       "Integrated cart, WhatsApp, Klaviyo & analytics",
     ],
 
@@ -187,8 +197,8 @@ const studies = [
         v: "Custom storefront",
       },
       {
-        k: "Growth Ready",
-        v: "Analytics & integrations",
+        k: "Integrations",
+        v: "Cart, WhatsApp, Klaviyo & analytics",
       },
     ],
   },
@@ -204,12 +214,13 @@ export function CaseStudies() {
             <div>
               <p className="eyebrow">Selected work</p>
               <h2 className="mt-3 max-w-3xl text-[32px] leading-[1.06] sm:text-[42px]">
-                The website did the selling.<span className="hl"> Here's proof.</span>
+              Built by <span className="hl">Blokes</span>
               </h2>
             </div>
             <p className="text-ink-soft text-sm lg:max-w-sm lg:text-right">
-              Four live builds designed, developed, and launched end-to-end by our Mumbai web
-              development agency.
+             Take a look at some of our live builds.  
+Along with how they’re performing in the real world. 
+
             </p>
           </div>
         </Reveal>

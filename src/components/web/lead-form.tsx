@@ -174,7 +174,7 @@ export function LeadForm({ id = "audit" }: { id?: string }) {
               <Loader2 className="h-4 w-4 animate-spin" />
             ) : (
               <>
-                Request my free audit
+                Request a free audit
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </>
             )}
